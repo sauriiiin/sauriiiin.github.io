@@ -1,3 +1,9 @@
 theme: jekyll-theme-minimal
-title: In Search of Beauty
-description: Personal Webpage
+title: Saurin Parikh
+logo: "/images/saurin.jpg?raw=true"
+description: >
+	Problem Solver<br>
+	Doctor turned Engineer turned Scientist <br>
+	<a href="https://www.linkedin.com/in/sauriiiin/">LinkedIn</a> <br>
+	<a href="https://twitter.com/sauriiiin">Twitter</a> <br>
+	<a href="mailto:sauriiiin@gmail.com">Email</a>
