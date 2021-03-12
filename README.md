@@ -55,7 +55,7 @@ Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., 
 - [Swanson School of Engineering](https://www.engineering.pitt.edu){:target="_blank"}
 <br><br>
 
-###[Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}, Ahmedabad, Gujarat, India
+### [Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}, Ahmedabad, Gujarat, India
 **Bachelor of Medicine & Bachelor of Surgery** _(June, 2014)_ <br>
 - [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}
 - Internship: Vadilal Sarabhai General Hospital
