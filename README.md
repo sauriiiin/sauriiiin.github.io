@@ -23,21 +23,24 @@ Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., 
 ### Talks
 **LI Detector: Measuring Small Fitness Effects in High Throughput** _(April, 2020)_ <br>
 - Pittsburgh Area Yeast Meeting (PAYM)
-- [Presentation](https://sauriiiin.github.io/files/presentations/paym.pdf){:target="_blank"} <br>
+- [Presentation](https://sauriiiin.github.io/files/presentations/paym.pdf){:target="_blank"}
+
 **LI Detector: Measuring Small Fitness Effects in High Throughput** _(September, 2019)_ <br>
 - [EPiC](https://philadelphiaevolut.wixsite.com/epic){:target="_blank"} - [Evolution in Philadelphia](https://philadelphiaevolut.wixsite.com/phillyevolution){:target="_blank"}
-- [Talk](https://youtu.be/JUYhxYGW52E){:target="_blank"} &#124; [Presentation](https://sauriiiin.github.io/files/presentations/epic.pdf){:target="_blank"} <br>
+- [Talk](https://youtu.be/JUYhxYGW52E){:target="_blank"} &#124; [Presentation](https://sauriiiin.github.io/files/presentations/epic.pdf){:target="_blank"}
 
 ### Poster Presentations
 **LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects** _(September, 2020)_
 - Molecular Mechanisms in Evolution and Ecology Conference - European Molecular Biology Laboratory ([EMBL](https://www.embl.org){:target="_blank"})
-- [Poster](https://sauriiiin.github.io/files/posters/embl.pdf){:target="_blank"} <br>
+- [Poster](https://sauriiiin.github.io/files/posters/embl.pdf){:target="_blank"}
+
 **All Sizes Matter!** _(January, 2020)_
 - Integrative Systems Biology ([ISB](https://www.isb.pitt.edu){:target="_blank"}) Symposium, University of Pittsburgh School of Medicine
-- [Poster](https://sauriiiin.github.io/files/posters/isbsymposium.pdf){:target="_blank"} <br>
+- [Poster](https://sauriiiin.github.io/files/posters/isbsymposium.pdf){:target="_blank"}
+
 **How To Innovate: A Novel Method to Explore Evolutionary Novelty** _(November, 2018)_
 - Biomedical Graduate Student Association ([BGSA](https://bgsa-pitt.squarespace.com){:target="_blank"}), University of Pittsburgh School of Medicine
-- [Poster](https://sauriiiin.github.io/files/posters/bgsa.pdf){:target="_blank"} <br>
+- [Poster](https://sauriiiin.github.io/files/posters/bgsa.pdf){:target="_blank"}
 
 ## Education
 ### [University of Pittsburgh](https://www.pitt.edu){:target="_blank"}, Pittsburgh, Pennsylvania, USA
@@ -69,5 +72,5 @@ Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., 
 	- Registration No. G-52091
 
 ## On The Side
-**Student Fellow** @ [PECA Labs](http://www.pecalabs.com){:target="_blank"} _(January 2017 - April 2017)_
-- Active member of the team that procured CE-marking for [exGraft](http://www.pecalabs.com/devices.html){:target="_blank"}
+**Student Fellow** @ [PECA Labs](http://www.pecalabs.com){:target="_blank"} _(January 2017 - April 2017)_ <br>
+Active member of the team that procured CE-marking for [exGraft](http://www.pecalabs.com/devices.html){:target="_blank"}
