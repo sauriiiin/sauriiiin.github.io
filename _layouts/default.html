@@ -16,15 +16,6 @@
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
-        <h3 class="masthead-title">
-          <a href="/" title="Home">{{ site.title }}</a>
-
-          {% for page in site.pages_list %}
-              &nbsp;&nbsp;&nbsp;<small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-          {% endfor %}
-
-        </h3>
-
         
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -48,6 +39,18 @@
         </ul>
         {% endif %}
       </header>
+
+      <div class="masthead">
+        <h3 class="masthead-title">
+            <a href="/" title="Home">{{ site.title }}</a>
+
+            {% for page in site.pages_list %}
+                &nbsp;&nbsp;&nbsp;<small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
+            {% endfor %}
+
+        </h3>
+      </div>
+      
       <section>
 
       {{ content }}
