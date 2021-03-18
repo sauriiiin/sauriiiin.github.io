@@ -24,10 +24,10 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <div>
-          <h2>{{ site.data.pagelist.page_list_title }}</h2>
+          <h3>{{ site.data.pagelist.page_list_title }}</h3>
           <ul>
              {% for item in site.data.pagelist.page_list %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+                <li><a href="{{ item.url }}"><strong>{{ item.title }}</strong></a></li>
              {% endfor %}
           </ul>
         </div>
