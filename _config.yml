@@ -9,4 +9,5 @@ include:
   - .htaccess
   - _pages
   - _layouts
+pages_list_title: Navigation
 pages_list: {'Projects':'/projects'}
