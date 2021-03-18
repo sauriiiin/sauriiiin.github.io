@@ -1,5 +1,7 @@
 # CV
 
+* * *
+
 ## Experience
 **Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - Present)_<br>
 Department of Computational & Systems Biology, University of Pittsburgh School of Medicine
@@ -12,6 +14,8 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Identify, develop, and commercialize projects undertaken by bioengineers and clinical faculty that address unmet clinical needs
 - Stakeholder Discovery, Intellectual Property Analysis, Reimbursement Strategy, Business Plan Development
 
+* * *
+
 ## Publications
 **Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). [https://doi.org/10.1093/g3journal/jkaa068](https://doi.org/10.1093/g3journal/jkaa068){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
 
@@ -19,8 +23,12 @@ Vakirlis, N., Acar, O., Hsu, B., Castilho Coelho, N., Van Oss, S. B., Wacholder,
 
 Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., & Hernandez, M. E. (2016). Virtual reality applications in assessing the effect of anxiety on sensorimotor integration in human postural control. 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 33–36. [https://doi.org/10.1109/EMBC.2016.7590633](https://doi.org/10.1109/EMBC.2016.7590633){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Widdowson2016.pdf){:target="_blank"}) <br>
 
+* * *
+
 ## Projects
-_([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
+#### _([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
+
+* * *
 
 ## Talks/Posters
 ### Talks
@@ -45,6 +53,8 @@ _([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
 - Biomedical Graduate Student Association ([BGSA](https://bgsa-pitt.squarespace.com){:target="_blank"}), University of Pittsburgh School of Medicine
 - [Poster](https://sauriiiin.github.io/files/posters/bgsa.pdf){:target="_blank"}
 
+* * *
+
 ## Education
 ### [University of Pittsburgh](https://www.pitt.edu){:target="_blank"}, Pittsburgh, Pennsylvania, USA
 - **Ph.D. in Integrative Systems Biology** _(Expected April, 2023)_ <br>
@@ -60,6 +70,8 @@ _([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
 	- [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}
 	- Internship: Vadilal Sarabhai General Hospital
 
+* * *
+
 ## Other
 ### Awards
 - **[Randall Family Big Idea Competition](https://www.bigidea.pitt.edu/programs/randall-family-big-idea-competition/){:target="_blank"}** _(March 2017)_
@@ -73,6 +85,8 @@ _([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
 - **Medical License and Registration**
 	- [Gujarat Medical Council](http://www.gmcgujarat.org){:target="_blank"}, India
 	- Registration No. G-52091
+
+* * *
 
 ## On The Side
 **Student Fellow** @ [PECA Labs](http://www.pecalabs.com){:target="_blank"} _(January 2017 - April 2017)_ <br>
