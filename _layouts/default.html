@@ -22,6 +22,13 @@
         {% endif %}
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
+        
+        <h2>{{ site.data.pagelist.page_list_title }}</h2>
+        <ul>
+           {% for item in site.data.pagelist.page_list %}
+              <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+           {% endfor %}
+        </ul>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
@@ -38,15 +45,6 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        
-        <section>
-          <h2>{{ site.data.pagelist.page_list_title }}</h2>
-          <ul>
-             {% for item in site.data.pagelist.page_list %}
-                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-             {% endfor %}
-          </ul>
-        </section>
         
       </header>
       
