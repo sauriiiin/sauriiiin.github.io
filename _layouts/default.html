@@ -25,11 +25,12 @@
         
         <div>
           <h3>{{ site.data.pagelist.page_list_title }}</h3>
-          <ul>
+          {% assign pagelist = site.data.pagelist.page_list | sort: 'title'  %}
+          <ol>
              {% for item in site.data.pagelist.page_list %}
-                <li><a href="{{ item.url }}"><strong>{{ item.title }}</strong></a></li>
+                <li><a href="{{ item.url }}">{{ item.title }}</a></li>
              {% endfor %}
-          </ul>
+          </ol>
         </div>
 
         {% if site.github.is_project_page %}
