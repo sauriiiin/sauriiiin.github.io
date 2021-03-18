@@ -1,7 +1,9 @@
 page_list_title: Navigation
 page_list:
 
+- title: CV
+  url: /
 - title: Projects
   url: /projects
-- title: ScienceArt
+- title: Science Art
   url: /sci-art
