@@ -8,5 +8,4 @@ description: >
 include:
   - .htaccess
   - _pages
-pages_list:       
-  Projects: '/projects'
+pages_list: {'Projects':'/projects'}
