@@ -13,11 +13,14 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Stakeholder Discovery, Intellectual Property Analysis, Reimbursement Strategy, Business Plan Development
 
 ## Publications
-**Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). https://doi.org/10.1093/g3journal/jkaa068 ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
+**Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). [https://doi.org/10.1093/g3journal/jkaa068](https://doi.org/10.1093/g3journal/jkaa068){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
 
-Vakirlis, N., Acar, O., Hsu, B., Castilho Coelho, N., Van Oss, S. B., Wacholder, A., Medetgul-Ernar, K., Bowman, R. W., 2nd, Hines, C. P., Iannotta, J., **Parikh, S. B.**, McLysaght, A., Camacho, C. J., O’Donnell, A. F., Ideker, T., & Carvunis, A. R. (2020). De novo emergence of adaptive membrane proteins from thymine-rich genomic sequences. Nature Communications, 11(1), 781. https://doi.org/10.1038/s41467-020-14500-z ([PDF](https://sauriiiin.github.io/files/papers/Vakirlis2020.pdf){:target="_blank"}) <br>
+Vakirlis, N., Acar, O., Hsu, B., Castilho Coelho, N., Van Oss, S. B., Wacholder, A., Medetgul-Ernar, K., Bowman, R. W., 2nd, Hines, C. P., Iannotta, J., **Parikh, S. B.**, McLysaght, A., Camacho, C. J., O’Donnell, A. F., Ideker, T., & Carvunis, A. R. (2020). De novo emergence of adaptive membrane proteins from thymine-rich genomic sequences. Nature Communications, 11(1), 781. [https://doi.org/10.1038/s41467-020-14500-z](https://doi.org/10.1038/s41467-020-14500-z){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Vakirlis2020.pdf){:target="_blank"}) <br>
 
-Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., & Hernandez, M. E. (2016). Virtual reality applications in assessing the effect of anxiety on sensorimotor integration in human postural control. 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 33–36. https://doi.org/10.1109/EMBC.2016.7590633 ([PDF](https://sauriiiin.github.io/files/papers/Widdowson2016.pdf){:target="_blank"}) <br>
+Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., & Hernandez, M. E. (2016). Virtual reality applications in assessing the effect of anxiety on sensorimotor integration in human postural control. 2016 38th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), 33–36. [https://doi.org/10.1109/EMBC.2016.7590633](https://doi.org/10.1109/EMBC.2016.7590633){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Widdowson2016.pdf){:target="_blank"}) <br>
+
+## Projects
+_([List of projects](https://sauriiiin.github.io/projects/){:target="_blank"})_
 
 ## Talks/Posters
 ### Talks
