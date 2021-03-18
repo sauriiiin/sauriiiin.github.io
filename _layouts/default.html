@@ -56,6 +56,14 @@
       {{ content }}
 
       </section>
+      
+      <h2>{{ site.pages_list_title }}</h2>
+      <ul>
+         {% for item in site.pages_list %}
+            <li><a href="{{ page[1] }}">{{ page[0] }}</a></li>
+         {% endfor %}
+      </ul>
+      
       <footer>
         {% if site.github.is_project_page %}
         <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
