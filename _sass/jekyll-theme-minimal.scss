@@ -111,6 +111,12 @@ header {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+header li {
+    width: 89px;
+    float: left;
+    height: 40px;
+}
+
 ul.downloads {
   list-style:none;
   height:40px;
