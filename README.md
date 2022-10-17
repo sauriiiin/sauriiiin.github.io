@@ -1,5 +1,18 @@
 # CV
 
+## Education
+### Ph.D. in Integrative Systems Biology _(Expected 2023)_ <br>
+- Focus: Evolutionary Systems Biology
+- [University of Pittsburgh School of Medicine](https://somgrad.pitt.edu){:target="_blank"}
+### M.S. in Bioengineering _(April, 2018)_ <br>
+- Focus: Medical Product Engineering
+- [Center For Medical Innovation](https://www.engineering.pitt.edu/cmi/){:target="_blank"}
+- [University of Pittsburgh Swanson School of Engineering](https://www.engineering.pitt.edu){:target="_blank"}
+
+### Bachelor of Medicine & Bachelor of Surgery _(June, 2014)_ <br>
+- [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}, [Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}
+- Internship: Vadilal Sarabhai General Hospital
+
 ## Experience
 **Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - Present)_<br>
 Department of Computational & Systems Biology, University of Pittsburgh School of Medicine
@@ -11,6 +24,10 @@ Department of Computational & Systems Biology, University of Pittsburgh School o
 Department of Bioengineering, University of Pittsburgh Swanson School of Engineering
 - Identify, develop, and commercialize projects undertaken by bioengineers and clinical faculty that address unmet clinical needs
 - Stakeholder Discovery, Intellectual Property Analysis, Reimbursement Strategy, Business Plan Development
+
+## SKILLS
+
+
 
 ## Publications
 **Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). https://doi.org/10.1093/g3journal/jkaa068 ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
@@ -41,21 +58,6 @@ Widdowson, C., Ganhotra, J., Faizal, M., Wilko, M., **Parikh, S.**, Adhami, Z., 
 **How To Innovate: A Novel Method to Explore Evolutionary Novelty** _(November, 2018)_
 - Biomedical Graduate Student Association ([BGSA](https://bgsa-pitt.squarespace.com){:target="_blank"}), University of Pittsburgh School of Medicine
 - [Poster](https://sauriiiin.github.io/files/posters/bgsa.pdf){:target="_blank"}
-
-## Education
-### [University of Pittsburgh](https://www.pitt.edu){:target="_blank"}, Pittsburgh, Pennsylvania, USA
-- **Ph.D. in Integrative Systems Biology** _(Expected April, 2023)_ <br>
-	- Focus: Evolutionary Systems Biology
-	- [School of Medicine](https://somgrad.pitt.edu){:target="_blank"}
-- **M.S. in Bioengineering** _(April, 2018)_ <br>
-	- Focus: Medical Product Engineering
-	- [Center For Medical Innovation](https://www.engineering.pitt.edu/cmi/){:target="_blank"}
-	- [Swanson School of Engineering](https://www.engineering.pitt.edu){:target="_blank"}
-
-### [Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}, Ahmedabad, Gujarat, India
-- **Bachelor of Medicine & Bachelor of Surgery** _(June, 2014)_ <br>
-	- [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}
-	- Internship: Vadilal Sarabhai General Hospital
 
 ## Other
 ### Awards
