@@ -1,16 +1,14 @@
-# CV
-
 ## Education
-### Ph.D. in Integrative Systems Biology _(Expected 2023)_ <br>
+### Ph.D. in Integrative Systems Biology _(2023)_ <br>
 - Focus: Evolutionary Systems Biology
 - [University of Pittsburgh School of Medicine](https://somgrad.pitt.edu){:target="_blank"}, Pittsburgh, Pennsylvania, USA
 
-### M.S. in Bioengineering _(April, 2018)_ <br>
+### M.S. in Bioengineering _(2018)_ <br>
 - Focus: Medical Product Engineering
 - [Center For Medical Innovation](https://www.engineering.pitt.edu/cmi/){:target="_blank"}
 - [University of Pittsburgh Swanson School of Engineering](https://www.engineering.pitt.edu){:target="_blank"}, Pittsburgh, Pennsylvania, USA
 
-### Bachelor of Medicine & Bachelor of Surgery _(June, 2014)_ <br>
+### Bachelor of Medicine & Bachelor of Surgery _(2014)_ <br>
 - [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}, [Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}, Ahmedabad, Gujarat, India
 - Internship: Vadilal Sarabhai General Hospital
 
@@ -42,7 +40,6 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Product ideation, prototyping, stakeholder discovery, intellectual property analysis, human factor engineering, reimbursement strategy, clinical trial design
 
 ## Publications
-### Published
 **Parikh, S. B.**, Houghton, C., Van Oss, S. B., Wacholder, A., & Carvunis, A.-R. (2022). Origins, evolution, and physiological implications of de novo genes in yeast. Yeast, 39(9), 471–481. [https://doi.org/10.1002/yea.3810](https://doi.org/10.1002/yea.3810) ([PDF](https://sauriiiin.github.io/files/papers/Parikh2022.pdf){:target="_blank"}) <br>
 
 **Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). [https://doi.org/10.1093/g3journal/jkaa068](https://doi.org/10.1093/g3journal/jkaa068) ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
