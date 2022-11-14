@@ -41,6 +41,9 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Product ideation, prototyping, stakeholder discovery, intellectual property analysis, human factor engineering, reimbursement strategy, clinical trial design
 
 ## Publications
+**Parikh, S. B.**[^1], Van Oss, S. B.[^1], Castilho Coelho, N.[^1], Wacholder, A., Belashov, I., Zdancewicz, S., Michaca, M., Xu, J., Kang, Y. P., Ward, N. P., Yoon, S. J., McCourt, K. M., McKee, J., Ideker, T., VanDemark, A. P., DeNicola, G. M., & Carvunis, A.-R. (2022). On the illusion of auxotrophy: met15Δ yeast cells can grow on inorganic sulfur thanks to the previously uncharacterized homocysteine synthase Yll058w. The Journal of Biological Chemistry, 0(0). [https://doi.org/10.1016/j.jbc.2022.102697](https://doi.org/10.1016/j.jbc.2022.102697)([PDF](https://sauriiiin.github.io/files/papers/VanOss2022.pdf){:target="_blank"})) <br>
+[^1] these authors contributed equally
+
 **Parikh, S. B.**, Houghton, C., Van Oss, S. B., Wacholder, A., & Carvunis, A.-R. (2022). Origins, evolution, and physiological implications of de novo genes in yeast. Yeast, 39(9), 471–481. [https://doi.org/10.1002/yea.3810](https://doi.org/10.1002/yea.3810) ([PDF](https://sauriiiin.github.io/files/papers/Parikh2022.pdf){:target="_blank"}) <br>
 
 **Parikh, S. B.**, Castilho Coelho, N., & Carvunis, A.-R. (2021). LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects. G3 Genes&#124;Genomes&#124;Genetics, 11(2). [https://doi.org/10.1093/g3journal/jkaa068](https://doi.org/10.1093/g3journal/jkaa068) ([PDF](https://sauriiiin.github.io/files/papers/Parikh2021.pdf){:target="_blank"}) <br>
