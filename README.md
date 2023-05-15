@@ -41,6 +41,8 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Product ideation, prototyping, stakeholder discovery, intellectual property analysis, human factor engineering, reimbursement strategy, clinical trial design
 
 ## Publications
+Wacholder, A., **Parikh, S. B.**, Coelho, N. C., Acar, O., Houghton, C., Chou, L., & Carvunis, A.-R. (2023). A vast evolutionarily transient translatome contributes to phenotype and fitness. Cell Systems. [https://doi.org/10.1016/j.cels.2023.04.002](https://doi.org/10.1016/j.cels.2023.04.002){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/Wacholder2023.pdf){:target="_blank"}) <br>
+
 **Parikh, S. B.**<sup>a</sup>, Van Oss, S. B.<sup>a</sup>, Castilho Coelho, N.<sup>a</sup>, Wacholder, A., Belashov, I., Zdancewicz, S., Michaca, M., Xu, J., Kang, Y. P., Ward, N. P., Yoon, S. J., McCourt, K. M., McKee, J., Ideker, T., VanDemark, A. P., DeNicola, G. M., & Carvunis, A.-R. (2022). On the illusion of auxotrophy: met15Δ yeast cells can grow on inorganic sulfur thanks to the previously uncharacterized homocysteine synthase Yll058w. The Journal of Biological Chemistry, 298(12), 102697. [https://doi.org/10.1016/j.jbc.2022.102697](https://doi.org/10.1016/j.jbc.2022.102697){:target="_blank"} ([PDF](https://sauriiiin.github.io/files/papers/VanOss2022.pdf){:target="_blank"}) <br>
 <sup>a</sup> these authors contributed equally
 
