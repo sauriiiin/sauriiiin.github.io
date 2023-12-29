@@ -14,7 +14,11 @@
 - Internship: Vadilal Sarabhai General Hospital
 
 ## Experience
-**Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - Present)_<br>
+**Technology Licensing Associate** @ [UR Ventures](https://www.rochester.edu/ventures/){:target="_blank"} _(February 2024 - Present)_<br>
+University of Rochester Medical Center
+- Technology Transfer, Medical Technology
+
+**Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - December 2023)_<br>
 Department of Computational & Systems Biology, University of Pittsburgh School of Medicine
 - **_Advisor:_** [Anne-Ruxandra Carvunis](https://www.isb.pitt.edu/people/faculty/anne-ruxandra-carvunis-phd){:target="_blank"}
 - **_Research Topic:_** Understanding how evolutionarily novel micro proteins influence the fitness of an organism
