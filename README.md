@@ -1,4 +1,21 @@
 # About Me
+## Experience
+**Sr Technology Licensing Specialist** @ [UR Ventures](https://www.rochester.edu/ventures/){:target="_blank"} _(February 2024 - Present)_<br>
+University of Rochester Medical Center
+- Identify, evaluate, protect and commercialize technologies developed at the [University of Rochester](https://rochester.edu/){:target="_blank"}.
+- Digital health, aritificial intelligence, machine learning, biomedical devices
+
+**Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - December 2023)_<br>
+Department of Computational & Systems Biology, University of Pittsburgh School of Medicine
+- **_Advisor:_** [Anne-Ruxandra Carvunis](https://www.isb.pitt.edu/people/faculty/anne-ruxandra-carvunis-phd){:target="_blank"}
+- **_Research Topic:_** Understanding how evolutionarily novel micro proteins influence the fitness of an organism
+- Bioinformatics, Computational Biology, Evolution, Genetics, Genomics, Systems Biology
+
+**Technology Fellow** @ [Coulter Translational Research Partners II Program](https://www.engineering.pitt.edu/coulter/){:target="_blank"} _(January 2017 - June 2017)_<br>
+Department of Bioengineering, University of Pittsburgh Swanson School of Engineering
+- Identify, develop, and commercialize projects undertaken by bioengineers and clinical faculty that address unmet clinical needs
+- Stakeholder Discovery, Intellectual Property Analysis, Reimbursement Strategy, Business Plan Development
+
 ## Education
 ### Ph.D. in Integrative Systems Biology _(2023)_ <br>
 - Focus: Evolutionary Systems Biology
@@ -12,22 +29,6 @@
 ### Bachelor of Medicine & Bachelor of Surgery _(2014)_ <br>
 - [Smt. NHL Municipal Medical College](http://www.amcmet.org){:target="_blank"}, [Gujarat University](https://www.gujaratuniversity.ac.in){:target="_blank"}, Ahmedabad, Gujarat, India
 - Internship: Vadilal Sarabhai General Hospital
-
-## Experience
-**Technology Licensing Associate** @ [UR Ventures](https://www.rochester.edu/ventures/){:target="_blank"} _(February 2024 - Present)_<br>
-University of Rochester Medical Center
-- Technology Transfer, Medical Technology
-
-**Graduate Researcher** @ [Carvunis Lab](https://www.csb.pitt.edu/faculty/carvunis/){:target="_blank"} _(August 2017 - December 2023)_<br>
-Department of Computational & Systems Biology, University of Pittsburgh School of Medicine
-- **_Advisor:_** [Anne-Ruxandra Carvunis](https://www.isb.pitt.edu/people/faculty/anne-ruxandra-carvunis-phd){:target="_blank"}
-- **_Research Topic:_** Understanding how evolutionarily novel micro proteins influence the fitness of an organism
-- Bioinformatics, Computational Biology, Evolution, Genetics, Genomics, Systems Biology
-
-**Technology Fellow** @ [Coulter Translational Research Partners II Program](https://www.engineering.pitt.edu/coulter/){:target="_blank"} _(January 2017 - June 2017)_<br>
-Department of Bioengineering, University of Pittsburgh Swanson School of Engineering
-- Identify, develop, and commercialize projects undertaken by bioengineers and clinical faculty that address unmet clinical needs
-- Stakeholder Discovery, Intellectual Property Analysis, Reimbursement Strategy, Business Plan Development
 
 ## Skills
 ### Programming Expertise
