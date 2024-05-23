@@ -40,7 +40,7 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
 - Evolutionary biology, systems biology, computational biology
 - _De novo_ gene birth, genome engineering, next-generation sequencing, genomics
 - Phenomics, high-throughput screening, robotic handling
-- Biostatistics
+- Biostatistics, machine learning, artificial intelligence
 
 ### Medical Product Development
 - Product ideation, prototyping, stakeholder discovery, intellectual property analysis, human factor engineering, reimbursement strategy, clinical trial design
