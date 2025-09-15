@@ -17,6 +17,8 @@
   .byline { margin:6px 0 12px; color:var(--muted); }
   .byline a { color:inherit; text-decoration:underline; }
 
+  hr.section-break { border:0; border-top:1px solid var(--b); margin:28px 0 16px; }
+
   button { padding:8px 12px; border:1px solid #888; background:#f6f6f6; border-radius:6px; cursor:pointer; transition:background-color .12s, border-color .12s, box-shadow .12s; }
   .press.flash, .press:active { background:#e6f0ff; border-color:#5a8cff; box-shadow: inset 0 0 0 2px rgba(90,140,255,.18); }
 
@@ -61,7 +63,7 @@
 </section>
 
 <p class="lead">This tool offers a practical framework to distinguish genuine value from noise in AI-labeled disclosures and to translate credible value into the right protection and deal path.</p>
-<p class="byline">Developed by <a href="https://sauriiiin.github.io/">Saurin Parikh</a>, Senior Technology Licensing Specialist at <a href="https://www.rochester.edu/ventures/">UR Ventures</a>, <a href="https://www.rochester.edu/">University of Rochester</a>.</p>
+<p class="byline" style="margin:8px 0 20px">Developed by <a href="https://sauriiiin.github.io/">Saurin Parikh</a>, Senior Technology Licensing Specialist at <a href="https://www.rochester.edu/ventures/">UR Ventures</a>, <a href="https://www.rochester.edu/">University of Rochester</a>.</p>
 
 <details id="guide">
   <summary>How to use • Taxonomy + Five Signals</summary>
@@ -88,12 +90,14 @@
     <ul style="margin:.2rem 0 .8rem 1.2rem">
       <li><strong>Model card &amp; evaluation report</strong> — external test set, baseline, failure modes, hardware footprint.</li>
       <li><strong>Data provenance memo</strong> — sources, rights/consents, territoriality, retention, reproducible pipelines.</li>
-      <li><strong>IP map</strong> — what’s patentable vs secret; document significant human contributions.</li>
+      <li><strong>IP map</strong> — what's patentable vs secret; document significant human contributions.</li>
       <li><strong>Change-management plan</strong> — monitoring, drift triggers, rollback; map to <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>; use a <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence">PCCP</a> if regulated.</li>
       <li><strong>License stack</strong> — all third-party models/data/libs and their terms.</li>
     </ul>
   </section>
 </details>
+
+<hr class="section-break">
 
 <main>
   <section class="grid">
