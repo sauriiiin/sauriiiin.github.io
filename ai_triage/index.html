@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Separating AI Signal from Noise</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+  :root { font-family: system-ui, sans-serif; --b:#e5e7eb; --muted:#666; }
+  body { margin:16px; }
+  .wrap { width:85%; margin:0 auto; }
+
+  header.top { display:flex; justify-content:space-between; align-items:center; gap:12px; position:sticky; top:0; background:#fff; padding:8px 0; border-bottom:1px solid var(--b); z-index:5; }
+  h1 { font-size:18px; margin:0; }
+
+  .lead { margin:12px 0 0; color:#222; }
+  .byline { margin:6px 0 12px; color:var(--muted); }
+  .byline a { color:inherit; text-decoration:underline; }
+
+  button { padding:8px 12px; border:1px solid #888; background:#f6f6f6; border-radius:6px; cursor:pointer; transition:background-color .12s, border-color .12s, box-shadow .12s; }
+  .press.flash, .press:active { background:#e6f0ff; border-color:#5a8cff; box-shadow: inset 0 0 0 2px rgba(90,140,255,.18); }
+
+  .muted { color:var(--muted); font-size:12px; }
+  details#guide { margin:12px 0; }
+  details#guide > summary { cursor:pointer; font-weight:600; }
+
+  .grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:16px; margin-top:8px; }
+  .panel { border:1px solid var(--b); border-radius:8px; padding:12px; background:#fff; }
+  .graph { max-height:78vh; overflow:auto; }
+
+  .title { font-weight:600; white-space:pre-wrap; margin:0 0 8px; }
+  .choices { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:8px; }
+  .meta { display:flex; gap:8px; align-items:center; margin-top:8px; flex-wrap:wrap; }
+  .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:6px 0 10px; }
+  .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding:2px 6px; border:1px solid var(--b); border-radius:4px; background:#f9fafb; }
+
+  footer.site { margin-top:16px; padding-top:12px; border-top:1px solid var(--b); color:var(--muted); font-size:14px; text-align:center; }
+  @media (max-width:900px){
+    .grid { grid-template-columns:1fr; }
+    .runner { order:-1; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+<header class="top">
+  <h1>Separating AI Signal from Noise</h1>
+</header>
+
+<section class="intro" style="margin:8px 0 12px">
+  <p>
+    Everywhere you look, something is “AI.” Papers, pitches, product pages. The volume alone makes it hard to tell what's real. PubMed, for example, went from about 1,000 AI-tagged papers in 2015 to 30,000+ in 2024. University technology transfer offices (TTOs) now see the same flood in disclosures.
+  </p>
+  <p>
+    That hype has a cost. If we can't separate signal from noise, we misjudge what's protectable, who actually invented what, and whether the value lives in a technical mechanism or in data, weights, and pipelines. We also stumble in diligence when buyers ask for evidence, safety plans, and licensing clarity.
+  </p>
+  <p>
+    The rules are tightening too. The <a href="https://www.federalregister.gov/documents/2024/02/13/2024-02623/inventorship-guidance-for-ai-assisted-inventions">USPTO says only humans can be inventors</a>. The <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence">FDA has a pathway for AI/ML updates through PCCPs</a>. The <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">EU AI Act is rolling out</a>.  All this means, TTOs need a sophisticated way to evaluate AI-related inventions.
+  </p>
+</section>
+
+<p class="lead">This tool offers a practical framework to distinguish genuine value from noise in AI-labeled disclosures and to translate credible value into the right protection and deal path.</p>
+<p class="byline">Developed by <a href="https://sauriiiin.github.io/">Saurin Parikh</a>, Senior Technology Licensing Specialist at <a href="https://www.rochester.edu/ventures/">UR Ventures</a>, <a href="https://www.rochester.edu/">University of Rochester</a>.</p>
+
+<details id="guide">
+  <summary>How to use • Taxonomy + Five Signals</summary>
+  <section id="ai-field-guide-summary" style="line-height:1.4">
+    <p style="margin:.4rem 0">Classify the “AI” first, then run the five-signal test. If it clears, pick protection that matches where the value lives.</p>
+    <h4 style="margin:.6rem 0 .2rem">Fast taxonomy</h4>
+    <ul style="margin:.2rem 0 .8rem 1.2rem">
+      <li><strong>AI as the core invention</strong> — mechanism-level novelty altering compute behavior.
+      <li><strong>AI as an enabling capability</strong> — integration, calibration, operating points.
+      <li><strong>AI as a bolt-on</strong> — no unique data/algorithm, no lift.
+    </ul>
+    <h4 style="margin:.6rem 0 .2rem">Five signals</h4>
+    <ol style="margin:.2rem 0 .8rem 1.2rem">
+      <li><strong>Benchmark lift</strong> vs credible baseline on external/prospective data; tie to outcomes where relevant.</li>
+      <li><strong>Defensible data</strong> provenance, rights, reproducible pipelines, bias assessment, governance.</li>
+      <li><strong>§101 survivability</strong> via concrete computational improvement, not domain recitation.</li>
+      <li><strong>Safety/regulatory</strong> lifecycle: intended use, bounds, human-in-the-loop, verification &amp; validation, security, monitoring, rollback; map to <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a> and use a <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence">PCCP</a> where applicable.</li>
+      <li><strong>Upstream licenses</strong> compatible with outbound promises: FoU, flow-downs, redistribution, export.</li>
+    </ol>
+    <h4 style="margin:.6rem 0 .2rem">Evidence pack (captures from Signals)</h4>
+    <p style="margin:.2rem 0">
+      As you answer the five signals, record the artifacts below. They form the evidence pack for licensing and diligence.
+    </p>
+    <ul style="margin:.2rem 0 .8rem 1.2rem">
+      <li><strong>Model card &amp; evaluation report</strong> — external test set, baseline, failure modes, hardware footprint.</li>
+      <li><strong>Data provenance memo</strong> — sources, rights/consents, territoriality, retention, reproducible pipelines.</li>
+      <li><strong>IP map</strong> — what’s patentable vs secret; document significant human contributions.</li>
+      <li><strong>Change-management plan</strong> — monitoring, drift triggers, rollback; map to <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>; use a <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence">PCCP</a> if regulated.</li>
+      <li><strong>License stack</strong> — all third-party models/data/libs and their terms.</li>
+    </ul>
+  </section>
+</details>
+
+<main>
+  <section class="grid">
+    <div class="panel graph" aria-label="Flowchart">
+      <div id="graph"></div>
+    </div>
+    <div class="panel runner" aria-label="Decision runner">
+      <h2 id="nodeTitle" class="title"></h2>
+
+      <div class="row">
+        <button id="restart" class="press">Restart</button>
+        <button id="back" class="press">Back</button>
+      </div>
+
+      <div id="choices" class="choices"></div>
+      <div class="meta">
+        <span id="status" class="muted"></span>
+        <span id="meta" class="muted"></span>
+        <button id="copyLink" title="Copy link to this step">Copy link</button>
+        <span class="muted">Shortcuts: <span class="kbd">←</span> Back, <span class="kbd">R</span> Restart</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  © 2025 Saurin Parikh. All rights reserved.
+</footer>
+</div>
+
+<!-- Hidden Mermaid source -->
+<script type="text/plain" id="mermaid-source">
+flowchart TD
+A[Intake: AI-related disclosure / pitch deck] --> B{Quick taxonomy}
+B -->|AI is core invention| B1[Probe mechanism-level novelty\n(arch/training/opt/runtime)]
+B -->|AI is enabling capability| B2[Probe integration & workflow change\n(domain adaptation, calibration, PCCP mindset)]
+B -->|AI looks bolt-on| B3{Substitutable?\nNo unique data/algorithm?\nNo measured lift?}
+B3 -->|Yes| Z1[De-prioritize or request stronger evidence\n(define benchmarks, calibration, ops plan)] --> A
+B3 -->|No / Unclear| B2
+
+C{Signal 1:\nBenchmark lift vs credible baseline?}
+B1 --> C
+B2 --> C
+C -->|Yes| D{Signal 2:\nDefensible data advantage?}
+C -->|No| S1[Ask for external test set, ablations,\nprospective/real-world results;\notherwise defer] --> A
+
+D -->|Yes| E{Signal 3:\nTechnical differentiation that survives §101?}
+D -->|No| S2[Secure provenance & rights (DUAs/consents),\nreproducible pipelines, bias assessment;\nif unattainable → de-risk or exit] --> A
+
+E -->|Yes| F{Signal 4:\nSafety / regulatory alignment?}
+E -->|No| S3[Shift locus to trade secrets and contracts;\nre-draft claims toward concrete technical effect;\nif none → no-file] --> F
+
+F -->|Yes| G{Signal 5:\nUpstream model/data licenses OK?}
+F -->|No| S4[Require lifecycle plan\n(NIST AI RMF mapping; PCCP if medical),\nmonitoring/drift/rollback, security & privacy docs] --> G
+
+G -->|Yes| H{Protection & deal path}
+G -->|No| S5[Remediate license stack:\nfields-of-use, flow-downs, redistribution;\nreplace restricted assets or constrain scope] --> H
+
+H -->|Core technical improvement present| O1[Patent-forward:\nclaim concrete computational/technical effects;\nkeep data/weights/configs as secrets]
+H -->|Value in data/weights/pipelines| O2[Trade-secret-forward:\nsecrecy measures (DTSA-grade),\ncontractual controls; narrow patents if any]
+H -->|Insufficient signal| O3[Defer/no-go:\nset evidence asks; re-engage on improved package]
+</script>
+
+<script>
+/* Mermaid + Runner */
+mermaid.initialize({ startOnLoad:false, securityLevel:'loose' });
+
+const RE_NODE = /\s*([A-Za-z0-9_]+)\s*(?:\[(.*?)\]|\{(.*?)\}|\((.*?)\))?/y;
+const RE_EDGE = /\s*-->\s*(?:\|([^|]+)\|)?/y;
+
+function clean(line){ return line.split('%%',1)[0].trim().replace(/;+\s*$/,''); }
+function ctrl(line){ const h=(line.split(/\s+/,1)[0]||'').toLowerCase(); return h==='graph'||h==='flowchart'||h==='subgraph'||h==='end'; }
+
+function parseMermaidToGraph(text){
+  const labels=new Map(), edges=new Map(), seenS=new Set(), seenD=new Set();
+  for (const raw of text.trim().split(/\r?\n/)) {
+    const line=clean(raw); if (!line||ctrl(line)) continue;
+    let pos=0;
+    RE_NODE.lastIndex=pos; const m=RE_NODE.exec(line); if(!m) continue;
+    let a=m[1]; const la=m[2]??m[3]??m[4];
+    if (la) labels.set(a, la.replaceAll('\\n','\n')); if (!labels.has(a)) labels.set(a,a);
+    pos=RE_NODE.lastIndex;
+    while (true){
+      RE_EDGE.lastIndex=pos; const me=RE_EDGE.exec(line); if(!me) break;
+      const choice=(me[1]??'Next').trim(); pos=RE_EDGE.lastIndex;
+      RE_NODE.lastIndex=pos; const md=RE_NODE.exec(line); if(!md) break;
+      const b=md[1]; const lb=md[2]??md[3]??md[4];
+      if (lb) labels.set(b, lb.replaceAll('\\n','\n')); if (!labels.has(b)) labels.set(b,b);
+      if(!edges.has(a)) edges.set(a,[]); edges.get(a).push([choice,b]);
+      seenS.add(a); seenD.add(b); a=b; pos=RE_NODE.lastIndex;
+    }
+  }
+  const sources=[...seenS]; const roots=sources.filter(n=>!seenD.has(n));
+  const root = roots.includes('A') ? 'A' : (roots[0] ?? sources[0] ?? null);
+  return {labels, edges, root};
+}
+
+function escLabel(s){
+  return String(s)
+    .replaceAll('\\n','<br/>')
+    .replaceAll('&','&amp;')
+    .replaceAll('<','&lt;')
+    .replaceAll('>','&gt;')
+    .replaceAll('"','&quot;');
+}
+function escChoice(s){ return String(s).replaceAll('|','/'); }
+
+function buildMermaid(G, active, visited){
+  const lines = ['flowchart TD'];
+  for (const [id,label] of G.labels){ lines.push(`${id}["${escLabel(label)}"]`); }
+  for (const [src, outs] of G.edges){
+    for (const [choice, dst] of outs){
+      const tag = choice ? `|${escChoice(choice)}|` : '';
+      lines.push(`${src} -->${tag} ${dst}`);
+    }
+  }
+  lines.push('classDef active fill:#fff3bf,stroke:#f59f00,stroke-width:3px',
+             'classDef past fill:#e7f5ff,stroke:#1c7ed6,stroke-width:2px');
+  if (visited.size) lines.push(`class ${[...visited].join(',')} past`);
+  if (active) lines.push(`class ${active} active`);
+  return lines.join('\n');
+}
+
+let G=null, current=null; const pathStack=[], visited=new Set();
+const el = {
+  status: document.getElementById('status'),
+  graph: document.getElementById('graph'),
+  title: document.getElementById('nodeTitle'),
+  choices: document.getElementById('choices'),
+  meta: document.getElementById('meta'),
+  copyLink: document.getElementById('copyLink'),
+  guide: document.getElementById('guide'),
+  restart: document.getElementById('restart'),
+  back: document.getElementById('back'),
+};
+
+async function renderGraph(){
+  try {
+    const code = buildMermaid(G, current, visited);
+    const id = 'm' + Math.random().toString(36).slice(2);
+    const { svg } = await mermaid.render(id, code);
+    el.graph.innerHTML = svg;
+  } catch (e) { el.status.textContent = 'Mermaid error: ' + e.message; }
+}
+
+function renderUI(){
+  el.title.textContent = G.labels.get(current) || current;
+  el.choices.replaceChildren();
+  const outs = G.edges.get(current) || [];
+  if (outs.length===0){
+    const done=document.createElement('div'); done.className='muted'; done.textContent='End node';
+    el.choices.appendChild(done);
+  } else {
+    for (const [label, to] of outs){
+      const b=document.createElement('button'); b.className='primary'; b.textContent=label||'Next';
+      b.onclick = () => {
+        const prev = current;
+        pathStack.push(prev); visited.add(prev); current = to;
+        if (current === G.root) { pathStack.length = 0; visited.clear(); el.status.textContent = 'Auto-reset at root'; }
+        renderUI(); renderGraph(); updateHash();
+      };
+      el.choices.appendChild(b);
+    }
+  }
+  el.meta.textContent = `Node: ${current} • Outgoing: ${outs.length} • Visited: ${visited.size}`;
+}
+
+function updateHash(){ window.history.replaceState(null,'', location.pathname + `#node=${encodeURIComponent(current)}`); }
+function flash(btn){ btn.classList.add('flash'); setTimeout(()=>btn.classList.remove('flash'), 180); }
+
+function initFlow(){
+  const src = document.getElementById('mermaid-source').textContent;
+  G = parseMermaidToGraph(src);
+  current = G.root;
+  const match = new URL(location.href).hash.match(/#node=([^&]+)/);
+  if (match){ const n = decodeURIComponent(match[1]); if (G.labels.has(n)) current = n; }
+  pathStack.length = 0; visited.clear();
+  el.status.textContent = `Root = ${G.root}`;
+  renderUI(); renderGraph(); updateHash();
+}
+
+/* Controls */
+el.restart.onclick = () => { flash(el.restart); if(!G) return; current = G.root; pathStack.length=0; visited.clear(); renderUI(); renderGraph(); updateHash(); };
+el.back.onclick = () => { flash(el.back); if(!G || pathStack.length===0) return; current = pathStack.pop(); renderUI(); renderGraph(); updateHash(); };
+el.copyLink.onclick = async () => { try { await navigator.clipboard.writeText(location.href); el.status.textContent='Link copied'; } catch {} };
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowLeft') { e.preventDefault(); el.back.click(); }
+  if (e.key.toLowerCase() === 'r') { e.preventDefault(); el.restart.click(); }
+});
+
+/* Boot */
+initFlow();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('a[href]').forEach(a => {
+    try {
+      const u = new URL(a.getAttribute('href'), location.href);
+      if (u.origin !== location.origin) {
+        a.target = '_blank';
+        a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener noreferrer';
+      }
+    } catch {}
+  });
+});
+</script>
+</body>
+</html>
