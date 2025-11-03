@@ -37,7 +37,7 @@ Albert Einstein College Of Medicine,Total Funding,2015,142196582
 Albert Einstein College Of Medicine,Urology,2015,0
 Augusta University,Anatomy/Cell Biology,2015,0
 Augusta University,Biochemistry,2015,0
-Augusta University,Biostatistics/Other Match Science,2015,0
+Augusta University,Biostatistics/Other Math Science,2015,0
 Augusta University,Internal Medicine,2015,0
 Augusta University,Neurology,2015,0
 Augusta University,Neurosciences,2015,0
@@ -148,7 +148,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2015,0
 Case Western Reserve University,Anesthesiology,2015,0
 Case Western Reserve University,Biochemistry,2015,9937555
 Case Western Reserve University,Biomedical Engineering,2015,0
-Case Western Reserve University,Biostatistics/Other Match Science,2015,0
+Case Western Reserve University,Biostatistics/Other Math Science,2015,0
 Case Western Reserve University,Dermatology,2015,2980424
 Case Western Reserve University,Engineering All Types,2015,0
 Case Western Reserve University,Family Medicine,2015,1090184
@@ -249,7 +249,7 @@ Drexel University,Total Funding,2015,16274408
 Duke University,Anatomy/Cell Biology,2015,11614812
 Duke University,Anesthesiology,2015,3291858
 Duke University,Biochemistry,2015,4305713
-Duke University,Biostatistics/Other Match Science,2015,13020697
+Duke University,Biostatistics/Other Math Science,2015,13020697
 Duke University,Dermatology,2015,2489673
 Duke University,Emergency Medicine,2015,0
 Duke University,Family Medicine,2015,0
@@ -364,7 +364,7 @@ George Washington University,Psychiatry,2015,0
 George Washington University,Surgery,2015,0
 George Washington University,Total Funding,2015,15394630
 Georgetown University,Biochemistry,2015,2487504
-Georgetown University,Biostatistics/Other Match Science,2015,0
+Georgetown University,Biostatistics/Other Math Science,2015,0
 Georgetown University,Family Medicine,2015,0
 Georgetown University,Internal Medicine,2015,33673524
 Georgetown University,Microbiology/Immunology/Virology,2015,221625
@@ -466,7 +466,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2015,12380856
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2015,4060138
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2015,0
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2015,4085980
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2015,1431645
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2015,1431645
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2015,1677003
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2015,1183140
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2015,0
@@ -496,7 +496,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2015,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2015,0
 Indiana University Indianapolis,Anesthesiology,2015,0
 Indiana University Indianapolis,Biochemistry,2015,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2015,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2015,0
 Indiana University Indianapolis,Dermatology,2015,0
 Indiana University Indianapolis,Emergency Medicine,2015,0
 Indiana University Indianapolis,Family Medicine,2015,0
@@ -526,7 +526,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2015,8401986
 Johns Hopkins University,Anesthesiology,2015,7146180
 Johns Hopkins University,Biochemistry,2015,18643680
 Johns Hopkins University,Biomedical Engineering,2015,11110484
-Johns Hopkins University,Biostatistics/Other Match Science,2015,0
+Johns Hopkins University,Biostatistics/Other Math Science,2015,0
 Johns Hopkins University,Dermatology,2015,361746
 Johns Hopkins University,Emergency Medicine,2015,512472
 Johns Hopkins University,Genetics,2015,10136107
@@ -803,7 +803,7 @@ Ohio State University,Administration,2015,0
 Ohio State University,Anatomy/Cell Biology,2015,0
 Ohio State University,Anesthesiology,2015,331688
 Ohio State University,Biochemistry,2015,1540705
-Ohio State University,Biostatistics/Other Match Science,2015,0
+Ohio State University,Biostatistics/Other Math Science,2015,0
 Ohio State University,Emergency Medicine,2015,0
 Ohio State University,Family Medicine,2015,0
 Ohio State University,Genetics,2015,0
@@ -840,7 +840,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2015,4339392
 Oregon Health & Science University,Anesthesiology,2015,2162761
 Oregon Health & Science University,Biochemistry,2015,3214433
 Oregon Health & Science University,Biomedical Engineering,2015,4242961
-Oregon Health & Science University,Biostatistics/Other Match Science,2015,1857805
+Oregon Health & Science University,Biostatistics/Other Math Science,2015,1857805
 Oregon Health & Science University,Dermatology,2015,1232152
 Oregon Health & Science University,Emergency Medicine,2015,3285536
 Oregon Health & Science University,Engineering All Types,2015,1436877
@@ -1039,7 +1039,7 @@ Stanford University,Anesthesiology,2015,8002077
 Stanford University,Biochemistry,2015,14973198
 Stanford University,Biomedical Engineering,2015,17656352
 Stanford University,Biophysics,2015,9800105
-Stanford University,Biostatistics/Other Match Science,2015,0
+Stanford University,Biostatistics/Other Math Science,2015,0
 Stanford University,Dermatology,2015,7465802
 Stanford University,Emergency Medicine,2015,0
 Stanford University,Genetics,2015,37611513
@@ -1069,7 +1069,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2015,0
 State University Of New York At Buffalo,Anesthesiology,2015,194355
 State University Of New York At Buffalo,Biochemistry,2015,2755068
 State University Of New York At Buffalo,Biomedical Engineering,2015,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2015,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2015,0
 State University Of New York At Buffalo,Family Medicine,2015,857187
 State University Of New York At Buffalo,Internal Medicine,2015,2259729
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2015,8220549
@@ -1091,7 +1091,7 @@ State University Of New York At Buffalo,Total Funding,2015,24597921
 State University Of New York Stony Brook,Anesthesiology,2015,903755
 State University Of New York Stony Brook,Biochemistry,2015,1889043
 State University Of New York Stony Brook,Biomedical Engineering,2015,201224
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2015,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2015,0
 State University Of New York Stony Brook,Dermatology,2015,0
 State University Of New York Stony Brook,Emergency Medicine,2015,565392
 State University Of New York Stony Brook,Family Medicine,2015,0
@@ -1243,7 +1243,7 @@ Tulane University,Total Funding,2015,0
 Tulane University,Urology,2015,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2015,0
 Tulane University Of Louisiana,Biochemistry,2015,1565250
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2015,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2015,0
 Tulane University Of Louisiana,Internal Medicine,2015,16478245
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2015,5007227
 Tulane University Of Louisiana,Neurology,2015,0
@@ -1347,7 +1347,7 @@ University Of Arizona,Total Funding,2015,44180082
 University Of Arizona,Urology,2015,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2015,1629688
 University Of Arkansas For Medical Sciences,Biochemistry,2015,2892468
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2015,162038
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2015,162038
 University Of Arkansas For Medical Sciences,Family Medicine,2015,0
 University Of Arkansas For Medical Sciences,Internal Medicine,2015,3397985
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2015,4297054
@@ -1424,7 +1424,7 @@ University Of California Riverside,Total Funding,2015,4844677
 "University Of California, Irvine",Urology,2015,0
 "University Of California, Los Angeles",Anesthesiology,2015,5772765
 "University Of California, Los Angeles",Biochemistry,2015,8514546
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2015,544393
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2015,544393
 "University Of California, Los Angeles",Family Medicine,2015,1797066
 "University Of California, Los Angeles",Genetics,2015,7266983
 "University Of California, Los Angeles",Internal Medicine,2015,102845248
@@ -1598,7 +1598,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2015,1818712
 University Of Florida,Anatomy/Cell Biology,2015,474000
 University Of Florida,Anesthesiology,2015,1399628
 University Of Florida,Biochemistry,2015,2738236
-University Of Florida,Biostatistics/Other Match Science,2015,7378625
+University Of Florida,Biostatistics/Other Math Science,2015,7378625
 University Of Florida,Dermatology,2015,0
 University Of Florida,Emergency Medicine,2015,0
 University Of Florida,Family Medicine,2015,371205
@@ -1690,7 +1690,7 @@ University Of Iowa,Urology,2015,1607642
 University Of Kansas Medical Center,Anatomy/Cell Biology,2015,8464939
 University Of Kansas Medical Center,Anesthesiology,2015,0
 University Of Kansas Medical Center,Biochemistry,2015,2220666
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2015,286173
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2015,286173
 University Of Kansas Medical Center,Family Medicine,2015,1752655
 University Of Kansas Medical Center,Internal Medicine,2015,4716571
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2015,3865168
@@ -1787,7 +1787,7 @@ University Of Maryland Baltimore,Surgery,2015,4575010
 University Of Maryland Baltimore,Total Funding,2015,109709723
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2015,3288916
 University Of Massachusetts Med Sch Worcester,Biochemistry,2015,12102376
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2015,2875981
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2015,2875981
 University Of Massachusetts Med Sch Worcester,Dermatology,2015,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2015,1999921
 University Of Massachusetts Med Sch Worcester,Family Medicine,2015,520712
@@ -1815,7 +1815,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2015,12845835
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2015,0
 University Of Massachusetts Worcester,Anesthesiology,2015,0
 University Of Massachusetts Worcester,Biochemistry,2015,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2015,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2015,0
 University Of Massachusetts Worcester,Dermatology,2015,0
 University Of Massachusetts Worcester,Emergency Medicine,2015,0
 University Of Massachusetts Worcester,Family Medicine,2015,0
@@ -1862,7 +1862,7 @@ University Of Miami School Of Medicine,Urology,2015,1395115
 University Of Michigan,Anatomy/Cell Biology,2015,9888351
 University Of Michigan,Anesthesiology,2015,14851903
 University Of Michigan,Biochemistry,2015,7464638
-University Of Michigan,Biostatistics/Other Match Science,2015,1796192
+University Of Michigan,Biostatistics/Other Math Science,2015,1796192
 University Of Michigan,Dermatology,2015,3101868
 University Of Michigan,Emergency Medicine,2015,3877767
 University Of Michigan,Engineering All Types,2015,936276
@@ -1895,7 +1895,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2015,0
 University Of Michigan At Ann Arbor,Anesthesiology,2015,0
 University Of Michigan At Ann Arbor,Biochemistry,2015,0
 University Of Michigan At Ann Arbor,Biomedical Engineering,2015,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2015,0
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2015,0
 University Of Michigan At Ann Arbor,Dermatology,2015,0
 University Of Michigan At Ann Arbor,Emergency Medicine,2015,0
 University Of Michigan At Ann Arbor,Engineering All Types,2015,0
@@ -1928,7 +1928,7 @@ University Of Minnesota,Anatomy/Cell Biology,2015,0
 University Of Minnesota,Anesthesiology,2015,0
 University Of Minnesota,Biochemistry,2015,9149523
 University Of Minnesota,Biomedical Engineering,2015,0
-University Of Minnesota,Biostatistics/Other Match Science,2015,0
+University Of Minnesota,Biostatistics/Other Math Science,2015,0
 University Of Minnesota,Dermatology,2015,695263
 University Of Minnesota,Emergency Medicine,2015,301328
 University Of Minnesota,Family Medicine,2015,3758661
@@ -2137,7 +2137,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2015,0
 University Of Pennsylvania,Anatomy/Cell Biology,2015,15105866
 University Of Pennsylvania,Anesthesiology,2015,4978438
 University Of Pennsylvania,Biochemistry,2015,8703479
-University Of Pennsylvania,Biostatistics/Other Match Science,2015,22775641
+University Of Pennsylvania,Biostatistics/Other Math Science,2015,22775641
 University Of Pennsylvania,Dermatology,2015,5290330
 University Of Pennsylvania,Emergency Medicine,2015,1902656
 University Of Pennsylvania,Family Medicine,2015,1619766
@@ -2229,7 +2229,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2015,14185169
 University Of Rochester,Anesthesiology,2015,1684729
 University Of Rochester,Biochemistry,2015,5542190
 University Of Rochester,Biomedical Engineering,2015,581743
-University Of Rochester,Biostatistics/Other Match Science,2015,2633290
+University Of Rochester,Biostatistics/Other Math Science,2015,2633290
 University Of Rochester,Dentistry,2015,731720
 University Of Rochester,Dermatology,2015,875094
 University Of Rochester,Emergency Medicine,2015,156881
@@ -2599,7 +2599,7 @@ University Of Virginia,Urology,2015,319653
 University Of Washington,Anatomy/Cell Biology,2015,11529168
 University Of Washington,Anesthesiology,2015,15958333
 University Of Washington,Biochemistry,2015,13937547
-University Of Washington,Biostatistics/Other Match Science,2015,7863550
+University Of Washington,Biostatistics/Other Math Science,2015,7863550
 University Of Washington,Emergency Medicine,2015,0
 University Of Washington,Engineering All Types,2015,3231098
 University Of Washington,Family Medicine,2015,0
@@ -2663,7 +2663,7 @@ University Of Wisconsin Madison,Administration,2015,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2015,6645398
 University Of Wisconsin Madison,Anesthesiology,2015,1198710
 University Of Wisconsin Madison,Biochemistry,2015,4609028
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2015,5169891
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2015,5169891
 University Of Wisconsin Madison,Dermatology,2015,2103977
 University Of Wisconsin Madison,Emergency Medicine,2015,636957
 University Of Wisconsin Madison,Family Medicine,2015,1968625
@@ -2739,7 +2739,7 @@ Ut Southwestern Medical Center,Urology,2015,1144711
 Vanderbilt University,Anatomy/Cell Biology,2015,20203279
 Vanderbilt University,Anesthesiology,2015,4514345
 Vanderbilt University,Biochemistry,2015,24121687
-Vanderbilt University,Biostatistics/Other Match Science,2015,1806957
+Vanderbilt University,Biostatistics/Other Math Science,2015,1806957
 Vanderbilt University,Dermatology,2015,0
 Vanderbilt University,Emergency Medicine,2015,1164537
 Vanderbilt University,Internal Medicine,2015,113686920
@@ -2764,7 +2764,7 @@ Vanderbilt University,Total Funding,2015,291195527
 Vanderbilt University,Urology,2015,0
 Virginia Commonwealth University,Anatomy/Cell Biology,2015,3946118
 Virginia Commonwealth University,Biochemistry,2015,9757274
-Virginia Commonwealth University,Biostatistics/Other Match Science,2015,1430902
+Virginia Commonwealth University,Biostatistics/Other Math Science,2015,1430902
 Virginia Commonwealth University,Emergency Medicine,2015,0
 Virginia Commonwealth University,Family Medicine,2015,602820
 Virginia Commonwealth University,Genetics,2015,1634461
@@ -2793,7 +2793,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2015,3837202
 Wake Forest University Health Sciences,Anesthesiology,2015,1731711
 Wake Forest University Health Sciences,Biochemistry,2015,2732201
 Wake Forest University Health Sciences,Biomedical Engineering,2015,134778
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2015,14651757
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2015,14651757
 Wake Forest University Health Sciences,Emergency Medicine,2015,738508
 Wake Forest University Health Sciences,Family Medicine,2015,922673
 Wake Forest University Health Sciences,Internal Medicine,2015,22892503
@@ -2823,7 +2823,7 @@ Washington State University,Total Funding,2015,646118
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2015,0
 Washington University School Of Medicine In St. Louis,Anesthesiology,2015,0
 Washington University School Of Medicine In St. Louis,Biochemistry,2015,0
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2015,0
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2015,0
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2015,0
 Washington University School Of Medicine In St. Louis,Genetics,2015,0
 Washington University School Of Medicine In St. Louis,Internal Medicine,2015,0
@@ -2985,7 +2985,7 @@ Albert Einstein College Of Medicine,Total Funding,2016,160793249
 Albert Einstein College Of Medicine,Urology,2016,738975
 Augusta University,Anatomy/Cell Biology,2016,0
 Augusta University,Biochemistry,2016,0
-Augusta University,Biostatistics/Other Match Science,2016,0
+Augusta University,Biostatistics/Other Math Science,2016,0
 Augusta University,Internal Medicine,2016,0
 Augusta University,Neurology,2016,0
 Augusta University,Neurosciences,2016,0
@@ -3096,7 +3096,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2016,0
 Case Western Reserve University,Anesthesiology,2016,0
 Case Western Reserve University,Biochemistry,2016,11508641
 Case Western Reserve University,Biomedical Engineering,2016,1442997
-Case Western Reserve University,Biostatistics/Other Match Science,2016,0
+Case Western Reserve University,Biostatistics/Other Math Science,2016,0
 Case Western Reserve University,Dermatology,2016,2380860
 Case Western Reserve University,Engineering All Types,2016,0
 Case Western Reserve University,Family Medicine,2016,1530382
@@ -3197,7 +3197,7 @@ Drexel University,Total Funding,2016,17734905
 Duke University,Anatomy/Cell Biology,2016,11881859
 Duke University,Anesthesiology,2016,5008932
 Duke University,Biochemistry,2016,5220955
-Duke University,Biostatistics/Other Match Science,2016,14477713
+Duke University,Biostatistics/Other Math Science,2016,14477713
 Duke University,Dermatology,2016,1739871
 Duke University,Emergency Medicine,2016,0
 Duke University,Family Medicine,2016,0
@@ -3312,7 +3312,7 @@ George Washington University,Psychiatry,2016,0
 George Washington University,Surgery,2016,285300
 George Washington University,Total Funding,2016,29317018
 Georgetown University,Biochemistry,2016,2724426
-Georgetown University,Biostatistics/Other Match Science,2016,0
+Georgetown University,Biostatistics/Other Math Science,2016,0
 Georgetown University,Family Medicine,2016,0
 Georgetown University,Internal Medicine,2016,33149455
 Georgetown University,Microbiology/Immunology/Virology,2016,233250
@@ -3414,7 +3414,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2016,11053910
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2016,3463463
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2016,0
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2016,3777873
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2016,705240
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2016,705240
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2016,1697801
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2016,51975
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2016,0
@@ -3444,7 +3444,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2016,325072
 Indiana University Indianapolis,Anatomy/Cell Biology,2016,0
 Indiana University Indianapolis,Anesthesiology,2016,0
 Indiana University Indianapolis,Biochemistry,2016,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2016,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2016,0
 Indiana University Indianapolis,Dermatology,2016,0
 Indiana University Indianapolis,Emergency Medicine,2016,0
 Indiana University Indianapolis,Family Medicine,2016,0
@@ -3474,7 +3474,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2016,12584773
 Johns Hopkins University,Anesthesiology,2016,7459211
 Johns Hopkins University,Biochemistry,2016,15342010
 Johns Hopkins University,Biomedical Engineering,2016,11439393
-Johns Hopkins University,Biostatistics/Other Match Science,2016,0
+Johns Hopkins University,Biostatistics/Other Math Science,2016,0
 Johns Hopkins University,Dermatology,2016,1316247
 Johns Hopkins University,Emergency Medicine,2016,393484
 Johns Hopkins University,Genetics,2016,15829048
@@ -3751,7 +3751,7 @@ Ohio State University,Administration,2016,11000
 Ohio State University,Anatomy/Cell Biology,2016,0
 Ohio State University,Anesthesiology,2016,0
 Ohio State University,Biochemistry,2016,1904397
-Ohio State University,Biostatistics/Other Match Science,2016,0
+Ohio State University,Biostatistics/Other Math Science,2016,0
 Ohio State University,Emergency Medicine,2016,648287
 Ohio State University,Family Medicine,2016,0
 Ohio State University,Genetics,2016,7875503
@@ -3788,7 +3788,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2016,3115795
 Oregon Health & Science University,Anesthesiology,2016,979136
 Oregon Health & Science University,Biochemistry,2016,2713779
 Oregon Health & Science University,Biomedical Engineering,2016,5123226
-Oregon Health & Science University,Biostatistics/Other Match Science,2016,1952350
+Oregon Health & Science University,Biostatistics/Other Math Science,2016,1952350
 Oregon Health & Science University,Dermatology,2016,873078
 Oregon Health & Science University,Emergency Medicine,2016,2283592
 Oregon Health & Science University,Engineering All Types,2016,383100
@@ -3987,7 +3987,7 @@ Stanford University,Anesthesiology,2016,7099280
 Stanford University,Biochemistry,2016,13855576
 Stanford University,Biomedical Engineering,2016,16043126
 Stanford University,Biophysics,2016,10201270
-Stanford University,Biostatistics/Other Match Science,2016,0
+Stanford University,Biostatistics/Other Math Science,2016,0
 Stanford University,Dermatology,2016,8175783
 Stanford University,Emergency Medicine,2016,299859
 Stanford University,Genetics,2016,33516684
@@ -4017,7 +4017,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2016,0
 State University Of New York At Buffalo,Anesthesiology,2016,202895
 State University Of New York At Buffalo,Biochemistry,2016,3712609
 State University Of New York At Buffalo,Biomedical Engineering,2016,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2016,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2016,0
 State University Of New York At Buffalo,Family Medicine,2016,0
 State University Of New York At Buffalo,Internal Medicine,2016,2646672
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2016,8741117
@@ -4039,7 +4039,7 @@ State University Of New York At Buffalo,Total Funding,2016,27478757
 State University Of New York Stony Brook,Anesthesiology,2016,6425997
 State University Of New York Stony Brook,Biochemistry,2016,3776193
 State University Of New York Stony Brook,Biomedical Engineering,2016,350501
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2016,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2016,0
 State University Of New York Stony Brook,Dermatology,2016,0
 State University Of New York Stony Brook,Emergency Medicine,2016,0
 State University Of New York Stony Brook,Family Medicine,2016,1394480
@@ -4191,7 +4191,7 @@ Tulane University,Total Funding,2016,0
 Tulane University,Urology,2016,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2016,0
 Tulane University Of Louisiana,Biochemistry,2016,1780283
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2016,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2016,0
 Tulane University Of Louisiana,Internal Medicine,2016,17659088
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2016,5935698
 Tulane University Of Louisiana,Neurology,2016,0
@@ -4295,7 +4295,7 @@ University Of Arizona,Total Funding,2016,56496227
 University Of Arizona,Urology,2016,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2016,2734623
 University Of Arkansas For Medical Sciences,Biochemistry,2016,2659495
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2016,194445
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2016,194445
 University Of Arkansas For Medical Sciences,Family Medicine,2016,111850
 University Of Arkansas For Medical Sciences,Internal Medicine,2016,3369880
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2016,4574857
@@ -4372,7 +4372,7 @@ University Of California Riverside,Total Funding,2016,2769730
 "University Of California, Irvine",Urology,2016,353419
 "University Of California, Los Angeles",Anesthesiology,2016,5556953
 "University Of California, Los Angeles",Biochemistry,2016,5301184
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2016,585181
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2016,585181
 "University Of California, Los Angeles",Family Medicine,2016,3351473
 "University Of California, Los Angeles",Genetics,2016,10482915
 "University Of California, Los Angeles",Internal Medicine,2016,111844668
@@ -4546,7 +4546,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2016,2863812
 University Of Florida,Anatomy/Cell Biology,2016,970630
 University Of Florida,Anesthesiology,2016,1530830
 University Of Florida,Biochemistry,2016,3315074
-University Of Florida,Biostatistics/Other Match Science,2016,8167603
+University Of Florida,Biostatistics/Other Math Science,2016,8167603
 University Of Florida,Dermatology,2016,0
 University Of Florida,Emergency Medicine,2016,180575
 University Of Florida,Family Medicine,2016,389388
@@ -4638,7 +4638,7 @@ University Of Iowa,Urology,2016,1493076
 University Of Kansas Medical Center,Anatomy/Cell Biology,2016,9456035
 University Of Kansas Medical Center,Anesthesiology,2016,0
 University Of Kansas Medical Center,Biochemistry,2016,2620713
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2016,0
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2016,0
 University Of Kansas Medical Center,Family Medicine,2016,2779779
 University Of Kansas Medical Center,Internal Medicine,2016,4466282
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2016,3881018
@@ -4735,7 +4735,7 @@ University Of Maryland Baltimore,Surgery,2016,4405093
 University Of Maryland Baltimore,Total Funding,2016,122945441
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2016,4304143
 University Of Massachusetts Med Sch Worcester,Biochemistry,2016,13856971
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2016,1890148
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2016,1890148
 University Of Massachusetts Med Sch Worcester,Dermatology,2016,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2016,2810861
 University Of Massachusetts Med Sch Worcester,Family Medicine,2016,25511
@@ -4763,7 +4763,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2016,14197303
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2016,0
 University Of Massachusetts Worcester,Anesthesiology,2016,0
 University Of Massachusetts Worcester,Biochemistry,2016,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2016,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2016,0
 University Of Massachusetts Worcester,Dermatology,2016,0
 University Of Massachusetts Worcester,Emergency Medicine,2016,0
 University Of Massachusetts Worcester,Family Medicine,2016,0
@@ -4810,7 +4810,7 @@ University Of Miami School Of Medicine,Urology,2016,0
 University Of Michigan,Anatomy/Cell Biology,2016,9709625
 University Of Michigan,Anesthesiology,2016,16651585
 University Of Michigan,Biochemistry,2016,7621359
-University Of Michigan,Biostatistics/Other Match Science,2016,4899364
+University Of Michigan,Biostatistics/Other Math Science,2016,4899364
 University Of Michigan,Dermatology,2016,3575568
 University Of Michigan,Emergency Medicine,2016,2864272
 University Of Michigan,Engineering All Types,2016,528619
@@ -4843,7 +4843,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2016,0
 University Of Michigan At Ann Arbor,Anesthesiology,2016,0
 University Of Michigan At Ann Arbor,Biochemistry,2016,0
 University Of Michigan At Ann Arbor,Biomedical Engineering,2016,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2016,0
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2016,0
 University Of Michigan At Ann Arbor,Dermatology,2016,0
 University Of Michigan At Ann Arbor,Emergency Medicine,2016,0
 University Of Michigan At Ann Arbor,Engineering All Types,2016,0
@@ -4876,7 +4876,7 @@ University Of Minnesota,Anatomy/Cell Biology,2016,0
 University Of Minnesota,Anesthesiology,2016,0
 University Of Minnesota,Biochemistry,2016,16188527
 University Of Minnesota,Biomedical Engineering,2016,0
-University Of Minnesota,Biostatistics/Other Match Science,2016,0
+University Of Minnesota,Biostatistics/Other Math Science,2016,0
 University Of Minnesota,Dermatology,2016,0
 University Of Minnesota,Emergency Medicine,2016,301328
 University Of Minnesota,Family Medicine,2016,3664484
@@ -5085,7 +5085,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2016,0
 University Of Pennsylvania,Anatomy/Cell Biology,2016,12078254
 University Of Pennsylvania,Anesthesiology,2016,5277973
 University Of Pennsylvania,Biochemistry,2016,9047457
-University Of Pennsylvania,Biostatistics/Other Match Science,2016,20287478
+University Of Pennsylvania,Biostatistics/Other Math Science,2016,20287478
 University Of Pennsylvania,Dermatology,2016,6117754
 University Of Pennsylvania,Emergency Medicine,2016,1135620
 University Of Pennsylvania,Family Medicine,2016,235289
@@ -5177,7 +5177,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2016,13198895
 University Of Rochester,Anesthesiology,2016,1966423
 University Of Rochester,Biochemistry,2016,4777661
 University Of Rochester,Biomedical Engineering,2016,804582
-University Of Rochester,Biostatistics/Other Match Science,2016,1871689
+University Of Rochester,Biostatistics/Other Math Science,2016,1871689
 University Of Rochester,Dentistry,2016,704260
 University Of Rochester,Dermatology,2016,347625
 University Of Rochester,Emergency Medicine,2016,0
@@ -5547,7 +5547,7 @@ University Of Virginia,Urology,2016,324571
 University Of Washington,Anatomy/Cell Biology,2016,12492723
 University Of Washington,Anesthesiology,2016,16020875
 University Of Washington,Biochemistry,2016,12808701
-University Of Washington,Biostatistics/Other Match Science,2016,6899089
+University Of Washington,Biostatistics/Other Math Science,2016,6899089
 University Of Washington,Emergency Medicine,2016,0
 University Of Washington,Engineering All Types,2016,5996157
 University Of Washington,Family Medicine,2016,1050383
@@ -5611,7 +5611,7 @@ University Of Wisconsin Madison,Administration,2016,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2016,3415516
 University Of Wisconsin Madison,Anesthesiology,2016,1596469
 University Of Wisconsin Madison,Biochemistry,2016,7735962
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2016,5488733
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2016,5488733
 University Of Wisconsin Madison,Dermatology,2016,1779296
 University Of Wisconsin Madison,Emergency Medicine,2016,737126
 University Of Wisconsin Madison,Family Medicine,2016,1597220
@@ -5687,7 +5687,7 @@ Ut Southwestern Medical Center,Urology,2016,1307555
 Vanderbilt University,Anatomy/Cell Biology,2016,19788563
 Vanderbilt University,Anesthesiology,2016,4086623
 Vanderbilt University,Biochemistry,2016,21188225
-Vanderbilt University,Biostatistics/Other Match Science,2016,1413307
+Vanderbilt University,Biostatistics/Other Math Science,2016,1413307
 Vanderbilt University,Dermatology,2016,0
 Vanderbilt University,Emergency Medicine,2016,588516
 Vanderbilt University,Internal Medicine,2016,162853078
@@ -5712,7 +5712,7 @@ Vanderbilt University,Total Funding,2016,340049796
 Vanderbilt University,Urology,2016,0
 Virginia Commonwealth University,Anatomy/Cell Biology,2016,3767967
 Virginia Commonwealth University,Biochemistry,2016,5759753
-Virginia Commonwealth University,Biostatistics/Other Match Science,2016,918809
+Virginia Commonwealth University,Biostatistics/Other Math Science,2016,918809
 Virginia Commonwealth University,Emergency Medicine,2016,0
 Virginia Commonwealth University,Family Medicine,2016,1121517
 Virginia Commonwealth University,Genetics,2016,2651217
@@ -5741,7 +5741,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2016,4119916
 Wake Forest University Health Sciences,Anesthesiology,2016,2966223
 Wake Forest University Health Sciences,Biochemistry,2016,2217270
 Wake Forest University Health Sciences,Biomedical Engineering,2016,611863
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2016,1388832
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2016,1388832
 Wake Forest University Health Sciences,Emergency Medicine,2016,0
 Wake Forest University Health Sciences,Family Medicine,2016,1145645
 Wake Forest University Health Sciences,Internal Medicine,2016,26208578
@@ -5771,7 +5771,7 @@ Washington State University,Total Funding,2016,3733490
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2016,0
 Washington University School Of Medicine In St. Louis,Anesthesiology,2016,0
 Washington University School Of Medicine In St. Louis,Biochemistry,2016,0
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2016,0
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2016,0
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2016,0
 Washington University School Of Medicine In St. Louis,Genetics,2016,0
 Washington University School Of Medicine In St. Louis,Internal Medicine,2016,0
@@ -5933,7 +5933,7 @@ Albert Einstein College Of Medicine,Total Funding,2017,174001336
 Albert Einstein College Of Medicine,Urology,2017,1275592
 Augusta University,Anatomy/Cell Biology,2017,0
 Augusta University,Biochemistry,2017,3475816
-Augusta University,Biostatistics/Other Match Science,2017,76000
+Augusta University,Biostatistics/Other Math Science,2017,76000
 Augusta University,Internal Medicine,2017,5641919
 Augusta University,Neurology,2017,380000
 Augusta University,Neurosciences,2017,4970974
@@ -6044,7 +6044,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2017,0
 Case Western Reserve University,Anesthesiology,2017,400000
 Case Western Reserve University,Biochemistry,2017,11861967
 Case Western Reserve University,Biomedical Engineering,2017,4573928
-Case Western Reserve University,Biostatistics/Other Match Science,2017,0
+Case Western Reserve University,Biostatistics/Other Math Science,2017,0
 Case Western Reserve University,Dermatology,2017,3040731
 Case Western Reserve University,Engineering All Types,2017,0
 Case Western Reserve University,Family Medicine,2017,1084174
@@ -6145,7 +6145,7 @@ Drexel University,Total Funding,2017,18327494
 Duke University,Anatomy/Cell Biology,2017,13408501
 Duke University,Anesthesiology,2017,3500156
 Duke University,Biochemistry,2017,7779848
-Duke University,Biostatistics/Other Match Science,2017,17976601
+Duke University,Biostatistics/Other Math Science,2017,17976601
 Duke University,Dermatology,2017,2340263
 Duke University,Emergency Medicine,2017,0
 Duke University,Family Medicine,2017,0
@@ -6260,7 +6260,7 @@ George Washington University,Psychiatry,2017,351679
 George Washington University,Surgery,2017,285300
 George Washington University,Total Funding,2017,29658820
 Georgetown University,Biochemistry,2017,2073400
-Georgetown University,Biostatistics/Other Match Science,2017,0
+Georgetown University,Biostatistics/Other Math Science,2017,0
 Georgetown University,Family Medicine,2017,638532
 Georgetown University,Internal Medicine,2017,30242140
 Georgetown University,Microbiology/Immunology/Virology,2017,194375
@@ -6362,7 +6362,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2017,260257
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2017,3982726
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2017,529531
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2017,4438701
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2017,398683
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2017,398683
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2017,829000
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2017,1708859
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2017,0
@@ -6392,7 +6392,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2017,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2017,0
 Indiana University Indianapolis,Anesthesiology,2017,0
 Indiana University Indianapolis,Biochemistry,2017,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2017,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2017,0
 Indiana University Indianapolis,Dermatology,2017,0
 Indiana University Indianapolis,Emergency Medicine,2017,0
 Indiana University Indianapolis,Family Medicine,2017,0
@@ -6422,7 +6422,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2017,12473365
 Johns Hopkins University,Anesthesiology,2017,7238661
 Johns Hopkins University,Biochemistry,2017,12838153
 Johns Hopkins University,Biomedical Engineering,2017,10459488
-Johns Hopkins University,Biostatistics/Other Match Science,2017,186446
+Johns Hopkins University,Biostatistics/Other Math Science,2017,186446
 Johns Hopkins University,Dermatology,2017,917147
 Johns Hopkins University,Emergency Medicine,2017,396584
 Johns Hopkins University,Genetics,2017,10420130
@@ -6699,7 +6699,7 @@ Ohio State University,Administration,2017,0
 Ohio State University,Anatomy/Cell Biology,2017,0
 Ohio State University,Anesthesiology,2017,547777
 Ohio State University,Biochemistry,2017,6105624
-Ohio State University,Biostatistics/Other Match Science,2017,0
+Ohio State University,Biostatistics/Other Math Science,2017,0
 Ohio State University,Emergency Medicine,2017,1140203
 Ohio State University,Family Medicine,2017,0
 Ohio State University,Genetics,2017,7426945
@@ -6736,7 +6736,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2017,8100781
 Oregon Health & Science University,Anesthesiology,2017,3304417
 Oregon Health & Science University,Biochemistry,2017,2923071
 Oregon Health & Science University,Biomedical Engineering,2017,6569998
-Oregon Health & Science University,Biostatistics/Other Match Science,2017,1628684
+Oregon Health & Science University,Biostatistics/Other Math Science,2017,1628684
 Oregon Health & Science University,Dermatology,2017,1407945
 Oregon Health & Science University,Emergency Medicine,2017,4993674
 Oregon Health & Science University,Engineering All Types,2017,1094247
@@ -6935,7 +6935,7 @@ Stanford University,Anesthesiology,2017,8453246
 Stanford University,Biochemistry,2017,11696113
 Stanford University,Biomedical Engineering,2017,12103906
 Stanford University,Biophysics,2017,10423860
-Stanford University,Biostatistics/Other Match Science,2017,0
+Stanford University,Biostatistics/Other Math Science,2017,0
 Stanford University,Dermatology,2017,7545281
 Stanford University,Emergency Medicine,2017,0
 Stanford University,Genetics,2017,39645495
@@ -6965,7 +6965,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2017,0
 State University Of New York At Buffalo,Anesthesiology,2017,212281
 State University Of New York At Buffalo,Biochemistry,2017,3187035
 State University Of New York At Buffalo,Biomedical Engineering,2017,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2017,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2017,0
 State University Of New York At Buffalo,Family Medicine,2017,121474
 State University Of New York At Buffalo,Internal Medicine,2017,1467084
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2017,9197466
@@ -6987,7 +6987,7 @@ State University Of New York At Buffalo,Total Funding,2017,27448730
 State University Of New York Stony Brook,Anesthesiology,2017,8233910
 State University Of New York Stony Brook,Biochemistry,2017,1099943
 State University Of New York Stony Brook,Biomedical Engineering,2017,590071
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2017,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2017,0
 State University Of New York Stony Brook,Dermatology,2017,0
 State University Of New York Stony Brook,Emergency Medicine,2017,0
 State University Of New York Stony Brook,Family Medicine,2017,1265777
@@ -7139,7 +7139,7 @@ Tulane University,Total Funding,2017,0
 Tulane University,Urology,2017,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2017,0
 Tulane University Of Louisiana,Biochemistry,2017,2095920
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2017,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2017,0
 Tulane University Of Louisiana,Internal Medicine,2017,17098767
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2017,11495073
 Tulane University Of Louisiana,Neurology,2017,0
@@ -7243,7 +7243,7 @@ University Of Arizona,Total Funding,2017,66891708
 University Of Arizona,Urology,2017,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2017,2553754
 University Of Arkansas For Medical Sciences,Biochemistry,2017,2161782
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2017,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2017,0
 University Of Arkansas For Medical Sciences,Family Medicine,2017,110100
 University Of Arkansas For Medical Sciences,Internal Medicine,2017,1411692
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2017,4375558
@@ -7320,7 +7320,7 @@ University Of California Riverside,Total Funding,2017,3186490
 "University Of California, Irvine",Urology,2017,353419
 "University Of California, Los Angeles",Anesthesiology,2017,6644783
 "University Of California, Los Angeles",Biochemistry,2017,8154057
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2017,644333
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2017,644333
 "University Of California, Los Angeles",Family Medicine,2017,4878450
 "University Of California, Los Angeles",Genetics,2017,6450659
 "University Of California, Los Angeles",Internal Medicine,2017,118853480
@@ -7494,7 +7494,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2017,2449584
 University Of Florida,Anatomy/Cell Biology,2017,1406696
 University Of Florida,Anesthesiology,2017,1128364
 University Of Florida,Biochemistry,2017,5712411
-University Of Florida,Biostatistics/Other Match Science,2017,7008867
+University Of Florida,Biostatistics/Other Math Science,2017,7008867
 University Of Florida,Dermatology,2017,0
 University Of Florida,Emergency Medicine,2017,180595
 University Of Florida,Family Medicine,2017,390330
@@ -7586,7 +7586,7 @@ University Of Iowa,Urology,2017,1409801
 University Of Kansas Medical Center,Anatomy/Cell Biology,2017,7599437
 University Of Kansas Medical Center,Anesthesiology,2017,196484
 University Of Kansas Medical Center,Biochemistry,2017,2232773
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2017,0
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2017,0
 University Of Kansas Medical Center,Family Medicine,2017,2049772
 University Of Kansas Medical Center,Internal Medicine,2017,4837606
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2017,1314625
@@ -7683,7 +7683,7 @@ University Of Maryland Baltimore,Surgery,2017,5144784
 University Of Maryland Baltimore,Total Funding,2017,141991965
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2017,38596513
 University Of Massachusetts Med Sch Worcester,Biochemistry,2017,12435629
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2017,7559352
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2017,7559352
 University Of Massachusetts Med Sch Worcester,Dermatology,2017,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2017,2144589
 University Of Massachusetts Med Sch Worcester,Family Medicine,2017,25511
@@ -7711,7 +7711,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2017,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2017,0
 University Of Massachusetts Worcester,Anesthesiology,2017,0
 University Of Massachusetts Worcester,Biochemistry,2017,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2017,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2017,0
 University Of Massachusetts Worcester,Dermatology,2017,0
 University Of Massachusetts Worcester,Emergency Medicine,2017,0
 University Of Massachusetts Worcester,Family Medicine,2017,0
@@ -7758,7 +7758,7 @@ University Of Miami School Of Medicine,Urology,2017,0
 University Of Michigan,Anatomy/Cell Biology,2017,11174008
 University Of Michigan,Anesthesiology,2017,17066102
 University Of Michigan,Biochemistry,2017,6788265
-University Of Michigan,Biostatistics/Other Match Science,2017,1434531
+University Of Michigan,Biostatistics/Other Math Science,2017,1434531
 University Of Michigan,Dermatology,2017,3595553
 University Of Michigan,Emergency Medicine,2017,9421204
 University Of Michigan,Engineering All Types,2017,1455954
@@ -7791,7 +7791,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2017,0
 University Of Michigan At Ann Arbor,Anesthesiology,2017,0
 University Of Michigan At Ann Arbor,Biochemistry,2017,0
 University Of Michigan At Ann Arbor,Biomedical Engineering,2017,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2017,0
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2017,0
 University Of Michigan At Ann Arbor,Dermatology,2017,0
 University Of Michigan At Ann Arbor,Emergency Medicine,2017,0
 University Of Michigan At Ann Arbor,Engineering All Types,2017,0
@@ -7824,7 +7824,7 @@ University Of Minnesota,Anatomy/Cell Biology,2017,0
 University Of Minnesota,Anesthesiology,2017,0
 University Of Minnesota,Biochemistry,2017,16032469
 University Of Minnesota,Biomedical Engineering,2017,0
-University Of Minnesota,Biostatistics/Other Match Science,2017,0
+University Of Minnesota,Biostatistics/Other Math Science,2017,0
 University Of Minnesota,Dermatology,2017,0
 University Of Minnesota,Emergency Medicine,2017,242928
 University Of Minnesota,Family Medicine,2017,2939474
@@ -8033,7 +8033,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2017,0
 University Of Pennsylvania,Anatomy/Cell Biology,2017,13905988
 University Of Pennsylvania,Anesthesiology,2017,4774013
 University Of Pennsylvania,Biochemistry,2017,9082646
-University Of Pennsylvania,Biostatistics/Other Match Science,2017,22896618
+University Of Pennsylvania,Biostatistics/Other Math Science,2017,22896618
 University Of Pennsylvania,Dermatology,2017,5212864
 University Of Pennsylvania,Emergency Medicine,2017,971918
 University Of Pennsylvania,Family Medicine,2017,1138313
@@ -8125,7 +8125,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2017,15886227
 University Of Rochester,Anesthesiology,2017,1920798
 University Of Rochester,Biochemistry,2017,4676556
 University Of Rochester,Biomedical Engineering,2017,2539614
-University Of Rochester,Biostatistics/Other Match Science,2017,1698383
+University Of Rochester,Biostatistics/Other Math Science,2017,1698383
 University Of Rochester,Dentistry,2017,704298
 University Of Rochester,Dermatology,2017,0
 University Of Rochester,Emergency Medicine,2017,197702
@@ -8495,7 +8495,7 @@ University Of Virginia,Urology,2017,327850
 University Of Washington,Anatomy/Cell Biology,2017,12011851
 University Of Washington,Anesthesiology,2017,16120065
 University Of Washington,Biochemistry,2017,21129574
-University Of Washington,Biostatistics/Other Match Science,2017,3765753
+University Of Washington,Biostatistics/Other Math Science,2017,3765753
 University Of Washington,Emergency Medicine,2017,180727
 University Of Washington,Engineering All Types,2017,4760081
 University Of Washington,Family Medicine,2017,191053
@@ -8559,7 +8559,7 @@ University Of Wisconsin Madison,Administration,2017,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2017,3170300
 University Of Wisconsin Madison,Anesthesiology,2017,998171
 University Of Wisconsin Madison,Biochemistry,2017,7117043
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2017,5225905
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2017,5225905
 University Of Wisconsin Madison,Dermatology,2017,1560755
 University Of Wisconsin Madison,Emergency Medicine,2017,921736
 University Of Wisconsin Madison,Family Medicine,2017,344669
@@ -8635,7 +8635,7 @@ Ut Southwestern Medical Center,Urology,2017,1307270
 Vanderbilt University,Anatomy/Cell Biology,2017,15800120
 Vanderbilt University,Anesthesiology,2017,4723339
 Vanderbilt University,Biochemistry,2017,25082264
-Vanderbilt University,Biostatistics/Other Match Science,2017,0
+Vanderbilt University,Biostatistics/Other Math Science,2017,0
 Vanderbilt University,Dermatology,2017,0
 Vanderbilt University,Emergency Medicine,2017,1132331
 Vanderbilt University,Internal Medicine,2017,168488852
@@ -8660,7 +8660,7 @@ Vanderbilt University,Total Funding,2017,343208614
 Vanderbilt University,Urology,2017,0
 Virginia Commonwealth University,Anatomy/Cell Biology,2017,4602443
 Virginia Commonwealth University,Biochemistry,2017,4807646
-Virginia Commonwealth University,Biostatistics/Other Match Science,2017,832998
+Virginia Commonwealth University,Biostatistics/Other Math Science,2017,832998
 Virginia Commonwealth University,Emergency Medicine,2017,0
 Virginia Commonwealth University,Family Medicine,2017,1041095
 Virginia Commonwealth University,Genetics,2017,2123760
@@ -8689,7 +8689,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2017,4252467
 Wake Forest University Health Sciences,Anesthesiology,2017,2558000
 Wake Forest University Health Sciences,Biochemistry,2017,1830084
 Wake Forest University Health Sciences,Biomedical Engineering,2017,762652
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2017,5308210
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2017,5308210
 Wake Forest University Health Sciences,Emergency Medicine,2017,750158
 Wake Forest University Health Sciences,Family Medicine,2017,610838
 Wake Forest University Health Sciences,Internal Medicine,2017,42340421
@@ -8719,7 +8719,7 @@ Washington State University,Total Funding,2017,6348244
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2017,0
 Washington University School Of Medicine In St. Louis,Anesthesiology,2017,0
 Washington University School Of Medicine In St. Louis,Biochemistry,2017,0
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2017,0
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2017,0
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2017,0
 Washington University School Of Medicine In St. Louis,Genetics,2017,0
 Washington University School Of Medicine In St. Louis,Internal Medicine,2017,0
@@ -8881,7 +8881,7 @@ Albert Einstein College Of Medicine,Total Funding,2018,172041241
 Albert Einstein College Of Medicine,Urology,2018,1050092
 Augusta University,Anatomy/Cell Biology,2018,0
 Augusta University,Biochemistry,2018,3237334
-Augusta University,Biostatistics/Other Match Science,2018,76000
+Augusta University,Biostatistics/Other Math Science,2018,76000
 Augusta University,Internal Medicine,2018,3986347
 Augusta University,Neurology,2018,380000
 Augusta University,Neurosciences,2018,4387437
@@ -8992,7 +8992,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2018,0
 Case Western Reserve University,Anesthesiology,2018,0
 Case Western Reserve University,Biochemistry,2018,9163236
 Case Western Reserve University,Biomedical Engineering,2018,1531198
-Case Western Reserve University,Biostatistics/Other Match Science,2018,0
+Case Western Reserve University,Biostatistics/Other Math Science,2018,0
 Case Western Reserve University,Dermatology,2018,2576671
 Case Western Reserve University,Engineering All Types,2018,0
 Case Western Reserve University,Family Medicine,2018,560567
@@ -9093,7 +9093,7 @@ Drexel University,Total Funding,2018,21005828
 Duke University,Anatomy/Cell Biology,2018,12927520
 Duke University,Anesthesiology,2018,5802860
 Duke University,Biochemistry,2018,5903617
-Duke University,Biostatistics/Other Match Science,2018,18312249
+Duke University,Biostatistics/Other Math Science,2018,18312249
 Duke University,Dermatology,2018,3285250
 Duke University,Emergency Medicine,2018,0
 Duke University,Family Medicine,2018,483365
@@ -9208,7 +9208,7 @@ George Washington University,Psychiatry,2018,177062
 George Washington University,Surgery,2018,1583657
 George Washington University,Total Funding,2018,24494524
 Georgetown University,Biochemistry,2018,1689670
-Georgetown University,Biostatistics/Other Match Science,2018,0
+Georgetown University,Biostatistics/Other Math Science,2018,0
 Georgetown University,Family Medicine,2018,1191449
 Georgetown University,Internal Medicine,2018,27932124
 Georgetown University,Microbiology/Immunology/Virology,2018,0
@@ -9310,7 +9310,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2018,214889
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2018,5579419
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2018,1906668
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2018,7523984
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2018,1274130
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2018,1274130
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2018,876268
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2018,1825294
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2018,0
@@ -9340,7 +9340,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2018,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2018,0
 Indiana University Indianapolis,Anesthesiology,2018,0
 Indiana University Indianapolis,Biochemistry,2018,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2018,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2018,0
 Indiana University Indianapolis,Dermatology,2018,0
 Indiana University Indianapolis,Emergency Medicine,2018,0
 Indiana University Indianapolis,Family Medicine,2018,0
@@ -9370,7 +9370,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2018,16075429
 Johns Hopkins University,Anesthesiology,2018,9052350
 Johns Hopkins University,Biochemistry,2018,12208768
 Johns Hopkins University,Biomedical Engineering,2018,7885249
-Johns Hopkins University,Biostatistics/Other Match Science,2018,559628
+Johns Hopkins University,Biostatistics/Other Math Science,2018,559628
 Johns Hopkins University,Dermatology,2018,3356623
 Johns Hopkins University,Emergency Medicine,2018,151796
 Johns Hopkins University,Genetics,2018,9901174
@@ -9647,7 +9647,7 @@ Ohio State University,Administration,2018,0
 Ohio State University,Anatomy/Cell Biology,2018,0
 Ohio State University,Anesthesiology,2018,536393
 Ohio State University,Biochemistry,2018,3728361
-Ohio State University,Biostatistics/Other Match Science,2018,483396
+Ohio State University,Biostatistics/Other Math Science,2018,483396
 Ohio State University,Emergency Medicine,2018,1133668
 Ohio State University,Family Medicine,2018,522240
 Ohio State University,Genetics,2018,4420627
@@ -9684,7 +9684,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2018,3530614
 Oregon Health & Science University,Anesthesiology,2018,2557775
 Oregon Health & Science University,Biochemistry,2018,2737610
 Oregon Health & Science University,Biomedical Engineering,2018,9301093
-Oregon Health & Science University,Biostatistics/Other Match Science,2018,3028114
+Oregon Health & Science University,Biostatistics/Other Math Science,2018,3028114
 Oregon Health & Science University,Dermatology,2018,2417339
 Oregon Health & Science University,Emergency Medicine,2018,3311834
 Oregon Health & Science University,Engineering All Types,2018,0
@@ -9883,7 +9883,7 @@ Stanford University,Anesthesiology,2018,9653044
 Stanford University,Biochemistry,2018,10291583
 Stanford University,Biomedical Engineering,2018,26999805
 Stanford University,Biophysics,2018,8969109
-Stanford University,Biostatistics/Other Match Science,2018,0
+Stanford University,Biostatistics/Other Math Science,2018,0
 Stanford University,Dermatology,2018,8205461
 Stanford University,Emergency Medicine,2018,0
 Stanford University,Genetics,2018,49032409
@@ -9913,7 +9913,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2018,315013
 State University Of New York At Buffalo,Anesthesiology,2018,216610
 State University Of New York At Buffalo,Biochemistry,2018,3264879
 State University Of New York At Buffalo,Biomedical Engineering,2018,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2018,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2018,0
 State University Of New York At Buffalo,Family Medicine,2018,598126
 State University Of New York At Buffalo,Internal Medicine,2018,3517374
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2018,9870776
@@ -9935,7 +9935,7 @@ State University Of New York At Buffalo,Total Funding,2018,30501954
 State University Of New York Stony Brook,Anesthesiology,2018,684194
 State University Of New York Stony Brook,Biochemistry,2018,1971962
 State University Of New York Stony Brook,Biomedical Engineering,2018,41600
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2018,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2018,0
 State University Of New York Stony Brook,Dermatology,2018,0
 State University Of New York Stony Brook,Emergency Medicine,2018,0
 State University Of New York Stony Brook,Family Medicine,2018,1196861
@@ -10087,7 +10087,7 @@ Tulane University,Total Funding,2018,0
 Tulane University,Urology,2018,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2018,0
 Tulane University Of Louisiana,Biochemistry,2018,2425489
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2018,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2018,0
 Tulane University Of Louisiana,Internal Medicine,2018,18200068
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2018,10479645
 Tulane University Of Louisiana,Neurology,2018,274455
@@ -10191,7 +10191,7 @@ University Of Arizona,Total Funding,2018,93056073
 University Of Arizona,Urology,2018,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2018,4124018
 University Of Arkansas For Medical Sciences,Biochemistry,2018,2769129
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2018,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2018,0
 University Of Arkansas For Medical Sciences,Family Medicine,2018,122327
 University Of Arkansas For Medical Sciences,Internal Medicine,2018,3556006
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2018,5891088
@@ -10268,7 +10268,7 @@ University Of California Riverside,Total Funding,2018,5305074
 "University Of California, Irvine",Urology,2018,364385
 "University Of California, Los Angeles",Anesthesiology,2018,6850331
 "University Of California, Los Angeles",Biochemistry,2018,9112961
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2018,645293
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2018,645293
 "University Of California, Los Angeles",Family Medicine,2018,4775715
 "University Of California, Los Angeles",Genetics,2018,7440987
 "University Of California, Los Angeles",Internal Medicine,2018,117277316
@@ -10442,7 +10442,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2018,2442183
 University Of Florida,Anatomy/Cell Biology,2018,1574499
 University Of Florida,Anesthesiology,2018,1056093
 University Of Florida,Biochemistry,2018,2681391
-University Of Florida,Biostatistics/Other Match Science,2018,7738106
+University Of Florida,Biostatistics/Other Math Science,2018,7738106
 University Of Florida,Dermatology,2018,0
 University Of Florida,Emergency Medicine,2018,552788
 University Of Florida,Family Medicine,2018,0
@@ -10534,7 +10534,7 @@ University Of Iowa,Urology,2018,1643626
 University Of Kansas Medical Center,Anatomy/Cell Biology,2018,8002838
 University Of Kansas Medical Center,Anesthesiology,2018,195993
 University Of Kansas Medical Center,Biochemistry,2018,2534226
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2018,0
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2018,0
 University Of Kansas Medical Center,Family Medicine,2018,607810
 University Of Kansas Medical Center,Internal Medicine,2018,7151631
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2018,1715188
@@ -10631,7 +10631,7 @@ University Of Maryland Baltimore,Surgery,2018,5361931
 University Of Maryland Baltimore,Total Funding,2018,152813207
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2018,34768774
 University Of Massachusetts Med Sch Worcester,Biochemistry,2018,12509255
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2018,11320669
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2018,11320669
 University Of Massachusetts Med Sch Worcester,Dermatology,2018,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2018,3489817
 University Of Massachusetts Med Sch Worcester,Family Medicine,2018,25511
@@ -10659,7 +10659,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2018,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2018,0
 University Of Massachusetts Worcester,Anesthesiology,2018,0
 University Of Massachusetts Worcester,Biochemistry,2018,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2018,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2018,0
 University Of Massachusetts Worcester,Dermatology,2018,0
 University Of Massachusetts Worcester,Emergency Medicine,2018,0
 University Of Massachusetts Worcester,Family Medicine,2018,0
@@ -10706,7 +10706,7 @@ University Of Miami School Of Medicine,Urology,2018,0
 University Of Michigan,Anatomy/Cell Biology,2018,0
 University Of Michigan,Anesthesiology,2018,0
 University Of Michigan,Biochemistry,2018,0
-University Of Michigan,Biostatistics/Other Match Science,2018,0
+University Of Michigan,Biostatistics/Other Math Science,2018,0
 University Of Michigan,Dermatology,2018,0
 University Of Michigan,Emergency Medicine,2018,0
 University Of Michigan,Engineering All Types,2018,0
@@ -10739,7 +10739,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2018,10031488
 University Of Michigan At Ann Arbor,Anesthesiology,2018,17337004
 University Of Michigan At Ann Arbor,Biochemistry,2018,11283668
 University Of Michigan At Ann Arbor,Biomedical Engineering,2018,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2018,3495422
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2018,3495422
 University Of Michigan At Ann Arbor,Dermatology,2018,2975007
 University Of Michigan At Ann Arbor,Emergency Medicine,2018,17699110
 University Of Michigan At Ann Arbor,Engineering All Types,2018,1279150
@@ -10772,7 +10772,7 @@ University Of Minnesota,Anatomy/Cell Biology,2018,0
 University Of Minnesota,Anesthesiology,2018,0
 University Of Minnesota,Biochemistry,2018,16604868
 University Of Minnesota,Biomedical Engineering,2018,0
-University Of Minnesota,Biostatistics/Other Match Science,2018,0
+University Of Minnesota,Biostatistics/Other Math Science,2018,0
 University Of Minnesota,Dermatology,2018,0
 University Of Minnesota,Emergency Medicine,2018,139507
 University Of Minnesota,Family Medicine,2018,4196008
@@ -10981,7 +10981,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2018,0
 University Of Pennsylvania,Anatomy/Cell Biology,2018,16424618
 University Of Pennsylvania,Anesthesiology,2018,3981431
 University Of Pennsylvania,Biochemistry,2018,7495238
-University Of Pennsylvania,Biostatistics/Other Match Science,2018,25855339
+University Of Pennsylvania,Biostatistics/Other Math Science,2018,25855339
 University Of Pennsylvania,Dermatology,2018,4290681
 University Of Pennsylvania,Emergency Medicine,2018,337392
 University Of Pennsylvania,Family Medicine,2018,1109108
@@ -11073,7 +11073,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2018,14828919
 University Of Rochester,Anesthesiology,2018,1860632
 University Of Rochester,Biochemistry,2018,5046275
 University Of Rochester,Biomedical Engineering,2018,3427481
-University Of Rochester,Biostatistics/Other Match Science,2018,1676868
+University Of Rochester,Biostatistics/Other Math Science,2018,1676868
 University Of Rochester,Dentistry,2018,853799
 University Of Rochester,Dermatology,2018,368822
 University Of Rochester,Emergency Medicine,2018,948583
@@ -11443,7 +11443,7 @@ University Of Virginia,Urology,2018,0
 University Of Washington,Anatomy/Cell Biology,2018,12714142
 University Of Washington,Anesthesiology,2018,16618660
 University Of Washington,Biochemistry,2018,18627306
-University Of Washington,Biostatistics/Other Match Science,2018,842589
+University Of Washington,Biostatistics/Other Math Science,2018,842589
 University Of Washington,Emergency Medicine,2018,180727
 University Of Washington,Engineering All Types,2018,7561810
 University Of Washington,Family Medicine,2018,0
@@ -11507,7 +11507,7 @@ University Of Wisconsin Madison,Administration,2018,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2018,4954862
 University Of Wisconsin Madison,Anesthesiology,2018,1327347
 University Of Wisconsin Madison,Biochemistry,2018,9585314
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2018,4539638
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2018,4539638
 University Of Wisconsin Madison,Dermatology,2018,1350577
 University Of Wisconsin Madison,Emergency Medicine,2018,1816172
 University Of Wisconsin Madison,Family Medicine,2018,870769
@@ -11583,7 +11583,7 @@ Ut Southwestern Medical Center,Urology,2018,754119
 Vanderbilt University,Anatomy/Cell Biology,2018,18993702
 Vanderbilt University,Anesthesiology,2018,3886475
 Vanderbilt University,Biochemistry,2018,23891117
-Vanderbilt University,Biostatistics/Other Match Science,2018,0
+Vanderbilt University,Biostatistics/Other Math Science,2018,0
 Vanderbilt University,Dermatology,2018,254852
 Vanderbilt University,Emergency Medicine,2018,1772004
 Vanderbilt University,Internal Medicine,2018,162151130
@@ -11608,7 +11608,7 @@ Vanderbilt University,Total Funding,2018,356235140
 Vanderbilt University,Urology,2018,1118939
 Virginia Commonwealth University,Anatomy/Cell Biology,2018,3756030
 Virginia Commonwealth University,Biochemistry,2018,5411521
-Virginia Commonwealth University,Biostatistics/Other Match Science,2018,474190
+Virginia Commonwealth University,Biostatistics/Other Math Science,2018,474190
 Virginia Commonwealth University,Emergency Medicine,2018,0
 Virginia Commonwealth University,Family Medicine,2018,0
 Virginia Commonwealth University,Genetics,2018,1415938
@@ -11637,7 +11637,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2018,4305519
 Wake Forest University Health Sciences,Anesthesiology,2018,2315955
 Wake Forest University Health Sciences,Biochemistry,2018,1483892
 Wake Forest University Health Sciences,Biomedical Engineering,2018,661046
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2018,3152454
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2018,3152454
 Wake Forest University Health Sciences,Emergency Medicine,2018,760391
 Wake Forest University Health Sciences,Family Medicine,2018,844157
 Wake Forest University Health Sciences,Internal Medicine,2018,42820571
@@ -11667,7 +11667,7 @@ Washington State University,Total Funding,2018,5737653
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2018,0
 Washington University School Of Medicine In St. Louis,Anesthesiology,2018,0
 Washington University School Of Medicine In St. Louis,Biochemistry,2018,0
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2018,0
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2018,0
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2018,0
 Washington University School Of Medicine In St. Louis,Genetics,2018,0
 Washington University School Of Medicine In St. Louis,Internal Medicine,2018,0
@@ -11829,7 +11829,7 @@ Albert Einstein College Of Medicine,Total Funding,2019,178828765
 Albert Einstein College Of Medicine,Urology,2019,1866385
 Augusta University,Anatomy/Cell Biology,2019,5189450
 Augusta University,Biochemistry,2019,2727434
-Augusta University,Biostatistics/Other Match Science,2019,1738651
+Augusta University,Biostatistics/Other Math Science,2019,1738651
 Augusta University,Internal Medicine,2019,5175229
 Augusta University,Neurology,2019,494469
 Augusta University,Neurosciences,2019,6522037
@@ -11940,7 +11940,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2019,0
 Case Western Reserve University,Anesthesiology,2019,0
 Case Western Reserve University,Biochemistry,2019,10651860
 Case Western Reserve University,Biomedical Engineering,2019,3296259
-Case Western Reserve University,Biostatistics/Other Match Science,2019,1028747
+Case Western Reserve University,Biostatistics/Other Math Science,2019,1028747
 Case Western Reserve University,Dermatology,2019,3112354
 Case Western Reserve University,Engineering All Types,2019,0
 Case Western Reserve University,Family Medicine,2019,0
@@ -12041,7 +12041,7 @@ Drexel University,Total Funding,2019,19269455
 Duke University,Anatomy/Cell Biology,2019,11959073
 Duke University,Anesthesiology,2019,7044930
 Duke University,Biochemistry,2019,4457656
-Duke University,Biostatistics/Other Match Science,2019,11981565
+Duke University,Biostatistics/Other Math Science,2019,11981565
 Duke University,Dermatology,2019,3291767
 Duke University,Emergency Medicine,2019,0
 Duke University,Family Medicine,2019,1053145
@@ -12156,7 +12156,7 @@ George Washington University,Psychiatry,2019,649564
 George Washington University,Surgery,2019,1510145
 George Washington University,Total Funding,2019,31070063
 Georgetown University,Biochemistry,2019,758791
-Georgetown University,Biostatistics/Other Match Science,2019,0
+Georgetown University,Biostatistics/Other Math Science,2019,0
 Georgetown University,Family Medicine,2019,877558
 Georgetown University,Internal Medicine,2019,27828647
 Georgetown University,Microbiology/Immunology/Virology,2019,385698
@@ -12258,7 +12258,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2019,0
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2019,7769344
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2019,1878933
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2019,6583120
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2019,2244006
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2019,2244006
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2019,1005742
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2019,1721323
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2019,0
@@ -12288,7 +12288,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2019,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2019,0
 Indiana University Indianapolis,Anesthesiology,2019,0
 Indiana University Indianapolis,Biochemistry,2019,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2019,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2019,0
 Indiana University Indianapolis,Dermatology,2019,0
 Indiana University Indianapolis,Emergency Medicine,2019,0
 Indiana University Indianapolis,Family Medicine,2019,0
@@ -12318,7 +12318,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2019,15373678
 Johns Hopkins University,Anesthesiology,2019,10376535
 Johns Hopkins University,Biochemistry,2019,11958860
 Johns Hopkins University,Biomedical Engineering,2019,11210428
-Johns Hopkins University,Biostatistics/Other Match Science,2019,524813
+Johns Hopkins University,Biostatistics/Other Math Science,2019,524813
 Johns Hopkins University,Dermatology,2019,3544464
 Johns Hopkins University,Emergency Medicine,2019,145418
 Johns Hopkins University,Genetics,2019,12848862
@@ -12595,7 +12595,7 @@ Ohio State University,Administration,2019,0
 Ohio State University,Anatomy/Cell Biology,2019,0
 Ohio State University,Anesthesiology,2019,1294132
 Ohio State University,Biochemistry,2019,4158189
-Ohio State University,Biostatistics/Other Match Science,2019,228327
+Ohio State University,Biostatistics/Other Math Science,2019,228327
 Ohio State University,Emergency Medicine,2019,1441679
 Ohio State University,Family Medicine,2019,525722
 Ohio State University,Genetics,2019,5349677
@@ -12632,7 +12632,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2019,0
 Oregon Health & Science University,Anesthesiology,2019,5501140
 Oregon Health & Science University,Biochemistry,2019,0
 Oregon Health & Science University,Biomedical Engineering,2019,0
-Oregon Health & Science University,Biostatistics/Other Match Science,2019,3399075
+Oregon Health & Science University,Biostatistics/Other Math Science,2019,3399075
 Oregon Health & Science University,Dermatology,2019,2068186
 Oregon Health & Science University,Emergency Medicine,2019,4037991
 Oregon Health & Science University,Engineering All Types,2019,0
@@ -12831,7 +12831,7 @@ Stanford University,Anesthesiology,2019,14832340
 Stanford University,Biochemistry,2019,12077435
 Stanford University,Biomedical Engineering,2019,27351871
 Stanford University,Biophysics,2019,8650478
-Stanford University,Biostatistics/Other Match Science,2019,0
+Stanford University,Biostatistics/Other Math Science,2019,0
 Stanford University,Dermatology,2019,7780973
 Stanford University,Emergency Medicine,2019,0
 Stanford University,Genetics,2019,32832336
@@ -12861,7 +12861,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2019,703442
 State University Of New York At Buffalo,Anesthesiology,2019,217919
 State University Of New York At Buffalo,Biochemistry,2019,4979267
 State University Of New York At Buffalo,Biomedical Engineering,2019,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2019,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2019,0
 State University Of New York At Buffalo,Family Medicine,2019,1022277
 State University Of New York At Buffalo,Internal Medicine,2019,1935300
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2019,5175031
@@ -12883,7 +12883,7 @@ State University Of New York At Buffalo,Total Funding,2019,31280157
 State University Of New York Stony Brook,Anesthesiology,2019,1224725
 State University Of New York Stony Brook,Biochemistry,2019,2491291
 State University Of New York Stony Brook,Biomedical Engineering,2019,1438523
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2019,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2019,0
 State University Of New York Stony Brook,Dermatology,2019,0
 State University Of New York Stony Brook,Emergency Medicine,2019,0
 State University Of New York Stony Brook,Family Medicine,2019,1496522
@@ -13035,7 +13035,7 @@ Tulane University,Total Funding,2019,0
 Tulane University,Urology,2019,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2019,0
 Tulane University Of Louisiana,Biochemistry,2019,3944116
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2019,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2019,0
 Tulane University Of Louisiana,Internal Medicine,2019,20440601
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2019,10279108
 Tulane University Of Louisiana,Neurology,2019,420053
@@ -13139,7 +13139,7 @@ University Of Arizona,Total Funding,2019,113505125
 University Of Arizona,Urology,2019,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2019,2976636
 University Of Arkansas For Medical Sciences,Biochemistry,2019,2222297
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2019,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2019,0
 University Of Arkansas For Medical Sciences,Family Medicine,2019,235902
 University Of Arkansas For Medical Sciences,Internal Medicine,2019,3313643
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2019,5993290
@@ -13216,7 +13216,7 @@ University Of California Riverside,Total Funding,2019,9005074
 "University Of California, Irvine",Urology,2019,341359
 "University Of California, Los Angeles",Anesthesiology,2019,6662902
 "University Of California, Los Angeles",Biochemistry,2019,11498590
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2019,880763
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2019,880763
 "University Of California, Los Angeles",Family Medicine,2019,2849051
 "University Of California, Los Angeles",Genetics,2019,6642133
 "University Of California, Los Angeles",Internal Medicine,2019,144534158
@@ -13390,7 +13390,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2019,1220031
 University Of Florida,Anatomy/Cell Biology,2019,1833426
 University Of Florida,Anesthesiology,2019,2004218
 University Of Florida,Biochemistry,2019,2074511
-University Of Florida,Biostatistics/Other Match Science,2019,3782051
+University Of Florida,Biostatistics/Other Math Science,2019,3782051
 University Of Florida,Dermatology,2019,0
 University Of Florida,Emergency Medicine,2019,564830
 University Of Florida,Family Medicine,2019,0
@@ -13482,7 +13482,7 @@ University Of Iowa,Urology,2019,1150022
 University Of Kansas Medical Center,Anatomy/Cell Biology,2019,8763832
 University Of Kansas Medical Center,Anesthesiology,2019,195414
 University Of Kansas Medical Center,Biochemistry,2019,3479725
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2019,0
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2019,0
 University Of Kansas Medical Center,Family Medicine,2019,2006371
 University Of Kansas Medical Center,Internal Medicine,2019,12147813
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2019,2989181
@@ -13579,7 +13579,7 @@ University Of Maryland Baltimore,Surgery,2019,8052916
 University Of Maryland Baltimore,Total Funding,2019,153982285
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2019,38962248
 University Of Massachusetts Med Sch Worcester,Biochemistry,2019,9538630
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2019,12663079
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2019,12663079
 University Of Massachusetts Med Sch Worcester,Dermatology,2019,788299
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2019,3137220
 University Of Massachusetts Med Sch Worcester,Family Medicine,2019,0
@@ -13607,7 +13607,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2019,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2019,0
 University Of Massachusetts Worcester,Anesthesiology,2019,0
 University Of Massachusetts Worcester,Biochemistry,2019,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2019,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2019,0
 University Of Massachusetts Worcester,Dermatology,2019,0
 University Of Massachusetts Worcester,Emergency Medicine,2019,0
 University Of Massachusetts Worcester,Family Medicine,2019,0
@@ -13654,7 +13654,7 @@ University Of Miami School Of Medicine,Urology,2019,0
 University Of Michigan,Anatomy/Cell Biology,2019,0
 University Of Michigan,Anesthesiology,2019,0
 University Of Michigan,Biochemistry,2019,0
-University Of Michigan,Biostatistics/Other Match Science,2019,0
+University Of Michigan,Biostatistics/Other Math Science,2019,0
 University Of Michigan,Dermatology,2019,0
 University Of Michigan,Emergency Medicine,2019,0
 University Of Michigan,Engineering All Types,2019,0
@@ -13687,7 +13687,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2019,16480622
 University Of Michigan At Ann Arbor,Anesthesiology,2019,24988159
 University Of Michigan At Ann Arbor,Biochemistry,2019,9903693
 University Of Michigan At Ann Arbor,Biomedical Engineering,2019,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2019,5459544
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2019,5459544
 University Of Michigan At Ann Arbor,Dermatology,2019,4448565
 University Of Michigan At Ann Arbor,Emergency Medicine,2019,11787904
 University Of Michigan At Ann Arbor,Engineering All Types,2019,2763809
@@ -13720,7 +13720,7 @@ University Of Minnesota,Anatomy/Cell Biology,2019,0
 University Of Minnesota,Anesthesiology,2019,0
 University Of Minnesota,Biochemistry,2019,18179849
 University Of Minnesota,Biomedical Engineering,2019,0
-University Of Minnesota,Biostatistics/Other Match Science,2019,0
+University Of Minnesota,Biostatistics/Other Math Science,2019,0
 University Of Minnesota,Dermatology,2019,0
 University Of Minnesota,Emergency Medicine,2019,135814
 University Of Minnesota,Family Medicine,2019,5103778
@@ -13929,7 +13929,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2019,0
 University Of Pennsylvania,Anatomy/Cell Biology,2019,16196388
 University Of Pennsylvania,Anesthesiology,2019,2965090
 University Of Pennsylvania,Biochemistry,2019,7053415
-University Of Pennsylvania,Biostatistics/Other Match Science,2019,27999304
+University Of Pennsylvania,Biostatistics/Other Math Science,2019,27999304
 University Of Pennsylvania,Dermatology,2019,6704635
 University Of Pennsylvania,Emergency Medicine,2019,2352806
 University Of Pennsylvania,Family Medicine,2019,626640
@@ -14021,7 +14021,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2019,16422941
 University Of Rochester,Anesthesiology,2019,1122790
 University Of Rochester,Biochemistry,2019,6889361
 University Of Rochester,Biomedical Engineering,2019,3812119
-University Of Rochester,Biostatistics/Other Match Science,2019,960571
+University Of Rochester,Biostatistics/Other Math Science,2019,960571
 University Of Rochester,Dentistry,2019,1084799
 University Of Rochester,Dermatology,2019,548287
 University Of Rochester,Emergency Medicine,2019,902804
@@ -14391,7 +14391,7 @@ University Of Virginia,Urology,2019,0
 University Of Washington,Anatomy/Cell Biology,2019,14719610
 University Of Washington,Anesthesiology,2019,20795180
 University Of Washington,Biochemistry,2019,20232850
-University Of Washington,Biostatistics/Other Match Science,2019,1674793
+University Of Washington,Biostatistics/Other Math Science,2019,1674793
 University Of Washington,Emergency Medicine,2019,541030
 University Of Washington,Engineering All Types,2019,8275038
 University Of Washington,Family Medicine,2019,174523
@@ -14455,7 +14455,7 @@ University Of Wisconsin Madison,Administration,2019,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2019,5483967
 University Of Wisconsin Madison,Anesthesiology,2019,1775562
 University Of Wisconsin Madison,Biochemistry,2019,6919385
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2019,5285116
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2019,5285116
 University Of Wisconsin Madison,Dermatology,2019,1116183
 University Of Wisconsin Madison,Emergency Medicine,2019,1638137
 University Of Wisconsin Madison,Family Medicine,2019,742621
@@ -14531,7 +14531,7 @@ Ut Southwestern Medical Center,Urology,2019,0
 Vanderbilt University,Anatomy/Cell Biology,2019,17103115
 Vanderbilt University,Anesthesiology,2019,4610318
 Vanderbilt University,Biochemistry,2019,30040678
-Vanderbilt University,Biostatistics/Other Match Science,2019,0
+Vanderbilt University,Biostatistics/Other Math Science,2019,0
 Vanderbilt University,Dermatology,2019,211272
 Vanderbilt University,Emergency Medicine,2019,1063236
 Vanderbilt University,Internal Medicine,2019,175110422
@@ -14556,7 +14556,7 @@ Vanderbilt University,Total Funding,2019,378067757
 Vanderbilt University,Urology,2019,2364176
 Virginia Commonwealth University,Anatomy/Cell Biology,2019,3744808
 Virginia Commonwealth University,Biochemistry,2019,1998926
-Virginia Commonwealth University,Biostatistics/Other Match Science,2019,363637
+Virginia Commonwealth University,Biostatistics/Other Math Science,2019,363637
 Virginia Commonwealth University,Emergency Medicine,2019,0
 Virginia Commonwealth University,Family Medicine,2019,0
 Virginia Commonwealth University,Genetics,2019,3291876
@@ -14585,7 +14585,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2019,7945458
 Wake Forest University Health Sciences,Anesthesiology,2019,2694352
 Wake Forest University Health Sciences,Biochemistry,2019,2535334
 Wake Forest University Health Sciences,Biomedical Engineering,2019,839588
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2019,3273869
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2019,3273869
 Wake Forest University Health Sciences,Emergency Medicine,2019,0
 Wake Forest University Health Sciences,Family Medicine,2019,476666
 Wake Forest University Health Sciences,Internal Medicine,2019,49530962
@@ -14615,7 +14615,7 @@ Washington State University,Total Funding,2019,8107418
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2019,0
 Washington University School Of Medicine In St. Louis,Anesthesiology,2019,0
 Washington University School Of Medicine In St. Louis,Biochemistry,2019,0
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2019,0
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2019,0
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2019,0
 Washington University School Of Medicine In St. Louis,Genetics,2019,0
 Washington University School Of Medicine In St. Louis,Internal Medicine,2019,0
@@ -14777,7 +14777,7 @@ Albert Einstein College Of Medicine,Total Funding,2020,222068969
 Albert Einstein College Of Medicine,Urology,2020,1862601
 Augusta University,Anatomy/Cell Biology,2020,5264233
 Augusta University,Biochemistry,2020,2943274
-Augusta University,Biostatistics/Other Match Science,2020,1822246
+Augusta University,Biostatistics/Other Math Science,2020,1822246
 Augusta University,Internal Medicine,2020,10342927
 Augusta University,Neurology,2020,1494250
 Augusta University,Neurosciences,2020,2789725
@@ -14888,7 +14888,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2020,0
 Case Western Reserve University,Anesthesiology,2020,4775386
 Case Western Reserve University,Biochemistry,2020,7014139
 Case Western Reserve University,Biomedical Engineering,2020,4154526
-Case Western Reserve University,Biostatistics/Other Match Science,2020,600000
+Case Western Reserve University,Biostatistics/Other Math Science,2020,600000
 Case Western Reserve University,Dermatology,2020,2812639
 Case Western Reserve University,Engineering All Types,2020,0
 Case Western Reserve University,Family Medicine,2020,1459810
@@ -14989,7 +14989,7 @@ Drexel University,Total Funding,2020,26234014
 Duke University,Anatomy/Cell Biology,2020,13622246
 Duke University,Anesthesiology,2020,9226779
 Duke University,Biochemistry,2020,7233536
-Duke University,Biostatistics/Other Match Science,2020,19632840
+Duke University,Biostatistics/Other Math Science,2020,19632840
 Duke University,Dermatology,2020,2406938
 Duke University,Emergency Medicine,2020,0
 Duke University,Family Medicine,2020,1041888
@@ -15104,7 +15104,7 @@ George Washington University,Psychiatry,2020,839773
 George Washington University,Surgery,2020,1537124
 George Washington University,Total Funding,2020,31736917
 Georgetown University,Biochemistry,2020,428757
-Georgetown University,Biostatistics/Other Match Science,2020,0
+Georgetown University,Biostatistics/Other Math Science,2020,0
 Georgetown University,Family Medicine,2020,619407
 Georgetown University,Internal Medicine,2020,23681859
 Georgetown University,Microbiology/Immunology/Virology,2020,575494
@@ -15206,7 +15206,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2020,767722
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2020,11108275
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2020,1560074
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2020,10496212
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2020,1668912
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2020,1668912
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2020,386415
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2020,2934585
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2020,0
@@ -15236,7 +15236,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2020,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2020,0
 Indiana University Indianapolis,Anesthesiology,2020,0
 Indiana University Indianapolis,Biochemistry,2020,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2020,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2020,0
 Indiana University Indianapolis,Dermatology,2020,0
 Indiana University Indianapolis,Emergency Medicine,2020,0
 Indiana University Indianapolis,Family Medicine,2020,0
@@ -15266,7 +15266,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2020,12443829
 Johns Hopkins University,Anesthesiology,2020,10828478
 Johns Hopkins University,Biochemistry,2020,12707044
 Johns Hopkins University,Biomedical Engineering,2020,14661354
-Johns Hopkins University,Biostatistics/Other Match Science,2020,337439
+Johns Hopkins University,Biostatistics/Other Math Science,2020,337439
 Johns Hopkins University,Dermatology,2020,4219070
 Johns Hopkins University,Emergency Medicine,2020,0
 Johns Hopkins University,Genetics,2020,11291786
@@ -15543,7 +15543,7 @@ Ohio State University,Administration,2020,0
 Ohio State University,Anatomy/Cell Biology,2020,0
 Ohio State University,Anesthesiology,2020,1289908
 Ohio State University,Biochemistry,2020,4030387
-Ohio State University,Biostatistics/Other Match Science,2020,0
+Ohio State University,Biostatistics/Other Math Science,2020,0
 Ohio State University,Emergency Medicine,2020,1203870
 Ohio State University,Family Medicine,2020,779531
 Ohio State University,Genetics,2020,5117151
@@ -15580,7 +15580,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2020,2964750
 Oregon Health & Science University,Anesthesiology,2020,1008695
 Oregon Health & Science University,Biochemistry,2020,384997
 Oregon Health & Science University,Biomedical Engineering,2020,2261493
-Oregon Health & Science University,Biostatistics/Other Match Science,2020,3604943
+Oregon Health & Science University,Biostatistics/Other Math Science,2020,3604943
 Oregon Health & Science University,Dermatology,2020,1471758
 Oregon Health & Science University,Emergency Medicine,2020,3271244
 Oregon Health & Science University,Engineering All Types,2020,0
@@ -15779,7 +15779,7 @@ Stanford University,Anesthesiology,2020,14624733
 Stanford University,Biochemistry,2020,10592206
 Stanford University,Biomedical Engineering,2020,34255907
 Stanford University,Biophysics,2020,12238743
-Stanford University,Biostatistics/Other Match Science,2020,0
+Stanford University,Biostatistics/Other Math Science,2020,0
 Stanford University,Dermatology,2020,9486209
 Stanford University,Emergency Medicine,2020,766303
 Stanford University,Genetics,2020,40915113
@@ -15809,7 +15809,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2020,714613
 State University Of New York At Buffalo,Anesthesiology,2020,671409
 State University Of New York At Buffalo,Biochemistry,2020,4802984
 State University Of New York At Buffalo,Biomedical Engineering,2020,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2020,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2020,0
 State University Of New York At Buffalo,Family Medicine,2020,988741
 State University Of New York At Buffalo,Internal Medicine,2020,7152194
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2020,6360969
@@ -15831,7 +15831,7 @@ State University Of New York At Buffalo,Total Funding,2020,39556293
 State University Of New York Stony Brook,Anesthesiology,2020,1948131
 State University Of New York Stony Brook,Biochemistry,2020,1713005
 State University Of New York Stony Brook,Biomedical Engineering,2020,825210
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2020,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2020,0
 State University Of New York Stony Brook,Dermatology,2020,0
 State University Of New York Stony Brook,Emergency Medicine,2020,0
 State University Of New York Stony Brook,Family Medicine,2020,883679
@@ -15983,7 +15983,7 @@ Tulane University,Total Funding,2020,0
 Tulane University,Urology,2020,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2020,334308
 Tulane University Of Louisiana,Biochemistry,2020,3783066
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2020,2160697
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2020,2160697
 Tulane University Of Louisiana,Internal Medicine,2020,22413720
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2020,9465002
 Tulane University Of Louisiana,Neurology,2020,622842
@@ -16087,7 +16087,7 @@ University Of Arizona,Total Funding,2020,124154870
 University Of Arizona,Urology,2020,388482
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2020,3003127
 University Of Arkansas For Medical Sciences,Biochemistry,2020,3817445
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2020,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2020,0
 University Of Arkansas For Medical Sciences,Family Medicine,2020,333450
 University Of Arkansas For Medical Sciences,Internal Medicine,2020,3336740
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2020,6392377
@@ -16164,7 +16164,7 @@ University Of California Riverside,Total Funding,2020,11194261
 "University Of California, Irvine",Urology,2020,1012422
 "University Of California, Los Angeles",Anesthesiology,2020,8944355
 "University Of California, Los Angeles",Biochemistry,2020,10992334
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2020,574529
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2020,574529
 "University Of California, Los Angeles",Family Medicine,2020,3018776
 "University Of California, Los Angeles",Genetics,2020,5945954
 "University Of California, Los Angeles",Internal Medicine,2020,337379870
@@ -16338,7 +16338,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2020,2808806
 University Of Florida,Anatomy/Cell Biology,2020,1408260
 University Of Florida,Anesthesiology,2020,762500
 University Of Florida,Biochemistry,2020,3122704
-University Of Florida,Biostatistics/Other Match Science,2020,4415921
+University Of Florida,Biostatistics/Other Math Science,2020,4415921
 University Of Florida,Dermatology,2020,0
 University Of Florida,Emergency Medicine,2020,1599802
 University Of Florida,Family Medicine,2020,0
@@ -16430,7 +16430,7 @@ University Of Iowa,Urology,2020,979593
 University Of Kansas Medical Center,Anatomy/Cell Biology,2020,6778858
 University Of Kansas Medical Center,Anesthesiology,2020,194824
 University Of Kansas Medical Center,Biochemistry,2020,3768286
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2020,0
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2020,0
 University Of Kansas Medical Center,Family Medicine,2020,1693730
 University Of Kansas Medical Center,Internal Medicine,2020,18756694
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2020,4134488
@@ -16527,7 +16527,7 @@ University Of Maryland Baltimore,Surgery,2020,12328770
 University Of Maryland Baltimore,Total Funding,2020,182290644
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2020,42089591
 University Of Massachusetts Med Sch Worcester,Biochemistry,2020,10699194
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2020,13393286
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2020,13393286
 University Of Massachusetts Med Sch Worcester,Dermatology,2020,368500
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2020,7549680
 University Of Massachusetts Med Sch Worcester,Family Medicine,2020,0
@@ -16555,7 +16555,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2020,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2020,0
 University Of Massachusetts Worcester,Anesthesiology,2020,0
 University Of Massachusetts Worcester,Biochemistry,2020,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2020,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2020,0
 University Of Massachusetts Worcester,Dermatology,2020,0
 University Of Massachusetts Worcester,Emergency Medicine,2020,0
 University Of Massachusetts Worcester,Family Medicine,2020,0
@@ -16602,7 +16602,7 @@ University Of Miami School Of Medicine,Urology,2020,0
 University Of Michigan,Anatomy/Cell Biology,2020,0
 University Of Michigan,Anesthesiology,2020,0
 University Of Michigan,Biochemistry,2020,0
-University Of Michigan,Biostatistics/Other Match Science,2020,0
+University Of Michigan,Biostatistics/Other Math Science,2020,0
 University Of Michigan,Dermatology,2020,0
 University Of Michigan,Emergency Medicine,2020,0
 University Of Michigan,Engineering All Types,2020,0
@@ -16635,7 +16635,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2020,19335959
 University Of Michigan At Ann Arbor,Anesthesiology,2020,21454704
 University Of Michigan At Ann Arbor,Biochemistry,2020,7613449
 University Of Michigan At Ann Arbor,Biomedical Engineering,2020,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2020,8450225
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2020,8450225
 University Of Michigan At Ann Arbor,Dermatology,2020,4333068
 University Of Michigan At Ann Arbor,Emergency Medicine,2020,20922383
 University Of Michigan At Ann Arbor,Engineering All Types,2020,7045904
@@ -16668,7 +16668,7 @@ University Of Minnesota,Anatomy/Cell Biology,2020,0
 University Of Minnesota,Anesthesiology,2020,0
 University Of Minnesota,Biochemistry,2020,20433091
 University Of Minnesota,Biomedical Engineering,2020,0
-University Of Minnesota,Biostatistics/Other Match Science,2020,0
+University Of Minnesota,Biostatistics/Other Math Science,2020,0
 University Of Minnesota,Dermatology,2020,0
 University Of Minnesota,Emergency Medicine,2020,135814
 University Of Minnesota,Family Medicine,2020,6817533
@@ -16877,7 +16877,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2020,0
 University Of Pennsylvania,Anatomy/Cell Biology,2020,19181746
 University Of Pennsylvania,Anesthesiology,2020,4931190
 University Of Pennsylvania,Biochemistry,2020,7985452
-University Of Pennsylvania,Biostatistics/Other Match Science,2020,34287581
+University Of Pennsylvania,Biostatistics/Other Math Science,2020,34287581
 University Of Pennsylvania,Dermatology,2020,5194640
 University Of Pennsylvania,Emergency Medicine,2020,2439018
 University Of Pennsylvania,Family Medicine,2020,0
@@ -16969,7 +16969,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2020,18100466
 University Of Rochester,Anesthesiology,2020,2514857
 University Of Rochester,Biochemistry,2020,7676106
 University Of Rochester,Biomedical Engineering,2020,3824272
-University Of Rochester,Biostatistics/Other Match Science,2020,2142593
+University Of Rochester,Biostatistics/Other Math Science,2020,2142593
 University Of Rochester,Dentistry,2020,729577
 University Of Rochester,Dermatology,2020,1107639
 University Of Rochester,Emergency Medicine,2020,874518
@@ -17339,7 +17339,7 @@ University Of Virginia,Urology,2020,0
 University Of Washington,Anatomy/Cell Biology,2020,6224385
 University Of Washington,Anesthesiology,2020,7977193
 University Of Washington,Biochemistry,2020,14180574
-University Of Washington,Biostatistics/Other Match Science,2020,0
+University Of Washington,Biostatistics/Other Math Science,2020,0
 University Of Washington,Emergency Medicine,2020,999851
 University Of Washington,Engineering All Types,2020,9169735
 University Of Washington,Family Medicine,2020,160775
@@ -17403,7 +17403,7 @@ University Of Wisconsin Madison,Administration,2020,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2020,5702619
 University Of Wisconsin Madison,Anesthesiology,2020,2182827
 University Of Wisconsin Madison,Biochemistry,2020,6625540
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2020,5154287
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2020,5154287
 University Of Wisconsin Madison,Dermatology,2020,325500
 University Of Wisconsin Madison,Emergency Medicine,2020,1101291
 University Of Wisconsin Madison,Family Medicine,2020,698644
@@ -17479,7 +17479,7 @@ Ut Southwestern Medical Center,Urology,2020,0
 Vanderbilt University,Anatomy/Cell Biology,2020,20121833
 Vanderbilt University,Anesthesiology,2020,7083853
 Vanderbilt University,Biochemistry,2020,32203962
-Vanderbilt University,Biostatistics/Other Match Science,2020,0
+Vanderbilt University,Biostatistics/Other Math Science,2020,0
 Vanderbilt University,Dermatology,2020,173672
 Vanderbilt University,Emergency Medicine,2020,1281345
 Vanderbilt University,Internal Medicine,2020,244654855
@@ -17504,7 +17504,7 @@ Vanderbilt University,Total Funding,2020,481285742
 Vanderbilt University,Urology,2020,1928404
 Virginia Commonwealth University,Anatomy/Cell Biology,2020,3687917
 Virginia Commonwealth University,Biochemistry,2020,2460489
-Virginia Commonwealth University,Biostatistics/Other Match Science,2020,226490
+Virginia Commonwealth University,Biostatistics/Other Math Science,2020,226490
 Virginia Commonwealth University,Emergency Medicine,2020,0
 Virginia Commonwealth University,Family Medicine,2020,0
 Virginia Commonwealth University,Genetics,2020,3785622
@@ -17533,7 +17533,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2020,4967741
 Wake Forest University Health Sciences,Anesthesiology,2020,3568313
 Wake Forest University Health Sciences,Biochemistry,2020,2463778
 Wake Forest University Health Sciences,Biomedical Engineering,2020,1946966
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2020,6825081
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2020,6825081
 Wake Forest University Health Sciences,Emergency Medicine,2020,0
 Wake Forest University Health Sciences,Family Medicine,2020,1416184
 Wake Forest University Health Sciences,Internal Medicine,2020,59248103
@@ -17563,7 +17563,7 @@ Washington State University,Total Funding,2020,11092056
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2020,9830620
 Washington University School Of Medicine In St. Louis,Anesthesiology,2020,16192892
 Washington University School Of Medicine In St. Louis,Biochemistry,2020,6798568
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2020,6051313
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2020,6051313
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2020,180727
 Washington University School Of Medicine In St. Louis,Genetics,2020,41923529
 Washington University School Of Medicine In St. Louis,Internal Medicine,2020,110475254
@@ -17725,7 +17725,7 @@ Albert Einstein College Of Medicine,Total Funding,2021,186429350
 Albert Einstein College Of Medicine,Urology,2021,482293
 Augusta University,Anatomy/Cell Biology,2021,5057182
 Augusta University,Biochemistry,2021,2318229
-Augusta University,Biostatistics/Other Match Science,2021,1994701
+Augusta University,Biostatistics/Other Math Science,2021,1994701
 Augusta University,Internal Medicine,2021,11970485
 Augusta University,Neurology,2021,2305299
 Augusta University,Neurosciences,2021,2825998
@@ -17836,7 +17836,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2021,0
 Case Western Reserve University,Anesthesiology,2021,0
 Case Western Reserve University,Biochemistry,2021,8445211
 Case Western Reserve University,Biomedical Engineering,2021,6276858
-Case Western Reserve University,Biostatistics/Other Match Science,2021,51036
+Case Western Reserve University,Biostatistics/Other Math Science,2021,51036
 Case Western Reserve University,Dermatology,2021,2578466
 Case Western Reserve University,Engineering All Types,2021,824341
 Case Western Reserve University,Family Medicine,2021,1383237
@@ -17937,7 +17937,7 @@ Drexel University,Total Funding,2021,18952543
 Duke University,Anatomy/Cell Biology,2021,11168124
 Duke University,Anesthesiology,2021,7975702
 Duke University,Biochemistry,2021,7217442
-Duke University,Biostatistics/Other Match Science,2021,12145875
+Duke University,Biostatistics/Other Math Science,2021,12145875
 Duke University,Dermatology,2021,3518370
 Duke University,Emergency Medicine,2021,0
 Duke University,Family Medicine,2021,1985386
@@ -18052,7 +18052,7 @@ George Washington University,Psychiatry,2021,1699180
 George Washington University,Surgery,2021,801834
 George Washington University,Total Funding,2021,29922921
 Georgetown University,Biochemistry,2021,493929
-Georgetown University,Biostatistics/Other Match Science,2021,0
+Georgetown University,Biostatistics/Other Math Science,2021,0
 Georgetown University,Family Medicine,2021,909615
 Georgetown University,Internal Medicine,2021,23729291
 Georgetown University,Microbiology/Immunology/Virology,2021,846843
@@ -18154,7 +18154,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2021,2246802
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2021,9971651
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2021,1344376
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2021,9859956
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2021,1452545
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2021,1452545
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2021,1017684
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2021,1787846
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2021,0
@@ -18184,7 +18184,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2021,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2021,0
 Indiana University Indianapolis,Anesthesiology,2021,0
 Indiana University Indianapolis,Biochemistry,2021,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2021,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2021,0
 Indiana University Indianapolis,Dermatology,2021,0
 Indiana University Indianapolis,Emergency Medicine,2021,0
 Indiana University Indianapolis,Family Medicine,2021,0
@@ -18214,7 +18214,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2021,12317209
 Johns Hopkins University,Anesthesiology,2021,13831170
 Johns Hopkins University,Biochemistry,2021,8166943
 Johns Hopkins University,Biomedical Engineering,2021,18046775
-Johns Hopkins University,Biostatistics/Other Match Science,2021,438682
+Johns Hopkins University,Biostatistics/Other Math Science,2021,438682
 Johns Hopkins University,Dermatology,2021,4192145
 Johns Hopkins University,Emergency Medicine,2021,0
 Johns Hopkins University,Genetics,2021,11269281
@@ -18491,7 +18491,7 @@ Ohio State University,Administration,2021,0
 Ohio State University,Anatomy/Cell Biology,2021,253250
 Ohio State University,Anesthesiology,2021,2149096
 Ohio State University,Biochemistry,2021,5893089
-Ohio State University,Biostatistics/Other Match Science,2021,0
+Ohio State University,Biostatistics/Other Math Science,2021,0
 Ohio State University,Emergency Medicine,2021,731432
 Ohio State University,Family Medicine,2021,1471814
 Ohio State University,Genetics,2021,5338150
@@ -18528,7 +18528,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2021,4131229
 Oregon Health & Science University,Anesthesiology,2021,1210227
 Oregon Health & Science University,Biochemistry,2021,615997
 Oregon Health & Science University,Biomedical Engineering,2021,4027971
-Oregon Health & Science University,Biostatistics/Other Match Science,2021,4452993
+Oregon Health & Science University,Biostatistics/Other Math Science,2021,4452993
 Oregon Health & Science University,Dermatology,2021,1294271
 Oregon Health & Science University,Emergency Medicine,2021,4291682
 Oregon Health & Science University,Engineering All Types,2021,0
@@ -18727,7 +18727,7 @@ Stanford University,Anesthesiology,2021,6735412
 Stanford University,Biochemistry,2021,12300816
 Stanford University,Biomedical Engineering,2021,27296635
 Stanford University,Biophysics,2021,11231245
-Stanford University,Biostatistics/Other Match Science,2021,1
+Stanford University,Biostatistics/Other Math Science,2021,1
 Stanford University,Dermatology,2021,9163081
 Stanford University,Emergency Medicine,2021,1926434
 Stanford University,Genetics,2021,43462664
@@ -18757,7 +18757,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2021,714613
 State University Of New York At Buffalo,Anesthesiology,2021,436773
 State University Of New York At Buffalo,Biochemistry,2021,4876693
 State University Of New York At Buffalo,Biomedical Engineering,2021,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2021,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2021,0
 State University Of New York At Buffalo,Family Medicine,2021,414714
 State University Of New York At Buffalo,Internal Medicine,2021,7944783
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2021,5568125
@@ -18779,7 +18779,7 @@ State University Of New York At Buffalo,Total Funding,2021,35304134
 State University Of New York Stony Brook,Anesthesiology,2021,1327854
 State University Of New York Stony Brook,Biochemistry,2021,2942924
 State University Of New York Stony Brook,Biomedical Engineering,2021,1036313
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2021,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2021,0
 State University Of New York Stony Brook,Dermatology,2021,0
 State University Of New York Stony Brook,Emergency Medicine,2021,0
 State University Of New York Stony Brook,Family Medicine,2021,1304403
@@ -18931,7 +18931,7 @@ Tulane University,Total Funding,2021,0
 Tulane University,Urology,2021,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2021,709200
 Tulane University Of Louisiana,Biochemistry,2021,5639819
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2021,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2021,0
 Tulane University Of Louisiana,Internal Medicine,2021,27406904
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2021,10490787
 Tulane University Of Louisiana,Neurology,2021,288580
@@ -19035,7 +19035,7 @@ University Of Arizona,Total Funding,2021,112418094
 University Of Arizona,Urology,2021,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2021,2281906
 University Of Arkansas For Medical Sciences,Biochemistry,2021,3820273
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2021,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2021,0
 University Of Arkansas For Medical Sciences,Family Medicine,2021,820527
 University Of Arkansas For Medical Sciences,Internal Medicine,2021,4615405
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2021,5313596
@@ -19112,7 +19112,7 @@ University Of California Riverside,Total Funding,2021,12425221
 "University Of California, Irvine",Urology,2021,316198
 "University Of California, Los Angeles",Anesthesiology,2021,8706501
 "University Of California, Los Angeles",Biochemistry,2021,13999520
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2021,724659
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2021,724659
 "University Of California, Los Angeles",Family Medicine,2021,3470049
 "University Of California, Los Angeles",Genetics,2021,10176828
 "University Of California, Los Angeles",Internal Medicine,2021,239708951
@@ -19286,7 +19286,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2021,1143158
 University Of Florida,Anatomy/Cell Biology,2021,1535625
 University Of Florida,Anesthesiology,2021,154739
 University Of Florida,Biochemistry,2021,3475916
-University Of Florida,Biostatistics/Other Match Science,2021,4896308
+University Of Florida,Biostatistics/Other Math Science,2021,4896308
 University Of Florida,Dermatology,2021,0
 University Of Florida,Emergency Medicine,2021,1787205
 University Of Florida,Family Medicine,2021,0
@@ -19378,7 +19378,7 @@ University Of Iowa,Urology,2021,627822
 University Of Kansas Medical Center,Anatomy/Cell Biology,2021,5457046
 University Of Kansas Medical Center,Anesthesiology,2021,653630
 University Of Kansas Medical Center,Biochemistry,2021,2771435
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2021,34535
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2021,34535
 University Of Kansas Medical Center,Family Medicine,2021,879747
 University Of Kansas Medical Center,Internal Medicine,2021,17637011
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2021,3327746
@@ -19475,7 +19475,7 @@ University Of Maryland Baltimore,Surgery,2021,13629398
 University Of Maryland Baltimore,Total Funding,2021,202104633
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2021,43377731
 University Of Massachusetts Med Sch Worcester,Biochemistry,2021,12399709
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2021,18490064
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2021,18490064
 University Of Massachusetts Med Sch Worcester,Dermatology,2021,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2021,2781405
 University Of Massachusetts Med Sch Worcester,Family Medicine,2021,0
@@ -19503,7 +19503,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2021,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2021,0
 University Of Massachusetts Worcester,Anesthesiology,2021,0
 University Of Massachusetts Worcester,Biochemistry,2021,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2021,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2021,0
 University Of Massachusetts Worcester,Dermatology,2021,0
 University Of Massachusetts Worcester,Emergency Medicine,2021,0
 University Of Massachusetts Worcester,Family Medicine,2021,0
@@ -19550,7 +19550,7 @@ University Of Miami School Of Medicine,Urology,2021,307000
 University Of Michigan,Anatomy/Cell Biology,2021,12629440
 University Of Michigan,Anesthesiology,2021,21882143
 University Of Michigan,Biochemistry,2021,8375875
-University Of Michigan,Biostatistics/Other Match Science,2021,5978959
+University Of Michigan,Biostatistics/Other Math Science,2021,5978959
 University Of Michigan,Dermatology,2021,4364680
 University Of Michigan,Emergency Medicine,2021,11274311
 University Of Michigan,Engineering All Types,2021,6280640
@@ -19583,7 +19583,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2021,0
 University Of Michigan At Ann Arbor,Anesthesiology,2021,0
 University Of Michigan At Ann Arbor,Biochemistry,2021,0
 University Of Michigan At Ann Arbor,Biomedical Engineering,2021,0
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2021,0
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2021,0
 University Of Michigan At Ann Arbor,Dermatology,2021,0
 University Of Michigan At Ann Arbor,Emergency Medicine,2021,0
 University Of Michigan At Ann Arbor,Engineering All Types,2021,0
@@ -19616,7 +19616,7 @@ University Of Minnesota,Anatomy/Cell Biology,2021,0
 University Of Minnesota,Anesthesiology,2021,0
 University Of Minnesota,Biochemistry,2021,18666078
 University Of Minnesota,Biomedical Engineering,2021,4104102
-University Of Minnesota,Biostatistics/Other Match Science,2021,0
+University Of Minnesota,Biostatistics/Other Math Science,2021,0
 University Of Minnesota,Dermatology,2021,0
 University Of Minnesota,Emergency Medicine,2021,135814
 University Of Minnesota,Family Medicine,2021,8690761
@@ -19825,7 +19825,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2021,0
 University Of Pennsylvania,Anatomy/Cell Biology,2021,22562787
 University Of Pennsylvania,Anesthesiology,2021,6726013
 University Of Pennsylvania,Biochemistry,2021,8624287
-University Of Pennsylvania,Biostatistics/Other Match Science,2021,44146079
+University Of Pennsylvania,Biostatistics/Other Math Science,2021,44146079
 University Of Pennsylvania,Dermatology,2021,6084326
 University Of Pennsylvania,Emergency Medicine,2021,8390779
 University Of Pennsylvania,Family Medicine,2021,460235
@@ -19917,7 +19917,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2021,21192362
 University Of Rochester,Anesthesiology,2021,2539582
 University Of Rochester,Biochemistry,2021,7135933
 University Of Rochester,Biomedical Engineering,2021,4333029
-University Of Rochester,Biostatistics/Other Match Science,2021,1576898
+University Of Rochester,Biostatistics/Other Math Science,2021,1576898
 University Of Rochester,Dentistry,2021,1464215
 University Of Rochester,Dermatology,2021,862530
 University Of Rochester,Emergency Medicine,2021,1304772
@@ -20287,7 +20287,7 @@ University Of Virginia,Urology,2021,0
 University Of Washington,Anatomy/Cell Biology,2021,7240227
 University Of Washington,Anesthesiology,2021,9758100
 University Of Washington,Biochemistry,2021,16216091
-University Of Washington,Biostatistics/Other Match Science,2021,0
+University Of Washington,Biostatistics/Other Math Science,2021,0
 University Of Washington,Emergency Medicine,2021,1565827
 University Of Washington,Engineering All Types,2021,10414997
 University Of Washington,Family Medicine,2021,3551627
@@ -20351,7 +20351,7 @@ University Of Wisconsin Madison,Administration,2021,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2021,13805849
 University Of Wisconsin Madison,Anesthesiology,2021,1699183
 University Of Wisconsin Madison,Biochemistry,2021,8235963
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2021,4605442
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2021,4605442
 University Of Wisconsin Madison,Dermatology,2021,326375
 University Of Wisconsin Madison,Emergency Medicine,2021,1101291
 University Of Wisconsin Madison,Family Medicine,2021,679142
@@ -20427,7 +20427,7 @@ Ut Southwestern Medical Center,Urology,2021,0
 Vanderbilt University,Anatomy/Cell Biology,2021,19220447
 Vanderbilt University,Anesthesiology,2021,7608040
 Vanderbilt University,Biochemistry,2021,30106251
-Vanderbilt University,Biostatistics/Other Match Science,2021,0
+Vanderbilt University,Biostatistics/Other Math Science,2021,0
 Vanderbilt University,Dermatology,2021,0
 Vanderbilt University,Emergency Medicine,2021,3095476
 Vanderbilt University,Internal Medicine,2021,192415235
@@ -20452,7 +20452,7 @@ Vanderbilt University,Total Funding,2021,445537839
 Vanderbilt University,Urology,2021,2375212
 Virginia Commonwealth University,Anatomy/Cell Biology,2021,2773198
 Virginia Commonwealth University,Biochemistry,2021,3183346
-Virginia Commonwealth University,Biostatistics/Other Match Science,2021,532954
+Virginia Commonwealth University,Biostatistics/Other Math Science,2021,532954
 Virginia Commonwealth University,Emergency Medicine,2021,0
 Virginia Commonwealth University,Family Medicine,2021,686352
 Virginia Commonwealth University,Genetics,2021,3889789
@@ -20481,7 +20481,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2021,3128253
 Wake Forest University Health Sciences,Anesthesiology,2021,2481374
 Wake Forest University Health Sciences,Biochemistry,2021,2713443
 Wake Forest University Health Sciences,Biomedical Engineering,2021,1303561
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2021,3869216
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2021,3869216
 Wake Forest University Health Sciences,Emergency Medicine,2021,0
 Wake Forest University Health Sciences,Family Medicine,2021,966969
 Wake Forest University Health Sciences,Internal Medicine,2021,55529947
@@ -20511,7 +20511,7 @@ Washington State University,Total Funding,2021,9549144
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2021,11477374
 Washington University School Of Medicine In St. Louis,Anesthesiology,2021,21004831
 Washington University School Of Medicine In St. Louis,Biochemistry,2021,9060333
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2021,8701503
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2021,8701503
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2021,7270557
 Washington University School Of Medicine In St. Louis,Genetics,2021,33661830
 Washington University School Of Medicine In St. Louis,Internal Medicine,2021,121384528
@@ -20673,7 +20673,7 @@ Albert Einstein College Of Medicine,Total Funding,2022,199464815
 Albert Einstein College Of Medicine,Urology,2022,482293
 Augusta University,Anatomy/Cell Biology,2022,5553271
 Augusta University,Biochemistry,2022,2699488
-Augusta University,Biostatistics/Other Match Science,2022,2024162
+Augusta University,Biostatistics/Other Math Science,2022,2024162
 Augusta University,Internal Medicine,2022,14428887
 Augusta University,Neurology,2022,248320
 Augusta University,Neurosciences,2022,3857620
@@ -20784,7 +20784,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2022,652355
 Case Western Reserve University,Anesthesiology,2022,0
 Case Western Reserve University,Biochemistry,2022,0
 Case Western Reserve University,Biomedical Engineering,2022,0
-Case Western Reserve University,Biostatistics/Other Match Science,2022,0
+Case Western Reserve University,Biostatistics/Other Math Science,2022,0
 Case Western Reserve University,Dermatology,2022,0
 Case Western Reserve University,Engineering All Types,2022,0
 Case Western Reserve University,Family Medicine,2022,0
@@ -20885,7 +20885,7 @@ Drexel University,Total Funding,2022,21180954
 Duke University,Anatomy/Cell Biology,2022,9277658
 Duke University,Anesthesiology,2022,20666059
 Duke University,Biochemistry,2022,7590518
-Duke University,Biostatistics/Other Match Science,2022,9972332
+Duke University,Biostatistics/Other Math Science,2022,9972332
 Duke University,Dermatology,2022,3763375
 Duke University,Emergency Medicine,2022,1554852
 Duke University,Family Medicine,2022,765240
@@ -21000,7 +21000,7 @@ George Washington University,Psychiatry,2022,1611733
 George Washington University,Surgery,2022,752803
 George Washington University,Total Funding,2022,34251356
 Georgetown University,Biochemistry,2022,1760866
-Georgetown University,Biostatistics/Other Match Science,2022,215910
+Georgetown University,Biostatistics/Other Math Science,2022,215910
 Georgetown University,Family Medicine,2022,0
 Georgetown University,Internal Medicine,2022,21807355
 Georgetown University,Microbiology/Immunology/Virology,2022,580698
@@ -21102,7 +21102,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2022,2021520
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2022,12811477
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2022,677476
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2022,10341222
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2022,2136187
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2022,2136187
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2022,1029922
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2022,1557606
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2022,0
@@ -21132,7 +21132,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2022,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2022,0
 Indiana University Indianapolis,Anesthesiology,2022,0
 Indiana University Indianapolis,Biochemistry,2022,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2022,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2022,0
 Indiana University Indianapolis,Dermatology,2022,0
 Indiana University Indianapolis,Emergency Medicine,2022,0
 Indiana University Indianapolis,Family Medicine,2022,0
@@ -21162,7 +21162,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2022,13666215
 Johns Hopkins University,Anesthesiology,2022,13034628
 Johns Hopkins University,Biochemistry,2022,11281948
 Johns Hopkins University,Biomedical Engineering,2022,19188822
-Johns Hopkins University,Biostatistics/Other Match Science,2022,0
+Johns Hopkins University,Biostatistics/Other Math Science,2022,0
 Johns Hopkins University,Dermatology,2022,4065548
 Johns Hopkins University,Emergency Medicine,2022,325816
 Johns Hopkins University,Genetics,2022,10897800
@@ -21439,7 +21439,7 @@ Ohio State University,Administration,2022,0
 Ohio State University,Anatomy/Cell Biology,2022,140963
 Ohio State University,Anesthesiology,2022,422014
 Ohio State University,Biochemistry,2022,5606280
-Ohio State University,Biostatistics/Other Match Science,2022,0
+Ohio State University,Biostatistics/Other Math Science,2022,0
 Ohio State University,Emergency Medicine,2022,1280775
 Ohio State University,Family Medicine,2022,218886
 Ohio State University,Genetics,2022,3176359
@@ -21476,7 +21476,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2022,4981951
 Oregon Health & Science University,Anesthesiology,2022,1788905
 Oregon Health & Science University,Biochemistry,2022,937792
 Oregon Health & Science University,Biomedical Engineering,2022,5139475
-Oregon Health & Science University,Biostatistics/Other Match Science,2022,4888772
+Oregon Health & Science University,Biostatistics/Other Math Science,2022,4888772
 Oregon Health & Science University,Dermatology,2022,720580
 Oregon Health & Science University,Emergency Medicine,2022,1654205
 Oregon Health & Science University,Engineering All Types,2022,0
@@ -21675,7 +21675,7 @@ Stanford University,Anesthesiology,2022,7245873
 Stanford University,Biochemistry,2022,9732883
 Stanford University,Biomedical Engineering,2022,28540939
 Stanford University,Biophysics,2022,10960731
-Stanford University,Biostatistics/Other Match Science,2022,0
+Stanford University,Biostatistics/Other Math Science,2022,0
 Stanford University,Dermatology,2022,8614079
 Stanford University,Emergency Medicine,2022,2251830
 Stanford University,Genetics,2022,37293897
@@ -21705,7 +21705,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2022,714613
 State University Of New York At Buffalo,Anesthesiology,2022,436772
 State University Of New York At Buffalo,Biochemistry,2022,4216291
 State University Of New York At Buffalo,Biomedical Engineering,2022,3692835
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2022,785522
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2022,785522
 State University Of New York At Buffalo,Family Medicine,2022,0
 State University Of New York At Buffalo,Internal Medicine,2022,7543696
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2022,5243535
@@ -21727,7 +21727,7 @@ State University Of New York At Buffalo,Total Funding,2022,42269604
 State University Of New York Stony Brook,Anesthesiology,2022,5772150
 State University Of New York Stony Brook,Biochemistry,2022,1393323
 State University Of New York Stony Brook,Biomedical Engineering,2022,555876
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2022,0
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2022,0
 State University Of New York Stony Brook,Dermatology,2022,0
 State University Of New York Stony Brook,Emergency Medicine,2022,0
 State University Of New York Stony Brook,Family Medicine,2022,735984
@@ -21879,7 +21879,7 @@ Tulane University,Total Funding,2022,0
 Tulane University,Urology,2022,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2022,675146
 Tulane University Of Louisiana,Biochemistry,2022,9552698
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2022,2247643
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2022,2247643
 Tulane University Of Louisiana,Internal Medicine,2022,28571276
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2022,10834805
 Tulane University Of Louisiana,Neurology,2022,0
@@ -21983,7 +21983,7 @@ University Of Arizona,Total Funding,2022,114114676
 University Of Arizona,Urology,2022,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2022,2283458
 University Of Arkansas For Medical Sciences,Biochemistry,2022,3882722
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2022,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2022,0
 University Of Arkansas For Medical Sciences,Family Medicine,2022,615895
 University Of Arkansas For Medical Sciences,Internal Medicine,2022,7980425
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2022,12433711
@@ -22060,7 +22060,7 @@ University Of California Riverside,Total Funding,2022,12412772
 "University Of California, Irvine",Urology,2022,686826
 "University Of California, Los Angeles",Anesthesiology,2022,9301406
 "University Of California, Los Angeles",Biochemistry,2022,9428542
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2022,1035390
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2022,1035390
 "University Of California, Los Angeles",Family Medicine,2022,3855041
 "University Of California, Los Angeles",Genetics,2022,14204088
 "University Of California, Los Angeles",Internal Medicine,2022,252287769
@@ -22234,7 +22234,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2022,2206951
 University Of Florida,Anatomy/Cell Biology,2022,1074857
 University Of Florida,Anesthesiology,2022,632737
 University Of Florida,Biochemistry,2022,3275143
-University Of Florida,Biostatistics/Other Match Science,2022,0
+University Of Florida,Biostatistics/Other Math Science,2022,0
 University Of Florida,Dermatology,2022,0
 University Of Florida,Emergency Medicine,2022,4447667
 University Of Florida,Family Medicine,2022,0
@@ -22326,7 +22326,7 @@ University Of Iowa,Urology,2022,473433
 University Of Kansas Medical Center,Anatomy/Cell Biology,2022,0
 University Of Kansas Medical Center,Anesthesiology,2022,4924829
 University Of Kansas Medical Center,Biochemistry,2022,2165447
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2022,111803
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2022,111803
 University Of Kansas Medical Center,Family Medicine,2022,816156
 University Of Kansas Medical Center,Internal Medicine,2022,17835359
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2022,3642823
@@ -22423,7 +22423,7 @@ University Of Maryland Baltimore,Surgery,2022,9090450
 University Of Maryland Baltimore,Total Funding,2022,197468744
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2022,0
 University Of Massachusetts Med Sch Worcester,Biochemistry,2022,0
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2022,0
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2022,0
 University Of Massachusetts Med Sch Worcester,Dermatology,2022,0
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2022,0
 University Of Massachusetts Med Sch Worcester,Family Medicine,2022,0
@@ -22451,7 +22451,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2022,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2022,44870085
 University Of Massachusetts Worcester,Anesthesiology,2022,810172
 University Of Massachusetts Worcester,Biochemistry,2022,11425599
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2022,16567801
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2022,16567801
 University Of Massachusetts Worcester,Dermatology,2022,1678998
 University Of Massachusetts Worcester,Emergency Medicine,2022,2575990
 University Of Massachusetts Worcester,Family Medicine,2022,955477
@@ -22498,7 +22498,7 @@ University Of Miami School Of Medicine,Urology,2022,307000
 University Of Michigan,Anatomy/Cell Biology,2022,0
 University Of Michigan,Anesthesiology,2022,0
 University Of Michigan,Biochemistry,2022,0
-University Of Michigan,Biostatistics/Other Match Science,2022,0
+University Of Michigan,Biostatistics/Other Math Science,2022,0
 University Of Michigan,Dermatology,2022,0
 University Of Michigan,Emergency Medicine,2022,0
 University Of Michigan,Engineering All Types,2022,0
@@ -22531,7 +22531,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2022,13249887
 University Of Michigan At Ann Arbor,Anesthesiology,2022,22365701
 University Of Michigan At Ann Arbor,Biochemistry,2022,9022640
 University Of Michigan At Ann Arbor,Biomedical Engineering,2022,14475350
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2022,6365236
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2022,6365236
 University Of Michigan At Ann Arbor,Dermatology,2022,4601380
 University Of Michigan At Ann Arbor,Emergency Medicine,2022,15890203
 University Of Michigan At Ann Arbor,Engineering All Types,2022,0
@@ -22564,7 +22564,7 @@ University Of Minnesota,Anatomy/Cell Biology,2022,0
 University Of Minnesota,Anesthesiology,2022,0
 University Of Minnesota,Biochemistry,2022,85388699
 University Of Minnesota,Biomedical Engineering,2022,7992337
-University Of Minnesota,Biostatistics/Other Match Science,2022,431825
+University Of Minnesota,Biostatistics/Other Math Science,2022,431825
 University Of Minnesota,Dermatology,2022,0
 University Of Minnesota,Emergency Medicine,2022,714189
 University Of Minnesota,Family Medicine,2022,13836873
@@ -22773,7 +22773,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2022,50752910
 University Of Pennsylvania,Anatomy/Cell Biology,2022,23496224
 University Of Pennsylvania,Anesthesiology,2022,4645761
 University Of Pennsylvania,Biochemistry,2022,10848003
-University Of Pennsylvania,Biostatistics/Other Match Science,2022,23956426
+University Of Pennsylvania,Biostatistics/Other Math Science,2022,23956426
 University Of Pennsylvania,Dermatology,2022,7874423
 University Of Pennsylvania,Emergency Medicine,2022,2978738
 University Of Pennsylvania,Family Medicine,2022,789376
@@ -22865,7 +22865,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2022,19770803
 University Of Rochester,Anesthesiology,2022,2213939
 University Of Rochester,Biochemistry,2022,7013242
 University Of Rochester,Biomedical Engineering,2022,1771547
-University Of Rochester,Biostatistics/Other Match Science,2022,1729094
+University Of Rochester,Biostatistics/Other Math Science,2022,1729094
 University Of Rochester,Dentistry,2022,2418055
 University Of Rochester,Dermatology,2022,1336188
 University Of Rochester,Emergency Medicine,2022,415063
@@ -23235,7 +23235,7 @@ University Of Virginia,Urology,2022,0
 University Of Washington,Anatomy/Cell Biology,2022,0
 University Of Washington,Anesthesiology,2022,0
 University Of Washington,Biochemistry,2022,0
-University Of Washington,Biostatistics/Other Match Science,2022,0
+University Of Washington,Biostatistics/Other Math Science,2022,0
 University Of Washington,Emergency Medicine,2022,0
 University Of Washington,Engineering All Types,2022,0
 University Of Washington,Family Medicine,2022,0
@@ -23299,7 +23299,7 @@ University Of Wisconsin Madison,Administration,2022,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2022,6999046
 University Of Wisconsin Madison,Anesthesiology,2022,1791146
 University Of Wisconsin Madison,Biochemistry,2022,8159207
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2022,6999830
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2022,6999830
 University Of Wisconsin Madison,Dermatology,2022,874132
 University Of Wisconsin Madison,Emergency Medicine,2022,1765501
 University Of Wisconsin Madison,Family Medicine,2022,1307208
@@ -23375,7 +23375,7 @@ Ut Southwestern Medical Center,Urology,2022,0
 Vanderbilt University,Anatomy/Cell Biology,2022,23464683
 Vanderbilt University,Anesthesiology,2022,8156344
 Vanderbilt University,Biochemistry,2022,17432166
-Vanderbilt University,Biostatistics/Other Match Science,2022,0
+Vanderbilt University,Biostatistics/Other Math Science,2022,0
 Vanderbilt University,Dermatology,2022,0
 Vanderbilt University,Emergency Medicine,2022,1906223
 Vanderbilt University,Internal Medicine,2022,214240114
@@ -23400,7 +23400,7 @@ Vanderbilt University,Total Funding,2022,483115242
 Vanderbilt University,Urology,2022,2571525
 Virginia Commonwealth University,Anatomy/Cell Biology,2022,2146438
 Virginia Commonwealth University,Biochemistry,2022,3735445
-Virginia Commonwealth University,Biostatistics/Other Match Science,2022,1370782
+Virginia Commonwealth University,Biostatistics/Other Math Science,2022,1370782
 Virginia Commonwealth University,Emergency Medicine,2022,0
 Virginia Commonwealth University,Family Medicine,2022,1770460
 Virginia Commonwealth University,Genetics,2022,3845671
@@ -23429,7 +23429,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2022,2433337
 Wake Forest University Health Sciences,Anesthesiology,2022,6892879
 Wake Forest University Health Sciences,Biochemistry,2022,3309803
 Wake Forest University Health Sciences,Biomedical Engineering,2022,2522940
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2022,3053015
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2022,3053015
 Wake Forest University Health Sciences,Emergency Medicine,2022,0
 Wake Forest University Health Sciences,Family Medicine,2022,740206
 Wake Forest University Health Sciences,Internal Medicine,2022,60339351
@@ -23459,7 +23459,7 @@ Washington State University,Total Funding,2022,8302448
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2022,10787447
 Washington University School Of Medicine In St. Louis,Anesthesiology,2022,17383973
 Washington University School Of Medicine In St. Louis,Biochemistry,2022,7613903
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2022,8943296
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2022,8943296
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2022,0
 Washington University School Of Medicine In St. Louis,Genetics,2022,24645705
 Washington University School Of Medicine In St. Louis,Internal Medicine,2022,140490402
@@ -23621,7 +23621,7 @@ Albert Einstein College Of Medicine,Total Funding,2023,192797706
 Albert Einstein College Of Medicine,Urology,2023,1366008
 Augusta University,Anatomy/Cell Biology,2023,7181550
 Augusta University,Biochemistry,2023,4618518
-Augusta University,Biostatistics/Other Match Science,2023,716852
+Augusta University,Biostatistics/Other Math Science,2023,716852
 Augusta University,Internal Medicine,2023,13577498
 Augusta University,Neurology,2023,815584
 Augusta University,Neurosciences,2023,4691794
@@ -23732,7 +23732,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2023,0
 Case Western Reserve University,Anesthesiology,2023,1636040
 Case Western Reserve University,Biochemistry,2023,12817316
 Case Western Reserve University,Biomedical Engineering,2023,4574652
-Case Western Reserve University,Biostatistics/Other Match Science,2023,0
+Case Western Reserve University,Biostatistics/Other Math Science,2023,0
 Case Western Reserve University,Dermatology,2023,1171847
 Case Western Reserve University,Engineering All Types,2023,3620064
 Case Western Reserve University,Family Medicine,2023,1135815
@@ -23833,7 +23833,7 @@ Drexel University,Total Funding,2023,18791305
 Duke University,Anatomy/Cell Biology,2023,11930187
 Duke University,Anesthesiology,2023,18165424
 Duke University,Biochemistry,2023,7872110
-Duke University,Biostatistics/Other Match Science,2023,13593576
+Duke University,Biostatistics/Other Math Science,2023,13593576
 Duke University,Dermatology,2023,2305985
 Duke University,Emergency Medicine,2023,1401089
 Duke University,Family Medicine,2023,2910117
@@ -23948,7 +23948,7 @@ George Washington University,Psychiatry,2023,1642453
 George Washington University,Surgery,2023,0
 George Washington University,Total Funding,2023,35612020
 Georgetown University,Biochemistry,2023,1617026
-Georgetown University,Biostatistics/Other Match Science,2023,175857
+Georgetown University,Biostatistics/Other Math Science,2023,175857
 Georgetown University,Family Medicine,2023,0
 Georgetown University,Internal Medicine,2023,24377941
 Georgetown University,Microbiology/Immunology/Virology,2023,220560
@@ -24050,7 +24050,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2023,3435990
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2023,7776928
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2023,240872
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2023,8522959
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2023,1273734
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2023,1273734
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2023,1187551
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2023,472564
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2023,250750
@@ -24080,7 +24080,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2023,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2023,0
 Indiana University Indianapolis,Anesthesiology,2023,0
 Indiana University Indianapolis,Biochemistry,2023,0
-Indiana University Indianapolis,Biostatistics/Other Match Science,2023,0
+Indiana University Indianapolis,Biostatistics/Other Math Science,2023,0
 Indiana University Indianapolis,Dermatology,2023,0
 Indiana University Indianapolis,Emergency Medicine,2023,0
 Indiana University Indianapolis,Family Medicine,2023,0
@@ -24110,7 +24110,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2023,17956700
 Johns Hopkins University,Anesthesiology,2023,7786247
 Johns Hopkins University,Biochemistry,2023,15246468
 Johns Hopkins University,Biomedical Engineering,2023,17367553
-Johns Hopkins University,Biostatistics/Other Match Science,2023,0
+Johns Hopkins University,Biostatistics/Other Math Science,2023,0
 Johns Hopkins University,Dermatology,2023,2459847
 Johns Hopkins University,Emergency Medicine,2023,460337
 Johns Hopkins University,Genetics,2023,11263090
@@ -24387,7 +24387,7 @@ Ohio State University,Administration,2023,0
 Ohio State University,Anatomy/Cell Biology,2023,139968
 Ohio State University,Anesthesiology,2023,393596
 Ohio State University,Biochemistry,2023,4478376
-Ohio State University,Biostatistics/Other Match Science,2023,0
+Ohio State University,Biostatistics/Other Math Science,2023,0
 Ohio State University,Emergency Medicine,2023,3233386
 Ohio State University,Family Medicine,2023,1419330
 Ohio State University,Genetics,2023,3050769
@@ -24424,7 +24424,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2023,3146901
 Oregon Health & Science University,Anesthesiology,2023,5743973
 Oregon Health & Science University,Biochemistry,2023,1332059
 Oregon Health & Science University,Biomedical Engineering,2023,7374831
-Oregon Health & Science University,Biostatistics/Other Match Science,2023,8951077
+Oregon Health & Science University,Biostatistics/Other Math Science,2023,8951077
 Oregon Health & Science University,Dermatology,2023,587008
 Oregon Health & Science University,Emergency Medicine,2023,3356842
 Oregon Health & Science University,Engineering All Types,2023,0
@@ -24623,7 +24623,7 @@ Stanford University,Anesthesiology,2023,25359262
 Stanford University,Biochemistry,2023,6252817
 Stanford University,Biomedical Engineering,2023,33753454
 Stanford University,Biophysics,2023,12817774
-Stanford University,Biostatistics/Other Match Science,2023,3320339
+Stanford University,Biostatistics/Other Math Science,2023,3320339
 Stanford University,Dermatology,2023,8176340
 Stanford University,Emergency Medicine,2023,2312404
 Stanford University,Genetics,2023,33996309
@@ -24653,7 +24653,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2023,785648
 State University Of New York At Buffalo,Anesthesiology,2023,436772
 State University Of New York At Buffalo,Biochemistry,2023,3602667
 State University Of New York At Buffalo,Biomedical Engineering,2023,0
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2023,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2023,0
 State University Of New York At Buffalo,Family Medicine,2023,0
 State University Of New York At Buffalo,Internal Medicine,2023,7620522
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2023,6108811
@@ -24675,7 +24675,7 @@ State University Of New York At Buffalo,Total Funding,2023,39949667
 State University Of New York Stony Brook,Anesthesiology,2023,3596831
 State University Of New York Stony Brook,Biochemistry,2023,705105
 State University Of New York Stony Brook,Biomedical Engineering,2023,372087
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2023,580607
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2023,580607
 State University Of New York Stony Brook,Dermatology,2023,0
 State University Of New York Stony Brook,Emergency Medicine,2023,0
 State University Of New York Stony Brook,Family Medicine,2023,0
@@ -24827,7 +24827,7 @@ Tulane University,Total Funding,2023,0
 Tulane University,Urology,2023,0
 Tulane University Of Louisiana,Anatomy/Cell Biology,2023,0
 Tulane University Of Louisiana,Biochemistry,2023,8033532
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2023,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2023,0
 Tulane University Of Louisiana,Internal Medicine,2023,27541694
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2023,11039612
 Tulane University Of Louisiana,Neurology,2023,0
@@ -24931,7 +24931,7 @@ University Of Arizona,Total Funding,2023,122689602
 University Of Arizona,Urology,2023,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2023,572437
 University Of Arkansas For Medical Sciences,Biochemistry,2023,4264861
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2023,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2023,0
 University Of Arkansas For Medical Sciences,Family Medicine,2023,603498
 University Of Arkansas For Medical Sciences,Internal Medicine,2023,7856622
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2023,4529618
@@ -25008,7 +25008,7 @@ University Of California Riverside,Total Funding,2023,9568820
 "University Of California, Irvine",Urology,2023,1319743
 "University Of California, Los Angeles",Anesthesiology,2023,9129017
 "University Of California, Los Angeles",Biochemistry,2023,13633723
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2023,1952915
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2023,1952915
 "University Of California, Los Angeles",Family Medicine,2023,5044646
 "University Of California, Los Angeles",Genetics,2023,12744063
 "University Of California, Los Angeles",Internal Medicine,2023,234206106
@@ -25182,7 +25182,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2023,3263716
 University Of Florida,Anatomy/Cell Biology,2023,739151
 University Of Florida,Anesthesiology,2023,632737
 University Of Florida,Biochemistry,2023,9808784
-University Of Florida,Biostatistics/Other Match Science,2023,0
+University Of Florida,Biostatistics/Other Math Science,2023,0
 University Of Florida,Dermatology,2023,161568
 University Of Florida,Emergency Medicine,2023,4802301
 University Of Florida,Family Medicine,2023,0
@@ -25274,7 +25274,7 @@ University Of Iowa,Urology,2023,439082
 University Of Kansas Medical Center,Anatomy/Cell Biology,2023,0
 University Of Kansas Medical Center,Anesthesiology,2023,6026191
 University Of Kansas Medical Center,Biochemistry,2023,2788456
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2023,130069
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2023,130069
 University Of Kansas Medical Center,Family Medicine,2023,1604848
 University Of Kansas Medical Center,Internal Medicine,2023,27460962
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2023,4703096
@@ -25371,7 +25371,7 @@ University Of Maryland Baltimore,Surgery,2023,8484077
 University Of Maryland Baltimore,Total Funding,2023,179092882
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2023,40283357
 University Of Massachusetts Med Sch Worcester,Biochemistry,2023,11820059
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2023,0
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2023,0
 University Of Massachusetts Med Sch Worcester,Dermatology,2023,2927080
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2023,6036045
 University Of Massachusetts Med Sch Worcester,Family Medicine,2023,861827
@@ -25399,7 +25399,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2023,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2023,0
 University Of Massachusetts Worcester,Anesthesiology,2023,0
 University Of Massachusetts Worcester,Biochemistry,2023,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2023,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2023,0
 University Of Massachusetts Worcester,Dermatology,2023,0
 University Of Massachusetts Worcester,Emergency Medicine,2023,0
 University Of Massachusetts Worcester,Family Medicine,2023,0
@@ -25446,7 +25446,7 @@ University Of Miami School Of Medicine,Urology,2023,2074130
 University Of Michigan,Anatomy/Cell Biology,2023,0
 University Of Michigan,Anesthesiology,2023,0
 University Of Michigan,Biochemistry,2023,0
-University Of Michigan,Biostatistics/Other Match Science,2023,0
+University Of Michigan,Biostatistics/Other Math Science,2023,0
 University Of Michigan,Dermatology,2023,0
 University Of Michigan,Emergency Medicine,2023,0
 University Of Michigan,Engineering All Types,2023,0
@@ -25479,7 +25479,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2023,16393413
 University Of Michigan At Ann Arbor,Anesthesiology,2023,9381388
 University Of Michigan At Ann Arbor,Biochemistry,2023,9735372
 University Of Michigan At Ann Arbor,Biomedical Engineering,2023,13696641
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2023,7371980
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2023,7371980
 University Of Michigan At Ann Arbor,Dermatology,2023,6202754
 University Of Michigan At Ann Arbor,Emergency Medicine,2023,10567563
 University Of Michigan At Ann Arbor,Engineering All Types,2023,0
@@ -25512,7 +25512,7 @@ University Of Minnesota,Anatomy/Cell Biology,2023,381149
 University Of Minnesota,Anesthesiology,2023,840307
 University Of Minnesota,Biochemistry,2023,18154271
 University Of Minnesota,Biomedical Engineering,2023,13385769
-University Of Minnesota,Biostatistics/Other Match Science,2023,0
+University Of Minnesota,Biostatistics/Other Math Science,2023,0
 University Of Minnesota,Dermatology,2023,0
 University Of Minnesota,Emergency Medicine,2023,896812
 University Of Minnesota,Family Medicine,2023,23529038
@@ -25721,7 +25721,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2023,55902614
 University Of Pennsylvania,Anatomy/Cell Biology,2023,18515844
 University Of Pennsylvania,Anesthesiology,2023,7561869
 University Of Pennsylvania,Biochemistry,2023,11493506
-University Of Pennsylvania,Biostatistics/Other Match Science,2023,32005318
+University Of Pennsylvania,Biostatistics/Other Math Science,2023,32005318
 University Of Pennsylvania,Dermatology,2023,7213493
 University Of Pennsylvania,Emergency Medicine,2023,5330889
 University Of Pennsylvania,Family Medicine,2023,715371
@@ -25813,7 +25813,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2023,20795891
 University Of Rochester,Anesthesiology,2023,2208416
 University Of Rochester,Biochemistry,2023,7783554
 University Of Rochester,Biomedical Engineering,2023,1721818
-University Of Rochester,Biostatistics/Other Match Science,2023,3227851
+University Of Rochester,Biostatistics/Other Math Science,2023,3227851
 University Of Rochester,Dentistry,2023,2488011
 University Of Rochester,Dermatology,2023,916392
 University Of Rochester,Emergency Medicine,2023,345230
@@ -26183,7 +26183,7 @@ University Of Virginia,Urology,2023,0
 University Of Washington,Anatomy/Cell Biology,2023,0
 University Of Washington,Anesthesiology,2023,0
 University Of Washington,Biochemistry,2023,0
-University Of Washington,Biostatistics/Other Match Science,2023,0
+University Of Washington,Biostatistics/Other Math Science,2023,0
 University Of Washington,Emergency Medicine,2023,0
 University Of Washington,Engineering All Types,2023,0
 University Of Washington,Family Medicine,2023,0
@@ -26247,7 +26247,7 @@ University Of Wisconsin Madison,Administration,2023,8000000
 University Of Wisconsin Madison,Anatomy/Cell Biology,2023,6960050
 University Of Wisconsin Madison,Anesthesiology,2023,2507112
 University Of Wisconsin Madison,Biochemistry,2023,8021917
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2023,6719215
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2023,6719215
 University Of Wisconsin Madison,Dermatology,2023,863181
 University Of Wisconsin Madison,Emergency Medicine,2023,705626
 University Of Wisconsin Madison,Family Medicine,2023,900566
@@ -26323,7 +26323,7 @@ Ut Southwestern Medical Center,Urology,2023,0
 Vanderbilt University,Anatomy/Cell Biology,2023,20727927
 Vanderbilt University,Anesthesiology,2023,11721520
 Vanderbilt University,Biochemistry,2023,14964584
-Vanderbilt University,Biostatistics/Other Match Science,2023,0
+Vanderbilt University,Biostatistics/Other Math Science,2023,0
 Vanderbilt University,Dermatology,2023,684185
 Vanderbilt University,Emergency Medicine,2023,14175820
 Vanderbilt University,Internal Medicine,2023,266827394
@@ -26348,7 +26348,7 @@ Vanderbilt University,Total Funding,2023,527736361
 Vanderbilt University,Urology,2023,3054506
 Virginia Commonwealth University,Anatomy/Cell Biology,2023,1724101
 Virginia Commonwealth University,Biochemistry,2023,4365187
-Virginia Commonwealth University,Biostatistics/Other Match Science,2023,1782486
+Virginia Commonwealth University,Biostatistics/Other Math Science,2023,1782486
 Virginia Commonwealth University,Emergency Medicine,2023,375616
 Virginia Commonwealth University,Family Medicine,2023,1815393
 Virginia Commonwealth University,Genetics,2023,4479683
@@ -26377,7 +26377,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2023,2876453
 Wake Forest University Health Sciences,Anesthesiology,2023,11803750
 Wake Forest University Health Sciences,Biochemistry,2023,3875550
 Wake Forest University Health Sciences,Biomedical Engineering,2023,2728190
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2023,3980103
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2023,3980103
 Wake Forest University Health Sciences,Emergency Medicine,2023,0
 Wake Forest University Health Sciences,Family Medicine,2023,1511999
 Wake Forest University Health Sciences,Internal Medicine,2023,60666605
@@ -26407,7 +26407,7 @@ Washington State University,Total Funding,2023,10239456
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2023,10154411
 Washington University School Of Medicine In St. Louis,Anesthesiology,2023,23775845
 Washington University School Of Medicine In St. Louis,Biochemistry,2023,10008296
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2023,8823214
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2023,8823214
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2023,759673
 Washington University School Of Medicine In St. Louis,Genetics,2023,32822443
 Washington University School Of Medicine In St. Louis,Internal Medicine,2023,132907419
@@ -26569,7 +26569,7 @@ Albert Einstein College Of Medicine,Total Funding,2024,192432013
 Albert Einstein College Of Medicine,Urology,2024,1970139
 Augusta University,Anatomy/Cell Biology,2024,7977405
 Augusta University,Biochemistry,2024,5321498
-Augusta University,Biostatistics/Other Match Science,2024,530013
+Augusta University,Biostatistics/Other Math Science,2024,530013
 Augusta University,Internal Medicine,2024,12933763
 Augusta University,Neurology,2024,4199209
 Augusta University,Neurosciences,2024,9583401
@@ -26680,7 +26680,7 @@ Case Western Reserve U & Cleveland Clinic Lerner Com,Urology,2024,1992906
 Case Western Reserve University,Anesthesiology,2024,0
 Case Western Reserve University,Biochemistry,2024,0
 Case Western Reserve University,Biomedical Engineering,2024,0
-Case Western Reserve University,Biostatistics/Other Match Science,2024,0
+Case Western Reserve University,Biostatistics/Other Math Science,2024,0
 Case Western Reserve University,Dermatology,2024,0
 Case Western Reserve University,Engineering All Types,2024,0
 Case Western Reserve University,Family Medicine,2024,0
@@ -26781,7 +26781,7 @@ Drexel University,Total Funding,2024,21138036
 Duke University,Anatomy/Cell Biology,2024,10915398
 Duke University,Anesthesiology,2024,12905331
 Duke University,Biochemistry,2024,9090851
-Duke University,Biostatistics/Other Match Science,2024,14533000
+Duke University,Biostatistics/Other Math Science,2024,14533000
 Duke University,Dermatology,2024,2429241
 Duke University,Emergency Medicine,2024,1573620
 Duke University,Family Medicine,2024,352406
@@ -26896,7 +26896,7 @@ George Washington University,Psychiatry,2024,1222312
 George Washington University,Surgery,2024,0
 George Washington University,Total Funding,2024,37590264
 Georgetown University,Biochemistry,2024,2940782
-Georgetown University,Biostatistics/Other Match Science,2024,0
+Georgetown University,Biostatistics/Other Math Science,2024,0
 Georgetown University,Family Medicine,2024,0
 Georgetown University,Internal Medicine,2024,24679380
 Georgetown University,Microbiology/Immunology/Virology,2024,1866488
@@ -26998,7 +26998,7 @@ Icahn School Of Medicine At Mount Sinai,Urology,2024,2715694
 Indiana Univ-Purdue Univ At Indianapolis,Anatomy/Cell Biology,2024,0
 Indiana Univ-Purdue Univ At Indianapolis,Anesthesiology,2024,0
 Indiana Univ-Purdue Univ At Indianapolis,Biochemistry,2024,0
-Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Match Science,2024,0
+Indiana Univ-Purdue Univ At Indianapolis,Biostatistics/Other Math Science,2024,0
 Indiana Univ-Purdue Univ At Indianapolis,Dermatology,2024,0
 Indiana Univ-Purdue Univ At Indianapolis,Emergency Medicine,2024,0
 Indiana Univ-Purdue Univ At Indianapolis,Family Medicine,2024,0
@@ -27028,7 +27028,7 @@ Indiana Univ-Purdue Univ At Indianapolis,Veterinary Sciences,2024,0
 Indiana University Indianapolis,Anatomy/Cell Biology,2024,10484952
 Indiana University Indianapolis,Anesthesiology,2024,608358
 Indiana University Indianapolis,Biochemistry,2024,7013083
-Indiana University Indianapolis,Biostatistics/Other Match Science,2024,6615431
+Indiana University Indianapolis,Biostatistics/Other Math Science,2024,6615431
 Indiana University Indianapolis,Dermatology,2024,1035828
 Indiana University Indianapolis,Emergency Medicine,2024,2629434
 Indiana University Indianapolis,Family Medicine,2024,924113
@@ -27058,7 +27058,7 @@ Johns Hopkins University,Anatomy/Cell Biology,2024,19013755
 Johns Hopkins University,Anesthesiology,2024,6886109
 Johns Hopkins University,Biochemistry,2024,13144612
 Johns Hopkins University,Biomedical Engineering,2024,13903833
-Johns Hopkins University,Biostatistics/Other Match Science,2024,0
+Johns Hopkins University,Biostatistics/Other Math Science,2024,0
 Johns Hopkins University,Dermatology,2024,2145486
 Johns Hopkins University,Emergency Medicine,2024,1000939
 Johns Hopkins University,Genetics,2024,11987273
@@ -27335,7 +27335,7 @@ Ohio State University,Administration,2024,0
 Ohio State University,Anatomy/Cell Biology,2024,133325
 Ohio State University,Anesthesiology,2024,9963
 Ohio State University,Biochemistry,2024,5138239
-Ohio State University,Biostatistics/Other Match Science,2024,0
+Ohio State University,Biostatistics/Other Math Science,2024,0
 Ohio State University,Emergency Medicine,2024,2877553
 Ohio State University,Family Medicine,2024,1486353
 Ohio State University,Genetics,2024,3741841
@@ -27372,7 +27372,7 @@ Oregon Health & Science University,Anatomy/Cell Biology,2024,2690508
 Oregon Health & Science University,Anesthesiology,2024,1640636
 Oregon Health & Science University,Biochemistry,2024,2120073
 Oregon Health & Science University,Biomedical Engineering,2024,9978260
-Oregon Health & Science University,Biostatistics/Other Match Science,2024,10707972
+Oregon Health & Science University,Biostatistics/Other Math Science,2024,10707972
 Oregon Health & Science University,Dermatology,2024,1362692
 Oregon Health & Science University,Emergency Medicine,2024,4557666
 Oregon Health & Science University,Engineering All Types,2024,0
@@ -27571,7 +27571,7 @@ Stanford University,Anesthesiology,2024,23088142
 Stanford University,Biochemistry,2024,6714030
 Stanford University,Biomedical Engineering,2024,28496863
 Stanford University,Biophysics,2024,13417833
-Stanford University,Biostatistics/Other Match Science,2024,3326999
+Stanford University,Biostatistics/Other Math Science,2024,3326999
 Stanford University,Dermatology,2024,6049198
 Stanford University,Emergency Medicine,2024,8913416
 Stanford University,Genetics,2024,37504725
@@ -27601,7 +27601,7 @@ State University Of New York At Buffalo,Anatomy/Cell Biology,2024,945433
 State University Of New York At Buffalo,Anesthesiology,2024,0
 State University Of New York At Buffalo,Biochemistry,2024,2767433
 State University Of New York At Buffalo,Biomedical Engineering,2024,3880932
-State University Of New York At Buffalo,Biostatistics/Other Match Science,2024,0
+State University Of New York At Buffalo,Biostatistics/Other Math Science,2024,0
 State University Of New York At Buffalo,Family Medicine,2024,0
 State University Of New York At Buffalo,Internal Medicine,2024,9758957
 State University Of New York At Buffalo,Microbiology/Immunology/Virology,2024,6364218
@@ -27623,7 +27623,7 @@ State University Of New York At Buffalo,Total Funding,2024,41927622
 State University Of New York Stony Brook,Anesthesiology,2024,4148374
 State University Of New York Stony Brook,Biochemistry,2024,7325670
 State University Of New York Stony Brook,Biomedical Engineering,2024,3008741
-State University Of New York Stony Brook,Biostatistics/Other Match Science,2024,1794227
+State University Of New York Stony Brook,Biostatistics/Other Math Science,2024,1794227
 State University Of New York Stony Brook,Dermatology,2024,594600
 State University Of New York Stony Brook,Emergency Medicine,2024,0
 State University Of New York Stony Brook,Family Medicine,2024,0
@@ -27775,7 +27775,7 @@ Tulane University,Total Funding,2024,65486391
 Tulane University,Urology,2024,1319989
 Tulane University Of Louisiana,Anatomy/Cell Biology,2024,0
 Tulane University Of Louisiana,Biochemistry,2024,0
-Tulane University Of Louisiana,Biostatistics/Other Match Science,2024,0
+Tulane University Of Louisiana,Biostatistics/Other Math Science,2024,0
 Tulane University Of Louisiana,Internal Medicine,2024,0
 Tulane University Of Louisiana,Microbiology/Immunology/Virology,2024,0
 Tulane University Of Louisiana,Neurology,2024,0
@@ -27879,7 +27879,7 @@ University Of Arizona,Total Funding,2024,103120771
 University Of Arizona,Urology,2024,0
 University Of Arkansas For Medical Sciences,Anatomy/Cell Biology,2024,549786
 University Of Arkansas For Medical Sciences,Biochemistry,2024,6740748
-University Of Arkansas For Medical Sciences,Biostatistics/Other Match Science,2024,0
+University Of Arkansas For Medical Sciences,Biostatistics/Other Math Science,2024,0
 University Of Arkansas For Medical Sciences,Family Medicine,2024,1172421
 University Of Arkansas For Medical Sciences,Internal Medicine,2024,6801510
 University Of Arkansas For Medical Sciences,Microbiology/Immunology/Virology,2024,7238469
@@ -27956,7 +27956,7 @@ University Of California Riverside,Total Funding,2024,13460016
 "University Of California, Irvine",Urology,2024,1300567
 "University Of California, Los Angeles",Anesthesiology,2024,5818838
 "University Of California, Los Angeles",Biochemistry,2024,10537156
-"University Of California, Los Angeles",Biostatistics/Other Match Science,2024,1525803
+"University Of California, Los Angeles",Biostatistics/Other Math Science,2024,1525803
 "University Of California, Los Angeles",Family Medicine,2024,4207964
 "University Of California, Los Angeles",Genetics,2024,11202069
 "University Of California, Los Angeles",Internal Medicine,2024,150472962
@@ -28130,7 +28130,7 @@ University Of Connecticut Sch Of Med/Dnt,Urology,2024,1940526
 University Of Florida,Anatomy/Cell Biology,2024,783959
 University Of Florida,Anesthesiology,2024,627957
 University Of Florida,Biochemistry,2024,12912920
-University Of Florida,Biostatistics/Other Match Science,2024,0
+University Of Florida,Biostatistics/Other Math Science,2024,0
 University Of Florida,Dermatology,2024,161568
 University Of Florida,Emergency Medicine,2024,3782392
 University Of Florida,Family Medicine,2024,0
@@ -28222,7 +28222,7 @@ University Of Iowa,Urology,2024,0
 University Of Kansas Medical Center,Anatomy/Cell Biology,2024,0
 University Of Kansas Medical Center,Anesthesiology,2024,5930375
 University Of Kansas Medical Center,Biochemistry,2024,5196729
-University Of Kansas Medical Center,Biostatistics/Other Match Science,2024,53974
+University Of Kansas Medical Center,Biostatistics/Other Math Science,2024,53974
 University Of Kansas Medical Center,Family Medicine,2024,3127128
 University Of Kansas Medical Center,Internal Medicine,2024,26462314
 University Of Kansas Medical Center,Microbiology/Immunology/Virology,2024,3762160
@@ -28319,7 +28319,7 @@ University Of Maryland Baltimore,Surgery,2024,8164269
 University Of Maryland Baltimore,Total Funding,2024,167849423
 University Of Massachusetts Med Sch Worcester,Anatomy/Cell Biology,2024,38056041
 University Of Massachusetts Med Sch Worcester,Biochemistry,2024,9151296
-University Of Massachusetts Med Sch Worcester,Biostatistics/Other Match Science,2024,4828821
+University Of Massachusetts Med Sch Worcester,Biostatistics/Other Math Science,2024,4828821
 University Of Massachusetts Med Sch Worcester,Dermatology,2024,3554763
 University Of Massachusetts Med Sch Worcester,Emergency Medicine,2024,7978205
 University Of Massachusetts Med Sch Worcester,Family Medicine,2024,2659642
@@ -28347,7 +28347,7 @@ University Of Massachusetts Med Sch Worcester,Urology,2024,0
 University Of Massachusetts Worcester,Anatomy/Cell Biology,2024,0
 University Of Massachusetts Worcester,Anesthesiology,2024,0
 University Of Massachusetts Worcester,Biochemistry,2024,0
-University Of Massachusetts Worcester,Biostatistics/Other Match Science,2024,0
+University Of Massachusetts Worcester,Biostatistics/Other Math Science,2024,0
 University Of Massachusetts Worcester,Dermatology,2024,0
 University Of Massachusetts Worcester,Emergency Medicine,2024,0
 University Of Massachusetts Worcester,Family Medicine,2024,0
@@ -28394,7 +28394,7 @@ University Of Miami School Of Medicine,Urology,2024,2157903
 University Of Michigan,Anatomy/Cell Biology,2024,0
 University Of Michigan,Anesthesiology,2024,0
 University Of Michigan,Biochemistry,2024,0
-University Of Michigan,Biostatistics/Other Match Science,2024,0
+University Of Michigan,Biostatistics/Other Math Science,2024,0
 University Of Michigan,Dermatology,2024,0
 University Of Michigan,Emergency Medicine,2024,0
 University Of Michigan,Engineering All Types,2024,0
@@ -28427,7 +28427,7 @@ University Of Michigan At Ann Arbor,Anatomy/Cell Biology,2024,13553524
 University Of Michigan At Ann Arbor,Anesthesiology,2024,17282806
 University Of Michigan At Ann Arbor,Biochemistry,2024,11511266
 University Of Michigan At Ann Arbor,Biomedical Engineering,2024,13370724
-University Of Michigan At Ann Arbor,Biostatistics/Other Match Science,2024,8818091
+University Of Michigan At Ann Arbor,Biostatistics/Other Math Science,2024,8818091
 University Of Michigan At Ann Arbor,Dermatology,2024,6118366
 University Of Michigan At Ann Arbor,Emergency Medicine,2024,10898485
 University Of Michigan At Ann Arbor,Engineering All Types,2024,0
@@ -28460,7 +28460,7 @@ University Of Minnesota,Anatomy/Cell Biology,2024,0
 University Of Minnesota,Anesthesiology,2024,1937065
 University Of Minnesota,Biochemistry,2024,16561704
 University Of Minnesota,Biomedical Engineering,2024,11243856
-University Of Minnesota,Biostatistics/Other Match Science,2024,0
+University Of Minnesota,Biostatistics/Other Math Science,2024,0
 University Of Minnesota,Dermatology,2024,0
 University Of Minnesota,Emergency Medicine,2024,860590
 University Of Minnesota,Family Medicine,2024,24252200
@@ -28669,7 +28669,7 @@ University Of Oklahoma Hlth Scis Ctr,Total Funding,2024,65379802
 University Of Pennsylvania,Anatomy/Cell Biology,2024,16124613
 University Of Pennsylvania,Anesthesiology,2024,7213456
 University Of Pennsylvania,Biochemistry,2024,10192227
-University Of Pennsylvania,Biostatistics/Other Match Science,2024,31101500
+University Of Pennsylvania,Biostatistics/Other Math Science,2024,31101500
 University Of Pennsylvania,Dermatology,2024,6732310
 University Of Pennsylvania,Emergency Medicine,2024,3482836
 University Of Pennsylvania,Family Medicine,2024,817349
@@ -28761,7 +28761,7 @@ University Of Puerto Rico Medical Sciences,Total Funding,2024,23275956
 University Of Rochester,Anesthesiology,2024,2179633
 University Of Rochester,Biochemistry,2024,7040147
 University Of Rochester,Biomedical Engineering,2024,2178955
-University Of Rochester,Biostatistics/Other Match Science,2024,2888868
+University Of Rochester,Biostatistics/Other Math Science,2024,2888868
 University Of Rochester,Dentistry,2024,2538018
 University Of Rochester,Dermatology,2024,1337848
 University Of Rochester,Emergency Medicine,2024,0
@@ -29131,7 +29131,7 @@ University Of Virginia,Urology,2024,0
 University Of Washington,Anatomy/Cell Biology,2024,0
 University Of Washington,Anesthesiology,2024,0
 University Of Washington,Biochemistry,2024,0
-University Of Washington,Biostatistics/Other Match Science,2024,0
+University Of Washington,Biostatistics/Other Math Science,2024,0
 University Of Washington,Emergency Medicine,2024,0
 University Of Washington,Engineering All Types,2024,0
 University Of Washington,Family Medicine,2024,0
@@ -29195,7 +29195,7 @@ University Of Wisconsin Madison,Administration,2024,0
 University Of Wisconsin Madison,Anatomy/Cell Biology,2024,9505900
 University Of Wisconsin Madison,Anesthesiology,2024,1294803
 University Of Wisconsin Madison,Biochemistry,2024,8316769
-University Of Wisconsin Madison,Biostatistics/Other Match Science,2024,6698502
+University Of Wisconsin Madison,Biostatistics/Other Math Science,2024,6698502
 University Of Wisconsin Madison,Dermatology,2024,602661
 University Of Wisconsin Madison,Emergency Medicine,2024,1715036
 University Of Wisconsin Madison,Family Medicine,2024,3421326
@@ -29271,7 +29271,7 @@ Ut Southwestern Medical Center,Urology,2024,0
 Vanderbilt University,Anatomy/Cell Biology,2024,22417934
 Vanderbilt University,Anesthesiology,2024,11894653
 Vanderbilt University,Biochemistry,2024,18965685
-Vanderbilt University,Biostatistics/Other Match Science,2024,0
+Vanderbilt University,Biostatistics/Other Math Science,2024,0
 Vanderbilt University,Dermatology,2024,834692
 Vanderbilt University,Emergency Medicine,2024,20276030
 Vanderbilt University,Internal Medicine,2024,277027811
@@ -29296,7 +29296,7 @@ Vanderbilt University,Total Funding,2024,586273695
 Vanderbilt University,Urology,2024,4451941
 Virginia Commonwealth University,Anatomy/Cell Biology,2024,5519076
 Virginia Commonwealth University,Biochemistry,2024,5981730
-Virginia Commonwealth University,Biostatistics/Other Match Science,2024,0
+Virginia Commonwealth University,Biostatistics/Other Math Science,2024,0
 Virginia Commonwealth University,Emergency Medicine,2024,297358
 Virginia Commonwealth University,Family Medicine,2024,4592027
 Virginia Commonwealth University,Genetics,2024,6572599
@@ -29325,7 +29325,7 @@ Wake Forest University Health Sciences,Anatomy/Cell Biology,2024,0
 Wake Forest University Health Sciences,Anesthesiology,2024,2573965
 Wake Forest University Health Sciences,Biochemistry,2024,5777458
 Wake Forest University Health Sciences,Biomedical Engineering,2024,2919745
-Wake Forest University Health Sciences,Biostatistics/Other Match Science,2024,3165075
+Wake Forest University Health Sciences,Biostatistics/Other Math Science,2024,3165075
 Wake Forest University Health Sciences,Emergency Medicine,2024,0
 Wake Forest University Health Sciences,Family Medicine,2024,2028617
 Wake Forest University Health Sciences,Internal Medicine,2024,60100882
@@ -29355,7 +29355,7 @@ Washington State University,Total Funding,2024,12621266
 Washington University School Of Medicine In St. Louis,Anatomy/Cell Biology,2024,11688637
 Washington University School Of Medicine In St. Louis,Anesthesiology,2024,31628629
 Washington University School Of Medicine In St. Louis,Biochemistry,2024,9753926
-Washington University School Of Medicine In St. Louis,Biostatistics/Other Match Science,2024,7819423
+Washington University School Of Medicine In St. Louis,Biostatistics/Other Math Science,2024,7819423
 Washington University School Of Medicine In St. Louis,Emergency Medicine,2024,1202651
 Washington University School Of Medicine In St. Louis,Genetics,2024,17633254
 Washington University School Of Medicine In St. Louis,Internal Medicine,2024,186121085
