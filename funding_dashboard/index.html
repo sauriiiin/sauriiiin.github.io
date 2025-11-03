@@ -269,8 +269,8 @@ function plotDeptAtSchool(y0,y1, selSchool, selDept){
     hovertemplate:'<b>%{x}</b><br>Total: $%{customdata:,.0f}<extra></extra>'
   }], {
     title:`Departments at ${selSchool} (${y0}–${y1})`,
-    xaxis:{title:'Department', tickangle:-30, automargin:true},
-    yaxis:{title:'Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    xaxis:{title:{ text: '' }, tickangle:-30, automargin:true},
+    yaxis:{title:{ text: '' }, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
     showlegend:false,
     margin:{t:40,r:10,b:120,l:60}
   }, {responsive:true, displaylogo:false});
@@ -290,8 +290,8 @@ function plotTopSchoolsForDept(y0,y1, selDept, selSchool){
     hovertemplate:'<b>%{x}</b><br>' + selDept + ' Funding: $%{customdata:,.0f}<extra></extra>'
   }], {
     title:`Top Institutes for ${selDept} (${y0}–${y1})`,
-    xaxis:{title:'School', tickangle:-30, automargin:true},
-    yaxis:{title:`${selDept} Funding`, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    xaxis:{title:{ text: '' }, tickangle:-30, automargin:true},
+    yaxis:{title:{ text: '' }, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
     showlegend:false,
     margin:{t:40,r:10,b:120,l:60}
   }, {responsive:true, displaylogo:false});
@@ -311,8 +311,8 @@ function plotNearSchoolsForDept(y0,y1, selDept, selSchool){
     hovertemplate:'<b>%{x}</b><br>' + selDept + ' Funding: $%{customdata:,.0f}<extra></extra>'
   }], {
     title:`${selDept}: Five Above and Below ${selSchool} (${y0}–${y1})`,
-    xaxis:{title:'School', tickangle:-30, automargin:true},
-    yaxis:{title:`${selDept} Funding`, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    xaxis:{title:{ text: '' }, tickangle:-30, automargin:true},
+    yaxis:{title:{ text: '' }, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
     showlegend:false,
     margin:{t:40,r:10,b:120,l:60}
   }, {responsive:true, displaylogo:false});
@@ -332,8 +332,8 @@ function plotTopSchoolsTotal(y0,y1, selSchool){
     hovertemplate:'<b>%{x}</b><br>Total Funding: $%{customdata:,.0f}<extra></extra>'
   }], {
     title:`Top Institutes by Total Funding (${y0}–${y1})`,
-    xaxis:{title:'School', tickangle:-30, automargin:true},
-    yaxis:{title:'Total Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    xaxis:{title:{ text: '' }, tickangle:-30, automargin:true},
+    yaxis:{title:{ text: '' }, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
     showlegend:false,
     margin:{t:40,r:10,b:120,l:60}
   }, {responsive:true, displaylogo:false});
@@ -353,8 +353,8 @@ function plotNearSchoolsTotal(y0,y1, selSchool){
     hovertemplate:'<b>%{x}</b><br>Total Funding: $%{customdata:,.0f}<extra></extra>'
   }], {
     title:`Total Funding: Five Above and Below ${selSchool} (${y0}–${y1})`,
-    xaxis:{title:'School', tickangle:-30, automargin:true},
-    yaxis:{title:'Total Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    xaxis:{title:{ text: '' }, tickangle:-30, automargin:true},
+    yaxis:{title:{ text: '' }, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
     showlegend:false,
     margin:{t:40,r:10,b:120,l:60}
   }, {responsive:true, displaylogo:false});
