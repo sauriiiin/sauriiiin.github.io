@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Funding Snapshot</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<style>
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:16px;line-height:1.35}
+  h1{font-size:20px;margin:0 0 12px}
+  .controls{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:12px;margin-bottom:14px}
+  label{font-size:12px;color:#444;display:block;margin-bottom:4px}
+  select{width:100%;padding:6px;font-size:14px}
+  .plot{width:100%;height:420px}
+  .note{font-size:12px;color:#666;margin:6px 0 0 0}
+  details{border:1px solid #e0e0e0;border-radius:6px;padding:10px 12px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600;margin:-10px -12px 10px -12px;padding:10px 12px}
+  summary::-webkit-details-marker{display:none}
+  .footer{margin-top:24px;padding-top:12px;border-top:1px solid #eee;font-size:12px;color:#444;text-align:center}
+  .footer a{color:inherit;text-decoration:underline}
+
+  .segmented{display:inline-flex;border:1px solid #ddd;border-radius:6px;overflow:hidden}
+  .segmented button{padding:6px 10px;font-size:14px;border:0;background:#fafafa;cursor:pointer}
+  .segmented button.on{background:#111;color:#fff}
+  .segmented button:focus-visible{outline:2px solid #555}
+</style>
+</head>
+<body>
+<h1>Funding Dashboard</h1>
+
+<div class="controls">
+  <div>
+    <label>Data source</label>
+    <div class="segmented" role="group" aria-label="Data source">
+      <button id="btnNIH" class="on" type="button">NIH</button>
+      <button id="btnNSF" type="button">NSF</button>
+    </div>
+  </div>
+  <div>
+    <label for="startYear">Start year</label>
+    <select id="startYear"></select>
+  </div>
+  <div>
+    <label for="endYear">End year</label>
+    <select id="endYear"></select>
+  </div>
+  <div>
+    <label for="schoolSel">Institution</label>
+    <select id="schoolSel"></select>
+  </div>
+  <div>
+    <label for="deptSel">Department</label>
+    <select id="deptSel"></select>
+  </div>
+  <div>
+    <label>Y-axis scale</label>
+    <div class="segmented" role="group" aria-label="Y axis scale">
+      <button id="scaleLinear" class="on" type="button">Linear</button>
+      <button id="scaleLog" type="button">Log</button>
+    </div>
+  </div>
+</div>
+
+<details open>
+  <summary>Plot 1 — Departmental Funding Totals at Selected Institution</summary>
+  <div id="plot1" class="plot"></div>
+  <div class="note">Selected department highlighted. On log scale, zero values are drawn as very small bars. Hover shows the true value.</div>
+</details>
+
+<details open>
+  <summary>Plot 2 — Selected Department: Top 10 Institution</summary>
+  <div id="plot2" class="plot"></div>
+  <div class="note">Selected institution highlighted. On log scale, zero values are drawn as very small bars. Hover shows the true value. Selected institution added if not in top 10.</div>
+</details>
+
+<details open>
+  <summary>Plot 3 — Selected Department: Five Above and Below Selected Institution</summary>
+  <div id="plot3" class="plot"></div>
+  <div class="note">Shows five institutions ranked above and five below the selected institution for the chosen department over the selected range.</div>
+</details>
+
+<details open>
+  <summary>Plot 4 — Total Funding: Top 10 Institutions</summary>
+  <div id="plot4" class="plot"></div>
+  <div class="note">Selected institution highlighted. On log scale, zero values are drawn as very small bars. Hover shows the true value. Selected institution added if not in top 10.</div>
+</details>
+
+<details open>
+  <summary>Plot 5 — Total Funding: Five Above and Below Selected Institution</summary>
+  <div id="plot5" class="plot"></div>
+  <div class="note">Shows five institutions ranked above and five below the selected institution by total funding over the selected range.</div>
+</details>
+
+<div class="footer">
+  <div>NIH data collected from The Blue Ridge Institute for Medical Research. NSF data collected from NSF Award Search.</div>
+  <div>Get in touch: <a href="mailto:saurinbp@gmail.com">E-mail</a>, <a href="https://www.linkedin.com/in/sauriiiin/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+  <div>© 2025 <a href="https://sauriiiin.github.io/" target="_blank" rel="noopener noreferrer">Saurin Parikh</a>. All rights reserved.</div>
+</div>
+
+<script>
+// -------- configuration --------
+const BASE_CSV = "dept_school_funding_timeseries.csv";
+const COLOR_SCHOOL = "#F44336";
+const COLOR_DEPT   = "#3F51B5";
+const COLOR_OTHER  = "rgba(150,150,150,0.45)";
+const EPS = 0.1; // shown for zero or negative when log
+
+// per-source default selections
+const DEFAULT_PICK = {
+  NIH: { school: "University Of Rochester", dept: "Internal Medicine" },
+  NSF: { school: "University Of Rochester", dept: "Directorate for Mathematical and Physical Sciences" }
+};
+
+// -------- helpers --------
+const $ = s => document.querySelector(s);
+const startYearSel = $('#startYear');
+const endYearSel   = $('#endYear');
+const schoolSel    = $('#schoolSel');
+const deptSel      = $('#deptSel');
+const btnNIH       = $('#btnNIH');
+const btnNSF       = $('#btnNSF');
+const btnLin       = $('#scaleLinear');
+const btnLog       = $('#scaleLog');
+
+let CURRENT_SOURCE = 'NIH';
+let IS_LOG = false;
+
+let DATA=[], YEARS=[], SCHOOLS=[], DEPTS=[];
+const CACHE = new Map(); // path -> {DATA,YEARS,SCHOOLS,DEPTS}
+
+function uniq(a){ return Array.from(new Set(a)) }
+function groupBy(arr, keyFn){
+  const m={}; for(const x of arr){ const k=keyFn(x); (m[k]||(m[k]=[])).push(x) } return m;
+}
+function sum(a){ return a.reduce((acc,v)=>acc+(+v||0),0) }
+function toNumber(x){ return Number(String(x).replace(/[^0-9.\-]/g,'')) }
+function withSuffix(path, suffix){
+  const i = path.lastIndexOf('.');
+  return i>0 ? path.slice(0,i)+suffix+path.slice(i) : path+suffix;
+}
+function pathForSource(src){ return src==='NSF' ? withSuffix(BASE_CSV,'_nsf') : BASE_CSV }
+function clamp(val, lo, hi){ return Math.min(hi, Math.max(lo, val)) }
+
+function normalizeRecord(raw){
+  const map={}; for(const k in raw){ map[k.trim().toLowerCase()]=k }
+  const y=raw[map['year']], s=raw[map['school']], d=raw[map['department']], f=raw[map['funding']];
+  if (y==null||s==null||d==null||f==null) return null;
+  let dept=String(d).trim();
+  if (dept.toLowerCase()==='total awards'||dept.toLowerCase()==='total funding') dept='Total Funding';
+  return { year:+String(y).replace(/[^0-9]/g,''), school:String(s).trim(), department:dept, funding:toNumber(f) };
+}
+
+function fillSelect(sel, options, selected){
+  sel.innerHTML='';
+  for(const v of options){
+    const opt=document.createElement('option'); opt.value=v; opt.textContent=v;
+    if (String(v)===String(selected)) opt.selected=true; sel.appendChild(opt);
+  }
+}
+
+function attachListeners(){
+  [startYearSel,endYearSel,schoolSel,deptSel].forEach(el=>el.addEventListener('change', updateAll));
+  btnNIH.addEventListener('click', ()=>switchSource('NIH'));
+  btnNSF.addEventListener('click', ()=>switchSource('NSF'));
+  btnLin.addEventListener('click', ()=>setScale(false));
+  btnLog.addEventListener('click', ()=>setScale(true));
+}
+
+function setScale(isLog){
+  IS_LOG = isLog;
+  btnLin.classList.toggle('on', !isLog);
+  btnLog.classList.toggle('on', isLog);
+  updateAll();
+}
+
+// -------- aggregations (range) --------
+function rowsInRange(y0,y1){ return DATA.filter(r=>r.year>=y0 && r.year<=y1) }
+
+// Department totals within a school across a range (exclude "Total Funding" row)
+function deptTotalsAtSchoolForRange(y0,y1, school){
+  const rows = rowsInRange(y0,y1).filter(r=>r.school===school && r.department!=='Total Funding');
+  const byDept = groupBy(rows, r=>r.department);
+  return Object.entries(byDept).map(([dept, arr])=>({dept, value: sum(arr.map(x=>x.funding))}));
+}
+
+// Top schools for a specific department across a range
+function schoolsForDepartmentRange(y0,y1, dept){
+  const rows = rowsInRange(y0,y1).filter(r=>r.department===dept);
+  const bySchool = groupBy(rows, r=>r.school);
+  return Object.entries(bySchool).map(([school, arr])=>({school, value: sum(arr.map(x=>x.funding))}));
+}
+
+// Per-school per-year totals using explicit "Total Funding" when present,
+// then summed across the selected range.
+function totalsBySchoolForRange(y0,y1){
+  const rows = rowsInRange(y0,y1);
+  const explicit = groupBy(rows.filter(d=>d.department==='Total Funding'), r=>r.school+'|'+r.year);
+  const bySy = groupBy(rows, r=>r.school+'|'+r.year);
+  const perSy=[];
+  for(const key in bySy){
+    const [school,year] = key.split('|');
+    const val = explicit[key] ? sum(explicit[key].map(r=>r.funding))
+                              : sum(bySy[key].map(r=>r.funding));
+    perSy.push({school, year:+year, value:val});
+  }
+  const bySchool = groupBy(perSy, r=>r.school);
+  return Object.entries(bySchool).map(([school, arr])=>({school, value: sum(arr.map(x=>x.value))}));
+}
+
+// Top N helper, optionally append selected school if absent
+function topNPlusSelected(rows, selectedSchool, N=10){
+  const sorted = rows.slice().sort((a,b)=>b.value-a.value);
+  const top = sorted.slice(0,N);
+  const inTop = top.some(r=>r.school===selectedSchool);
+  if (inTop) return top;
+  const sel = rows.find(r=>r.school===selectedSchool) || {school:selectedSchool, value:0};
+  top.push(sel);
+  return top;
+}
+
+// A +/- window around the selected school's rank
+function windowAroundSelected(rows, selectedSchool, above=5, below=5){
+  let sorted = rows.slice().sort((a,b)=>b.value-a.value);
+  let idx = sorted.findIndex(r=>r.school===selectedSchool);
+  if (idx===-1){
+    sorted.push({school:selectedSchool, value:0});
+    sorted.sort((a,b)=>b.value-a.value);
+    idx = sorted.findIndex(r=>r.school===selectedSchool);
+  }
+  const target = Math.min(above+below+1, sorted.length);
+  let start = Math.max(0, idx - above);
+  let end = Math.min(sorted.length, idx + below + 1);
+
+  // expand to hit target size if edges trimmed
+  let size = end - start;
+  if (size < target){
+    const need = target - size;
+    const addLeft = Math.min(start, Math.ceil(need/2));
+    start -= addLeft;
+    size += addLeft;
+    const addRight = Math.min(sorted.length - end, target - size);
+    end += addRight;
+    size = end - start;
+    if (size < target && start>0){
+      const moreLeft = Math.min(start, target - size);
+      start -= moreLeft;
+      size += moreLeft;
+    }
+  }
+  return sorted.slice(start,end);
+}
+
+// -------- plots --------
+function yForScale(vals){
+  if (!IS_LOG) return vals;
+  return vals.map(v => v>0 ? v : EPS);
+}
+
+function plotDeptAtSchool(y0,y1, selSchool, selDept){
+  const rows = deptTotalsAtSchoolForRange(y0,y1, selSchool).sort((a,b)=>b.value-a.value);
+  const x = rows.map(r=>r.dept);
+  const yOrig = rows.map(r=>r.value);
+  const yPlot = yForScale(yOrig);
+  const colors = rows.map(r => r.dept===selDept ? COLOR_DEPT : COLOR_OTHER);
+
+  Plotly.newPlot('plot1', [{
+    type:'bar', x, y:yPlot, customdata:yOrig, marker:{color:colors},
+    hovertemplate:'<b>%{x}</b><br>Total: $%{customdata:,.0f}<extra></extra>'
+  }], {
+    title:`Departments at ${selSchool} (${y0}–${y1})`,
+    xaxis:{title:'Department', tickangle:-30, automargin:true},
+    yaxis:{title:'Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    showlegend:false,
+    margin:{t:40,r:10,b:120,l:60}
+  }, {responsive:true, displaylogo:false});
+}
+
+function plotTopSchoolsForDept(y0,y1, selDept, selSchool){
+  const rows = schoolsForDepartmentRange(y0,y1, selDept);
+  const top = topNPlusSelected(rows, selSchool, 10);
+
+  const x = top.map(r=>r.school);
+  const yOrig = top.map(r=>r.value);
+  const yPlot = yForScale(yOrig);
+  const colors = top.map(r => r.school===selSchool ? COLOR_SCHOOL : COLOR_OTHER);
+
+  Plotly.newPlot('plot2', [{
+    type:'bar', x, y:yPlot, customdata:yOrig, marker:{color:colors},
+    hovertemplate:'<b>%{x}</b><br>' + selDept + ' Funding: $%{customdata:,.0f}<extra></extra>'
+  }], {
+    title:`Top Institutes for ${selDept} (${y0}–${y1})`,
+    xaxis:{title:'School', tickangle:-30, automargin:true},
+    yaxis:{title:`${selDept} Funding`, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    showlegend:false,
+    margin:{t:40,r:10,b:120,l:60}
+  }, {responsive:true, displaylogo:false});
+}
+
+function plotNearSchoolsForDept(y0,y1, selDept, selSchool){
+  const rows = schoolsForDepartmentRange(y0,y1, selDept);
+  const win = windowAroundSelected(rows, selSchool, 5, 5);
+
+  const x = win.map(r=>r.school);
+  const yOrig = win.map(r=>r.value);
+  const yPlot = yForScale(yOrig);
+  const colors = win.map(r => r.school===selSchool ? COLOR_SCHOOL : COLOR_OTHER);
+
+  Plotly.newPlot('plot3', [{
+    type:'bar', x, y:yPlot, customdata:yOrig, marker:{color:colors},
+    hovertemplate:'<b>%{x}</b><br>' + selDept + ' Funding: $%{customdata:,.0f}<extra></extra>'
+  }], {
+    title:`${selDept}: Five Above and Below ${selSchool} (${y0}–${y1})`,
+    xaxis:{title:'School', tickangle:-30, automargin:true},
+    yaxis:{title:`${selDept} Funding`, tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    showlegend:false,
+    margin:{t:40,r:10,b:120,l:60}
+  }, {responsive:true, displaylogo:false});
+}
+
+function plotTopSchoolsTotal(y0,y1, selSchool){
+  const rows = totalsBySchoolForRange(y0,y1);
+  const top = topNPlusSelected(rows, selSchool, 10);
+
+  const x = top.map(r=>r.school);
+  const yOrig = top.map(r=>r.value);
+  const yPlot = yForScale(yOrig);
+  const colors = top.map(r => r.school===selSchool ? COLOR_SCHOOL : COLOR_OTHER);
+
+  Plotly.newPlot('plot4', [{
+    type:'bar', x, y:yPlot, customdata:yOrig, marker:{color:colors},
+    hovertemplate:'<b>%{x}</b><br>Total Funding: $%{customdata:,.0f}<extra></extra>'
+  }], {
+    title:`Top Institutes by Total Funding (${y0}–${y1})`,
+    xaxis:{title:'School', tickangle:-30, automargin:true},
+    yaxis:{title:'Total Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    showlegend:false,
+    margin:{t:40,r:10,b:120,l:60}
+  }, {responsive:true, displaylogo:false});
+}
+
+function plotNearSchoolsTotal(y0,y1, selSchool){
+  const rows = totalsBySchoolForRange(y0,y1);
+  const win = windowAroundSelected(rows, selSchool, 5, 5);
+
+  const x = win.map(r=>r.school);
+  const yOrig = win.map(r=>r.value);
+  const yPlot = yForScale(yOrig);
+  const colors = win.map(r => r.school===selSchool ? COLOR_SCHOOL : COLOR_OTHER);
+
+  Plotly.newPlot('plot5', [{
+    type:'bar', x, y:yPlot, customdata:yOrig, marker:{color:colors},
+    hovertemplate:'<b>%{x}</b><br>Total Funding: $%{customdata:,.0f}<extra></extra>'
+  }], {
+    title:`Total Funding: Five Above and Below ${selSchool} (${y0}–${y1})`,
+    xaxis:{title:'School', tickangle:-30, automargin:true},
+    yaxis:{title:'Total Funding', tickformat:'$,~s', type: IS_LOG ? 'log' : 'linear'},
+    showlegend:false,
+    margin:{t:40,r:10,b:120,l:60}
+  }, {responsive:true, displaylogo:false});
+}
+
+// -------- load + init --------
+function switchSource(src){
+  if (CURRENT_SOURCE===src) return;
+  CURRENT_SOURCE = src;
+  btnNIH.classList.toggle('on', src==='NIH');
+  btnNSF.classList.toggle('on', src==='NSF');
+  // use source defaults on switch
+  loadData(pathForSource(src), /*preserveSelections=*/false);
+}
+
+function loadData(path, preserveSelections){
+  if (CACHE.has(path)){
+    ({DATA,YEARS,SCHOOLS,DEPTS} = CACHE.get(path));
+    initUI(preserveSelections);
+    return;
+  }
+  Papa.parse(path, {
+    download:true, header:true, dynamicTyping:false, skipEmptyLines:true,
+    complete: res => {
+      const recs = res.data.map(normalizeRecord).filter(Boolean);
+      const parsed = recs.filter(r => Number.isFinite(r.year) && Number.isFinite(r.funding) && r.school && r.department);
+      if (!parsed.length){ alert('Parsed 0 rows from '+path); return }
+      DATA = parsed;
+      YEARS = uniq(DATA.map(d=>d.year)).sort((a,b)=>a-b);
+      SCHOOLS = uniq(DATA.map(d=>d.school)).sort((a,b)=>a.localeCompare(b));
+      DEPTS = uniq(DATA.map(d=>d.department)).filter(x=>x!=='Total Funding').sort((a,b)=>a.localeCompare(b));
+      CACHE.set(path, {DATA,YEARS,SCHOOLS,DEPTS});
+      initUI(preserveSelections);
+    },
+    error: err => alert('Error loading CSV: '+err)
+  });
+}
+
+function initUI(preserve){
+  const prevY0 = +startYearSel.value || YEARS[0];
+  const prevY1 = +endYearSel.value   || YEARS[YEARS.length-1];
+  const prevSchool = schoolSel.value || SCHOOLS[0];
+  const prevDept   = deptSel.value   || (DEPTS[0]||'');
+  const dflt = DEFAULT_PICK[CURRENT_SOURCE] || {};
+
+  const y0 = preserve ? clamp(prevY0, YEARS[0], YEARS[YEARS.length-1]) : YEARS[0];
+  let   y1 = preserve ? clamp(prevY1, YEARS[0], YEARS[YEARS.length-1]) : YEARS[YEARS.length-1];
+  if (y1 < y0) y1 = y0;
+
+  const schoolFinal = preserve
+    ? (SCHOOLS.includes(prevSchool) ? prevSchool : SCHOOLS[0])
+    : (dflt.school && SCHOOLS.includes(dflt.school) ? dflt.school : SCHOOLS[0]);
+
+  const deptFinal = preserve
+    ? (DEPTS.includes(prevDept) ? prevDept : (DEPTS[0]||''))
+    : (dflt.dept && DEPTS.includes(dflt.dept) ? dflt.dept : (DEPTS[0]||''));
+
+  fillSelect(startYearSel, YEARS, y0);
+  fillSelect(endYearSel, YEARS, y1);
+  fillSelect(schoolSel, SCHOOLS, schoolFinal);
+  fillSelect(deptSel, DEPTS, deptFinal);
+
+  updateAll();
+}
+
+function updateAll(){
+  const y0 = +startYearSel.value;
+  const y1 = +endYearSel.value;
+  const ss = schoolSel.value;
+  const dd = deptSel.value;
+  if (!Number.isFinite(y0) || !Number.isFinite(y1) || y0>y1) return;
+
+  plotDeptAtSchool(y0,y1, ss, dd);          // Plot 1
+  plotTopSchoolsForDept(y0,y1, dd, ss);     // Plot 2
+  plotNearSchoolsForDept(y0,y1, dd, ss);    // Plot 3
+  plotTopSchoolsTotal(y0,y1, ss);           // Plot 4
+  plotNearSchoolsTotal(y0,y1, ss);          // Plot 5
+}
+
+// boot
+attachListeners();
+// first load uses NIH defaults and full range
+loadData(pathForSource('NIH'), /*preserveSelections=*/false);
+</script>
+</body>
+</html>
