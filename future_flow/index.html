@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Investment Growth Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.4;
+      color: #222;
+      background: #f5f5f7;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f7;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 1.75rem 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    .intro {
+      max-width: 720px;
+      margin: 0.5rem auto 1.5rem;
+      font-size: 0.9rem;
+      color: #4b5563;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.35rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+      display: block;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input[type="number"],
+    select {
+      padding: 0.45rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 0.9rem;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    input[type="number"]:focus,
+    select:focus {
+      outline: none;
+      border-color: #2563eb;
+      box-shadow: 0 0 0 1px rgba(37,99,235,0.3);
+    }
+
+    .periods-header {
+      display: grid;
+      grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 0.25rem;
+      padding: 0 0.25rem;
+    }
+
+    .period-row {
+      display: grid;
+      grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      align-items: center;
+    }
+
+    .period-row input[type="number"] {
+      width: 100%;
+    }
+
+    .btn-row {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.05s ease;
+    }
+
+    button.primary {
+      background: #2563eb;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(37,99,235,0.25);
+    }
+
+    button.secondary {
+      background: #e5e7eb;
+      color: #111827;
+    }
+
+    button.danger {
+      background: #ef4444;
+      color: #fff;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    button:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+
+    .results {
+      margin-top: 1.5rem;
+      padding: 1rem 1rem 0.75rem;
+      border-radius: 8px;
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      font-size: 0.9rem;
+    }
+
+    .results-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .summary-item {
+      padding-bottom: 0.25rem;
+    }
+
+    .summary-label {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-bottom: 0.15rem;
+    }
+
+    .summary-value {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.83rem;
+      margin-bottom: 0.5rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.4rem 0.3rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    th:first-child, td:first-child {
+      text-align: left;
+    }
+
+    th {
+      font-weight: 600;
+      background: #f3f4f6;
+    }
+
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .muted {
+      color: #6b7280;
+      font-size: 0.8rem;
+    }
+
+    .error {
+      color: #b91c1c;
+      font-size: 0.85rem;
+      margin-top: 0.4rem;
+    }
+
+    .chart-container {
+      position: relative;
+      height: 260px;
+      margin-top: 0.75rem;
+    }
+
+    .footer {
+      max-width: 960px;
+      margin: 1rem auto 2rem;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        margin: 0.75rem;
+        padding: 1.25rem 1rem 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .intro {
+        font-size: 0.85rem;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .periods-header {
+        display: none;
+      }
+
+      .period-row {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+        padding: 0.6rem 0.5rem;
+        border-radius: 8px;
+        background: #f9fafb;
+      }
+
+      .period-row .field {
+        margin-bottom: 0.15rem;
+      }
+
+      .btn-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn-row button {
+        width: 100%;
+      }
+
+      table {
+        font-size: 0.78rem;
+      }
+
+      .footer {
+        margin: 1rem 0 1.5rem;
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Investment Growth Calculator</h1>
+  <p class="intro">
+    Explore how your investments evolve over time with flexible deposits, withdrawals, and changing growth rates.
+    This tool helps you model realistic, multi-period investing scenarios.
+  </p>
+
+  <h2>Base Settings</h2>
+  <div class="grid">
+    <div class="field">
+      <label for="initialAmount">Initial investment</label>
+      <input id="initialAmount" type="number" min="0" step="100" value="10000">
+    </div>
+    <div class="field">
+      <label for="compoundFrequency">Compounding frequency</label>
+      <select id="compoundFrequency">
+        <option value="1">Annually</option>
+        <option value="4" selected>Quarterly</option>
+        <option value="12">Monthly</option>
+        <option value="52">Weekly</option>
+        <option value="365">Daily</option>
+      </select>
+    </div>
+  </div>
+
+  <h2>Contribution and Growth Periods</h2>
+  <div class="muted">
+    Configure each period with its own duration, monthly contribution, and annual rate.
+    Periods are applied sequentially. Monthly contributions can be negative to represent withdrawals.
+  </div>
+
+  <div id="periodsContainer">
+    <div class="periods-header">
+      <div>Years in period</div>
+      <div>Monthly contribution (±)</div>
+      <div>Annual growth rate (%)</div>
+      <div>Actions</div>
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <button id="addPeriodBtn" class="secondary" type="button">Add period</button>
+    <button id="calculateBtn" class="primary" type="button">Calculate growth</button>
+  </div>
+
+  <div id="errorBox" class="error" style="display:none;"></div>
+
+  <div id="results" class="results" style="display:none;">
+    <div class="results-summary">
+      <div class="summary-item">
+        <div class="summary-label">Total time</div>
+        <div class="summary-value" id="summaryYears"></div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Final value</div>
+        <div class="summary-value" id="summaryFinal"></div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Net contributions (excluding initial)</div>
+        <div class="summary-value" id="summaryContrib"></div>
+      </div>
+      <div class="summary-item">
+        <div class="summary-label">Total growth earned</div>
+        <div class="summary-value" id="summaryGrowth"></div>
+      </div>
+    </div>
+
+    <div class="muted">Per-period breakdown</div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+        <tr>
+          <th>Period</th>
+          <th>Years</th>
+          <th>Monthly contrib.</th>
+          <th>Rate</th>
+          <th>Start balance</th>
+          <th>Net contrib. this period</th>
+          <th>Cumulative contrib.</th>
+          <th>Net growth this period</th>
+          <th>End balance</th>
+        </tr>
+        </thead>
+        <tbody id="breakdownBody">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="muted" style="margin-top:0.75rem;">Growth over time</div>
+    <div class="chart-container">
+      <canvas id="growthChart"></canvas>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  © 2025 Saurin Parikh. All rights reserved.
+</footer>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  // Utility to format numbers as currency
+  function formatCurrency(value, decimals = 2) {
+    if (!isFinite(value)) return "-";
+    return value.toLocaleString(undefined, {
+      style: "currency",
+      currency: "USD",
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals
+    });
+  }
+
+  function formatPercent(value, decimals = 2) {
+    if (!isFinite(value)) return "-";
+    return value.toFixed(decimals) + "%";
+  }
+
+  function showError(message) {
+    var box = document.getElementById("errorBox");
+    box.textContent = message;
+    box.style.display = "block";
+  }
+
+  function clearError() {
+    var box = document.getElementById("errorBox");
+    box.textContent = "";
+    box.style.display = "none";
+  }
+
+  function createPeriodRow(years, monthlyContrib, rate) {
+    var row = document.createElement("div");
+    row.className = "period-row";
+
+    row.innerHTML = `
+      <div class="field">
+        <label class="mobile-label">Years in period</label>
+        <input type="number" class="period-years" min="0" step="1" value="${years}">
+      </div>
+      <div class="field">
+        <label class="mobile-label">Monthly contribution (±)</label>
+        <input type="number" class="period-contrib" step="100" value="${monthlyContrib}">
+      </div>
+      <div class="field">
+        <label class="mobile-label">Annual growth rate (%)</label>
+        <input type="number" class="period-rate" step="0.1" value="${rate}">
+      </div>
+      <div class="field" style="align-items:flex-start;">
+        <button type="button" class="danger remove-period-btn">Remove</button>
+      </div>
+    `;
+
+    row.querySelector(".remove-period-btn").addEventListener("click", function () {
+      var container = document.getElementById("periodsContainer");
+      container.removeChild(row);
+      if (container.querySelectorAll(".period-row").length === 0) {
+        container.appendChild(createPeriodRow(10, 1000, 7));
+      }
+    });
+
+    return row;
+  }
+
+  function initDefaultPeriods() {
+    var container = document.getElementById("periodsContainer");
+    container.innerHTML = container.innerHTML; // keep header
+    // Example periods:
+    container.appendChild(createPeriodRow(10, 1000, 7)); // 1000/month for 10 years
+    container.appendChild(createPeriodRow(10, 500, 6));  // 500/month for 10 years
+  }
+
+  var growthChart = null;
+
+  // Render chart with portfolio value and amount invested
+  function renderChart(labelsYears, balances, invested) {
+    var canvas = document.getElementById("growthChart");
+    if (!canvas) return;
+    var ctx = canvas.getContext("2d");
+
+    if (growthChart) {
+      growthChart.destroy();
+    }
+
+    // Build (x,y) points for linear X scale
+    var portfolioPoints = labelsYears.map(function (x, i) {
+      return { x: x, y: balances[i] };
+    });
+    var investedPoints = labelsYears.map(function (x, i) {
+      return { x: x, y: invested[i] };
+    });
+
+    growthChart = new Chart(ctx, {
+      type: "line",
+      data: {
+        datasets: [
+          {
+            label: "Portfolio value",
+            data: portfolioPoints,
+            borderWidth: 2,
+            pointRadius: 0,
+            tension: 0.15
+          },
+          {
+            label: "Amount invested",
+            data: investedPoints,
+            borderWidth: 2,
+            borderDash: [5, 5],
+            pointRadius: 0,
+            tension: 0.15
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: true
+          },
+          tooltip: {
+            callbacks: {
+              title: function (items) {
+                if (!items.length) return "";
+                var years = items[0].parsed.x;
+                return years.toFixed(2) + " years";
+              },
+              label: function (item) {
+                var value = item.parsed.y;
+                return item.dataset.label + ": " + formatCurrency(value);
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            type: "linear",
+            title: {
+              display: true,
+              text: "Years"
+            },
+            ticks: {
+              stepSize: 1,
+              callback: function (value) {
+                return value.toFixed(0);
+              }
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: "Value"
+            },
+            ticks: {
+              callback: function (value) {
+                return Number(value).toLocaleString(undefined, {
+                  maximumFractionDigits: 0
+                });
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+
+  function calculateGrowth() {
+    clearError();
+
+    var initial = parseFloat(document.getElementById("initialAmount").value);
+    var compoundPerYear = parseInt(document.getElementById("compoundFrequency").value, 10);
+    if (!isFinite(initial) || initial < 0) {
+      showError("Initial investment must be a non-negative number.");
+      return;
+    }
+    if (!isFinite(compoundPerYear) || compoundPerYear <= 0) {
+      showError("Compounding frequency must be a positive number.");
+      return;
+    }
+
+    var periodRows = document.querySelectorAll(".period-row");
+    if (periodRows.length === 0) {
+      showError("Please add at least one period.");
+      return;
+    }
+
+    var balance = initial;
+    var totalContributions = 0;
+    var totalYears = 0;
+    var runningYears = 0;
+
+    var investedSoFar = initial; // initial deposit counted as invested
+    var cumulativeContrib = 0;   // cumulative net contributions (excluding initial)
+
+    var breakdown = [];
+
+    var timelineYears = [0];
+    var timelineBalances = [balance];
+    var timelineInvested = [investedSoFar];
+
+    for (var idx = 0; idx < periodRows.length; idx++) {
+      var row = periodRows[idx];
+      var years = parseFloat(row.querySelector(".period-years").value);
+      var monthlyContrib = parseFloat(row.querySelector(".period-contrib").value);
+      var ratePercent = parseFloat(row.querySelector(".period-rate").value);
+
+      if (!isFinite(years) || years < 0) {
+        showError("Years in each period must be zero or greater.");
+        return;
+      }
+      if (!isFinite(monthlyContrib)) {
+        showError("Monthly contribution must be a numeric value.");
+        return;
+      }
+      if (!isFinite(ratePercent)) {
+        showError("Growth rate must be a numeric value.");
+        return;
+      }
+
+      if (years === 0) {
+        continue;
+      }
+
+      var startBalance = balance;
+      var annualRate = ratePercent / 100;
+      var n = compoundPerYear;
+      var totalSteps = Math.round(years * n); // approximate for fractional years
+
+      if (totalSteps <= 0) {
+        var contribThisPeriodZero = 0;
+        var netGrowthZero = balance - startBalance;
+        totalYears += years;
+
+        breakdown.push({
+          label: "Period " + (idx + 1),
+          years: years,
+          monthlyContrib: monthlyContrib,
+          ratePercent: ratePercent,
+          startBalance: startBalance,
+          contribThisPeriod: contribThisPeriodZero,
+          cumulativeContrib: cumulativeContrib,
+          netGrowth: netGrowthZero,
+          endBalance: balance
+        });
+        continue;
+      }
+
+      // Convert monthly contribution to an annual equivalent, then to per-compounding-period
+      var annualEquivalent = monthlyContrib * 12;
+      var periodicContrib = annualEquivalent / n;
+
+      var contribThisPeriod = 0;
+      var deltaYear = years / totalSteps;
+
+      for (var step = 0; step < totalSteps; step++) {
+        // Apply growth
+        balance *= (1 + annualRate / n);
+        // Apply contribution/withdrawal
+        balance += periodicContrib;
+        contribThisPeriod += periodicContrib;
+        investedSoFar += periodicContrib;
+
+        runningYears += deltaYear;
+        timelineYears.push(runningYears);
+        timelineBalances.push(balance);
+        timelineInvested.push(investedSoFar);
+      }
+
+      totalContributions += contribThisPeriod;
+      cumulativeContrib += contribThisPeriod;
+      totalYears += years;
+
+      var netGrowth = balance - startBalance - contribThisPeriod;
+
+      breakdown.push({
+        label: "Period " + (idx + 1),
+        years: years,
+        monthlyContrib: monthlyContrib,
+        ratePercent: ratePercent,
+        startBalance: startBalance,
+        contribThisPeriod: contribThisPeriod,
+        cumulativeContrib: cumulativeContrib,
+        netGrowth: netGrowth,
+        endBalance: balance
+      });
+    }
+
+    if (breakdown.length === 0) {
+      showError("At least one period must have a duration greater than zero.");
+      return;
+    }
+
+    var finalBalance = balance;
+    var totalGrowth = finalBalance - initial - totalContributions;
+
+    // Update summary
+    document.getElementById("summaryYears").textContent = totalYears.toFixed(2) + " years";
+    document.getElementById("summaryFinal").textContent = formatCurrency(finalBalance);
+    document.getElementById("summaryContrib").textContent = formatCurrency(totalContributions);
+    document.getElementById("summaryGrowth").textContent = formatCurrency(totalGrowth);
+
+    // Update breakdown table
+    var tbody = document.getElementById("breakdownBody");
+    tbody.innerHTML = "";
+    breakdown.forEach(function (p, index) {
+      var tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${p.years.toFixed(2)}</td>
+        <td>${formatCurrency(p.monthlyContrib)}</td>
+        <td>${formatPercent(p.ratePercent, 2)}</td>
+        <td>${formatCurrency(p.startBalance)}</td>
+        <td>${formatCurrency(p.contribThisPeriod)}</td>
+        <td>${formatCurrency(p.cumulativeContrib)}</td>
+        <td>${formatCurrency(p.netGrowth)}</td>
+        <td>${formatCurrency(p.endBalance)}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+    document.getElementById("results").style.display = "block";
+
+    // Render growth chart with both lines; x-axis will tick at whole years
+    renderChart(timelineYears, timelineBalances, timelineInvested);
+  }
+
+  // Initialize on load
+  document.addEventListener("DOMContentLoaded", function () {
+    initDefaultPeriods();
+
+    document.getElementById("addPeriodBtn").addEventListener("click", function () {
+      var container = document.getElementById("periodsContainer");
+      container.appendChild(createPeriodRow(5, 500, 6));
+    });
+
+    document.getElementById("calculateBtn").addEventListener("click", calculateGrowth);
+  });
+</script>
+</body>
+</html>
