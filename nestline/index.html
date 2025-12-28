@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nestline — Investment Growth Calculator</title>
+  <meta name="description" content="Nestline is a minimalist, on-device investment growth calculator for iPhone." />
+
+  <style>
+    :root {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+      color: #111;
+      background: #f2f2f2;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 28px 22px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 1.6rem;
+      margin: 0 0 6px 0;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      margin: 22px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    p {
+      margin: 0 0 12px;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .section {
+      margin-bottom: 22px;
+    }
+
+    .note {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 0.8rem;
+      color: #666;
+    }
+
+    footer a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+    }
+
+    /* Dark mode */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        color: #e5e5e5;
+        background: #0f0f0f;
+      }
+
+      body {
+        background: #0f0f0f;
+      }
+
+      .card {
+        background: #151515;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      }
+
+      .subtitle,
+      .note,
+      footer {
+        color: #9a9a9a;
+      }
+
+      h2 {
+        border-bottom-color: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <header>
+        <h1>Nestline</h1>
+        <div class="subtitle">
+          A simple, on-device investment growth calculator for iPhone
+        </div>
+      </header>
+
+      <div class="section">
+        <h2>What is Nestline?</h2>
+        <p>
+          Nestline is a minimalist tool that helps you understand how an investment
+          can evolve over time. It focuses on clarity, simplicity, and privacy.
+        </p>
+        <p>
+          All calculations run locally on your device. No accounts, no tracking,
+          and no data leaves your phone.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>How it works</h2>
+        <ul>
+          <li>Enter an initial investment amount</li>
+          <li>Select how often growth is applied (annual, monthly, etc.)</li>
+          <li>Add one or more periods with:
+            <ul>
+              <li>Duration (years)</li>
+              <li>Monthly contribution or withdrawal</li>
+              <li>Annual growth rate</li>
+            </ul>
+          </li>
+          <li>View portfolio value, contributions, and growth over time</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Why use it?</h2>
+        <ul>
+          <li>Model different savings and investing phases</li>
+          <li>Simulate deposits and withdrawals</li>
+          <li>Compare money invested vs. portfolio value</li>
+          <li>Keep scenarios realistic and easy to understand</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Key characteristics</h2>
+        <ul>
+          <li>Runs entirely on-device</li>
+          <li>No network access</li>
+          <li>No analytics or tracking</li>
+          <li>Remembers inputs between launches</li>
+          <li>System, light, and dark appearance support</li>
+        </ul>
+        <p class="note">
+          Nestline is for educational purposes only and does not provide financial advice.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 <a href="https://sauriiiin.github.io/" target="_blank" rel="noopener noreferrer">Saurin Parikh</a>. All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
