@@ -1,0 +1,193 @@
+.plot-card { height: 100%; }
+.plot-card .card-header { flex: 0 0 auto; }
+
+/* Card header with fullscreen button */
+.plot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.plot-header .btn { flex: 0 0 auto; }
+
+.plot-card-sm { --plot-h: clamp(320px, 38vh, 380px); }
+.plot-card-md { --plot-h: clamp(380px, 46vh, 460px); }
+.plot-card-lg { --plot-h: clamp(520px, 62vh, 680px); }
+.plot-card-xl { --plot-h: clamp(560px, 68vh, 740px); }
+
+/* Card body that contains a single plot*/
+.plot-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  height: var(--plot-h, 420px);
+  overflow: hidden;
+}
+
+/* Plot container fills available space inside plot-body */
+.plot {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 0 !important;
+}
+
+/* Heatmap grid container */
+.heat-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 12px;
+  align-items: stretch;
+}
+
+@media (max-width: 992px) {
+  .heat-grid { grid-template-columns: 1fr; }
+}
+
+.heat-grid .plot {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#heatmapCard .plot-body {
+  align-items: stretch;
+  justify-content: stretch;
+  overflow: auto;
+}
+
+/* Searchable institution list */
+.inst-list {
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0.375rem;
+  max-height: 320px;
+  overflow: auto;
+  padding: 0.25rem;
+  background: #fff;
+}
+
+.inst-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  user-select: none;
+}
+.inst-item:hover { background: rgba(0,0,0,0.04); }
+.inst-item.selected { background: rgba(13,110,253,0.10); }
+.inst-item input[type="checkbox"] { pointer-events: none; }
+
+/* Fullscreen behavior */
+.card:fullscreen,
+.card:-webkit-full-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.card:fullscreen .plot-body,
+.card:-webkit-full-screen .plot-body {
+  height: calc(100vh - 56px); /* header height approx */
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+#heatmapCard:fullscreen .plot-body,
+#heatmapCard:-webkit-full-screen .plot-body {
+  overflow: auto; /* allow scroll in fullscreen for many heatmaps */
+}
+
+:fullscreen { background: #fff; }
+
+/* Cross-browser slider ticks */
+.slider-ticks {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+  padding: 0 2px;
+  color: rgba(0,0,0,0.55);
+  font-size: 12px;
+  line-height: 1.1;
+  user-select: none;
+}
+.slider-ticks span {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* optional: tiny tick mark above labels */
+.slider-ticks span::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 6px;
+  margin: 0 auto 2px auto;
+  background: rgba(0,0,0,0.25);
+}
+
+/* ---- Persistent footer ---- */
+
+:root {
+  --footer-h: 56px; /* adjust if you want taller */
+}
+
+body.has-footer {
+  padding-bottom: var(--footer-h);
+}
+
+.app-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--footer-h);
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.12);
+  z-index: 1040; /* above cards; below modals */
+  display: flex;
+  align-items: center;
+}
+
+.app-footer .footer-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.7);
+  flex-wrap: wrap;
+}
+
+.app-footer a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* On narrow screens, stack footer items */
+@media (max-width: 768px) {
+  :root { --footer-h: 86px; }
+  .app-footer .footer-row {
+    justify-content: flex-start;
+  }
+  .app-footer .footer-left,
+  .app-footer .footer-mid,
+  .app-footer .footer-right {
+    width: 100%;
+  }
+}
+
+.sidebar-section-title{
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin: 0 0 .5rem 0;
+}
