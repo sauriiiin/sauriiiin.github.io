@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HERD Survey (2023) Dashboard</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+  <!-- d3-dsv for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/d3-dsv@3"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="has-footer">
+<div class="container-fluid py-3">
+  <div class="d-flex align-items-center justify-content-between mb-3">
+    <h4 class="mb-0">HERD Survey (2023) Dashboard</h4>
+    <div id="loadStatus" class="text-muted small">Loading…</div>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-rank" type="button" role="tab">
+        Rankings & Growth
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-mix" type="button" role="tab">
+        Funding Mix (2023)
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-port" type="button" role="tab">
+        Portfolio & Agencies (2023)
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-about" type="button" role="tab">
+        About
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content border border-top-0 rounded-bottom p-3">
+
+    <!-- Rankings & Growth -->
+    <div class="tab-pane fade show active" id="tab-rank" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-12 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="sidebar-section-title">Selection</div>
+              <div class="mb-2">
+                <label class="form-label">Institution(s)</label>
+                <input id="instSearchRank" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <div id="instListRank" class="inst-list" role="listbox" aria-label="Institutions"></div>
+                <div class="form-text">Click to select/unselect. Selected items are pinned to the top.</div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Metric</div>
+              <div class="mb-2">
+                <label class="form-label">Metric</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="metricTs" id="metricTotal" value="Total" checked>
+                    <label class="form-check-label" for="metricTotal">Total</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="metricTs" id="metricFederal" value="Federal">
+                    <label class="form-check-label" for="metricFederal">Federal</label>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Ranking controls</div>
+              <div class="mb-2">
+                <label class="form-label">Fiscal year (rank anchor)</label>
+                <input id="yearTs" type="range" class="form-range">
+                <div id="yearTsTicks" class="slider-ticks"></div>
+                <div class="small text-muted">Year: <span id="yearTsLabel"></span></div>
+              </div>
+
+              <div class="mb-2">
+                <label class="form-label">Top N (ranked)</label>
+                <input id="topN" type="range" class="form-range" min="10" max="100" step="5" value="25">
+                <div id="topNTicks" class="slider-ticks"></div>
+                <div class="small text-muted">N: <span id="topNLabel">25</span></div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Options</div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="includeAllInst">
+                <label class="form-check-label" for="includeAllInst">Include “All institutions”</label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-9">
+          <div class="row g-3">
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>Top-N (selected year; click a bar to select)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body">
+                  <div id="rankBar" class="plot"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>Selected Institution/s</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body">
+                  <div id="rankWindow" class="plot"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-sm">
+                <div class="card-header plot-header">
+                  <span>Rank over time (all institutions; selected highlighted)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body">
+                  <div id="bumpRank" class="plot"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-sm">
+                <div class="card-header plot-header">
+                  <span>Expenditures over time (selected institutions)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body">
+                  <div id="trendLines" class="plot"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Funding Mix -->
+    <div class="tab-pane fade" id="tab-mix" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-12 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="sidebar-section-title">Selection</div>
+              <div class="mb-2">
+                <label class="form-label">Institution(s)</label>
+                <input id="instSearchMix" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <div id="instListMix" class="inst-list" role="listbox" aria-label="Institutions"></div>
+                <div class="form-text">Selected items are pinned to the top.</div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Window</div>
+              <div class="mb-2">
+                <label class="form-label">Window size (institutions)</label>
+                <input id="topNMix" type="range" class="form-range" min="10" max="100" step="5" value="25">
+                <div id="topNMixTicks" class="slider-ticks"></div>
+                <div class="small text-muted">N: <span id="topNMixLabel">25</span></div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Display</div>
+              <div class="mb-2">
+                <label class="form-label">Display</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mixMode" id="mixPercent" value="Percent" checked>
+                    <label class="form-check-label" for="mixPercent">Percent</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="mixMode" id="mixDollars" value="Dollars">
+                    <label class="form-check-label" for="mixDollars">Dollars</label>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Ranking</div>
+              <div class="mb-2">
+                <label class="form-label">Rank institutions by source (FY 2023)</label>
+                <select id="sourceRank" class="form-select">
+                  <option>Federal Government</option>
+                  <option>State and local government</option>
+                  <option>Institution funds</option>
+                  <option selected>Business</option>
+                  <option>Nonprofit organizations</option>
+                  <option>All other sources</option>
+                </select>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Heatmap</div>
+              <div class="mb-2">
+                <label class="form-label">Heatmap view</label>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="heatMode" id="heatSingle" value="single" checked>
+                    <label class="form-check-label" for="heatSingle">Single</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="heatMode" id="heatAll" value="all">
+                    <label class="form-check-label" for="heatAll">All selected</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2" id="heatInstWrapper">
+                <label class="form-label">Heatmap institution</label>
+                <select id="heatInst" class="form-select"></select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-9">
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>Institution funding-source mix (FY 2023)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body"><div id="sourceMix" class="plot"></div></div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>Selected source (FY 2023)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body"><div id="topBySource" class="plot"></div></div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card plot-card plot-card-lg" id="heatmapCard">
+                <div class="card-header plot-header">
+                  <span>Source × Field heatmap (FY 2023)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body">
+                  <div id="heatGrid" class="heat-grid"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="tab-pane fade" id="tab-port" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-12 col-lg-3">
+          <div class="card">
+            <div class="card-body">
+
+              <div class="sidebar-section-title">Selection</div>
+              <div class="mb-2">
+                <label class="form-label">Institution(s)</label>
+                <input id="instSearchPort" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <div id="instListPort" class="inst-list" role="listbox" aria-label="Institutions"></div>
+                <div class="form-text">Selected items are pinned to the top.</div>
+              </div>
+
+              <hr class="my-3">
+
+              <div class="sidebar-section-title">Fields</div>
+              <div class="mb-2">
+                <label class="form-label">Field metric</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fieldMetric" id="fieldAll" value="All" checked>
+                    <label class="form-check-label" for="fieldAll">All</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fieldMetric" id="fieldFed" value="Federal">
+                    <label class="form-check-label" for="fieldFed">Federal</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label class="form-label">Fields display</label>
+                <div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fieldMode" id="fieldModeDollars" value="Dollars" checked>
+                    <label class="form-check-label" for="fieldModeDollars">Dollars</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="fieldMode" id="fieldModePercent" value="Percent">
+                    <label class="form-check-label" for="fieldModePercent">Percent</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-9">
+          <div class="row g-3">
+
+            <!-- Side-by-side on lg+, stacked on smaller screens -->
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>R&amp;D by field (FY 2023)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body"><div id="fieldBar" class="plot"></div></div>
+              </div>
+            </div>
+
+            <div class="col-12 col-xl-6">
+              <div class="card plot-card plot-card-md">
+                <div class="card-header plot-header">
+                  <span>Federal agency composition (FY 2023)</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body"><div id="agencyBar" class="plot"></div></div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="card plot-card plot-card-xl">
+                <div class="card-header plot-header">
+                  <span>Federal dependence (FY 2023) — selected highlighted</span>
+                  <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
+                </div>
+                <div class="card-body plot-body"><div id="scatterSizeShare" class="plot"></div></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="tab-pane fade" id="tab-about" role="tabpanel">
+      <div class="row g-3">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="mb-3">What is HERD?</h5>
+              <p class="mb-3">
+                The <b>Higher Education Research and Development (HERD)</b> Survey is produced by the National Center for Science
+                and Engineering Statistics (NCSES) within the National Science Foundation (NSF). It provides annual statistics on
+                research and development expenditures at U.S. higher education institutions, including breakdowns by funding source,
+                field of R&amp;D, and (for federally funded R&amp;D) federal agency.
+              </p>
+
+              <h5 class="mb-3">What data is used in this dashboard?</h5>
+              <p class="mb-2">
+                This dashboard is built from HERD 2023 <b>Tables 21–31</b> (institution-level tables). The original Excel tables were
+                converted into tidy “fact” tables so they can be joined, filtered, and visualized consistently. These are loaded in the browser and aggregated on the fly for the visuals shown here. The fact tables include:
+              </p>
+              <ul class="mb-3">
+                <li><b>Time series</b> totals and federally financed totals by institution and year.</li>
+                <li><b>FY 2023 funding-source mix</b> by institution (federal, state/local, institutional, business, nonprofit, other).</li>
+                <li><b>FY 2023 field portfolios</b> for all funds and federally financed funds.</li>
+                <li><b>FY 2023 federal agency composition</b> for federally financed R&amp;D.</li>
+                <li><b>FY 2023 source × field</b> detail for non-federal funding sources across fields.</li>
+              </ul>
+
+              <h5 class="mb-3">How is the data displayed?</h5>
+              <ul class="mb-3">
+                <li><b>Rankings &amp; Growth:</b> Top-N bars by selected year and metric; rank-over-time background for all institutions with selected highlighted; and trend lines for selected institutions.</li>
+                <li><b>Funding Mix (2023):</b> Stacked bars show the composition of funding sources; a source-specific ranking view shows institutions by a selected source; heatmaps show source × field patterns (log-scaled for readability).</li>
+                <li><b>Portfolio &amp; Agencies (2023):</b> Grouped bars compare selected institutions side-by-side across fields and agencies; scatter shows federal dependence with selected highlighted.</li>
+              </ul>
+
+              <h5 class="mb-3">What is the purpose of this app?</h5>
+              <p class="mb-0">
+                The goal is to make HERD institution-level data easier to explore interactively: compare institutions across time,
+                understand funding mix and dependence, examine field specialization, and see federal agency composition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Persistent footer -->
+<footer class="app-footer">
+  <div class="container-fluid">
+    <div class="footer-row">
+      <div class="footer-left">
+        HERD survey data collected from
+        <a href="https://ncses.nsf.gov/surveys/higher-education-research-development/2023#data" target="_blank" rel="noopener">
+          NCSES
+        </a>.
+      </div>
+
+      <div class="footer-mid">
+        © 2025 Saurin Parikh. All rights reserved.
+      </div>
+
+      <div class="footer-right">
+        Get in touch:
+        <a href="mailto:saurinbp@gmail.com">E-mail</a>,
+        <a href="https://www.linkedin.com/in/sauriiiin/" target="_blank" rel="noopener">LinkedIn</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
