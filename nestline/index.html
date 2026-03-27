@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nestline — Investment Growth Calculator</title>
-  <meta name="description" content="Nestline is a minimalist, on-device investment growth calculator for iPhone." />
+  <title>Nestline — Financial Planning Tools for iPhone</title>
+  <meta name="description" content="Nestline is an on-device financial planning toolkit for iPhone — investment calculators, budgeting, and tax estimation." />
 
   <style>
     body {
@@ -17,9 +17,21 @@
       background: #fff;
     }
 
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .app-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 11px;
+    }
+
     h1 {
       font-size: 1.6rem;
-      margin-bottom: 4px;
+      margin: 0;
     }
 
     h2 {
@@ -27,6 +39,12 @@
       margin-top: 28px;
       padding-bottom: 6px;
       border-bottom: 1px solid #ddd;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-top: 18px;
+      margin-bottom: 4px;
     }
 
     p {
@@ -56,40 +74,68 @@
 <body>
 
   <header>
-    <h1>Nestline</h1>
-    <p>A simple, on-device investment growth calculator for iPhone</p>
+    <div class="title-row">
+      <img src="nestline_icon.png" alt="Nestline app icon" class="app-icon" />
+      <h1>Nestline</h1>
+    </div>
+    <p>Simple, powerful financial planning tools for iPhone</p>
   </header>
 
   <section>
     <h2>What is Nestline?</h2>
     <p>
-      Nestline is a minimalist tool designed to help you understand how an investment
-      can grow over time. It focuses on clarity, simplicity, and privacy.
+      Nestline helps you plan your financial future with a suite of on-device tools.
+      Model investment scenarios, track your budget, and estimate federal taxes &mdash;
+      all with clarity, simplicity, and complete privacy.
     </p>
     <p>
-      All calculations run locally on your device. No accounts, no tracking,
+      Everything runs locally on your device. No accounts, no tracking,
       and no data leaves your phone.
     </p>
   </section>
 
   <section>
-    <h2>How it works</h2>
-    <ul>
-      <li>Enter an initial investment amount</li>
-      <li>Select how often growth is applied</li>
-      <li>Add one or more periods with duration, contribution, and growth rate</li>
-      <li>View portfolio value, contributions, and growth over time</li>
-    </ul>
+    <h2>Tools</h2>
+
+    <h3>Simple Calculator</h3>
+    <p>
+      Quick investment projections with per-period contributions or withdrawals.
+      Enter an initial amount, choose a compounding frequency, and add periods
+      with their own duration, contribution/withdrawal mode, and growth rate.
+    </p>
+
+    <h3>Pro Calculator</h3>
+    <p>
+      Advanced scenarios with contribution ramps, multiple frequencies
+      (monthly, weekly, biweekly, annual), beginning/end-of-month timing,
+      withdrawal strategies (fixed or 4% rule), and optional inflation adjustment.
+    </p>
+
+    <h3>Budget</h3>
+    <p>
+      Track income, taxes, deductions, and expenses to find your monthly surplus.
+      Categorize deductions as invested or expense, manage irregular expenses with
+      sinking fund targets, and estimate a portfolio target using the 4% rule.
+    </p>
+
+    <h3>Tax Estimator</h3>
+    <p>
+      Estimate federal income tax for 2025 and 2026 with progressive bracket-by-bracket
+      breakdowns. Supports all filing statuses, pre-tax deductions (401k, IRA, HSA),
+      standard or itemized deductions, and child tax credits.
+    </p>
   </section>
 
   <section>
-    <h2>Key characteristics</h2>
+    <h2>Key features</h2>
     <ul>
-      <li>Runs entirely on-device</li>
-      <li>No network access</li>
+      <li>Math expressions in any numeric field (e.g. 500+200)</li>
+      <li>Export results to CSV from any tool</li>
+      <li>Clear growth vs. contributions charts</li>
+      <li>Runs entirely on-device &mdash; no network access</li>
       <li>No analytics or tracking</li>
       <li>Remembers inputs between launches</li>
-      <li>Supports light and dark mode</li>
+      <li>Supports light, dark, and tinted app icons</li>
     </ul>
   </section>
 
@@ -124,16 +170,18 @@
     </p>
 
     <p>
-      Last updated: December 2025
+      Last updated: March 2026
     </p>
   </section>
 
   <footer>
-    © 2025
+    &copy; 2025
     <a href="https://sauriiiin.github.io/" target="_blank" rel="noopener noreferrer">
       Saurin Parikh
     </a>.
     All rights reserved.
+    <br />
+    Nestline is for educational and planning purposes only.
   </footer>
 
 </body>
