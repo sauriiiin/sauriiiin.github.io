@@ -5,3 +5,31 @@ sauriiiin.github.io.Rproj
 README.html
 .DS_Store
 files/.DS_Store
+
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Bundler
+.bundle/
+vendor/
+vendor/bundle/
+Gemfile.lock
+
+# Ruby version managers
+.ruby-version
+.ruby-gemset
+
+# Local environment / editor cruft
+.env
+.env.local
+*.gem
+*.rbc
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
