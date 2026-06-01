@@ -4,91 +4,126 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Federal Income Tax Estimator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #f8f9fa;
-    --card: #ffffff;
-    --accent: #2563eb;
-    --accent-light: #dbeafe;
-    --text: #1e293b;
-    --muted: #64748b;
-    --border: #e2e8f0;
-    --green: #16a34a;
-    --green-light: #dcfce7;
-    --red: #dc2626;
+    --paper: #f4efe4;
+    --paper-2: #ece4d3;
+    --ink: #22271f;
+    --ink-soft: #5b6155;
+    --forest: #2f4f3e;
+    --forest-2: #3d6650;
+    --clay: #c0633f;
+    --gold: #caa44a;
+    --sage: #7a9277;
+    --line: #d7cdb8;
+    --card: #fbf8f0;
+    --shadow: rgba(34,39,31,.10);
+
+    /* mapped aliases for existing class references */
+    --bg: var(--paper);
+    --accent: var(--forest);
+    --accent-light: rgba(47,79,62,.10);
+    --text: var(--ink);
+    --muted: var(--ink-soft);
+    --border: var(--line);
+    --green: var(--forest-2);
+    --green-light: rgba(122,146,119,.14);
+    --red: var(--clay);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+    font-family: 'Archivo', sans-serif;
+    background: var(--paper);
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(202,164,74,.10), transparent 38%),
+      radial-gradient(circle at 88% 92%, rgba(47,79,62,.10), transparent 42%);
+    color: var(--ink);
     line-height: 1.5;
-    padding: 20px;
+    padding: clamp(16px, 4vw, 56px);
+    min-height: 100vh;
   }
   .container { max-width: 720px; margin: 0 auto; }
   h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(28px, 5vw, 42px);
+    font-style: italic;
     text-align: center;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    letter-spacing: -.02em;
+    line-height: 1.1;
+    color: var(--ink);
   }
   .subtitle {
     text-align: center;
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 24px;
+    color: var(--ink-soft);
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 28px;
   }
   .card {
     background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 24px;
-    margin-bottom: 16px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: clamp(20px, 3vw, 30px);
+    margin-bottom: 18px;
+    box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 30px -22px var(--shadow);
   }
   .card h2 {
-    font-size: 1rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.15rem;
     font-weight: 600;
-    margin-bottom: 16px;
-    color: var(--accent);
+    margin-bottom: 18px;
+    color: var(--forest);
+    letter-spacing: -.01em;
   }
   .row {
     display: flex;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 14px;
+    margin-bottom: 14px;
     flex-wrap: wrap;
   }
   .field { flex: 1; min-width: 200px; }
   .field label {
     display: block;
-    font-size: 0.8rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
     font-weight: 500;
-    color: var(--muted);
-    margin-bottom: 4px;
+    color: var(--ink-soft);
+    margin-bottom: 6px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
   }
   .field select, .field input {
     width: 100%;
-    padding: 8px 12px;
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-size: 0.95rem;
-    background: var(--bg);
-    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    padding: 11px 13px;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    background: var(--paper);
+    color: var(--ink);
     outline: none;
-    transition: border-color 0.2s;
+    transition: border-color 0.15s, box-shadow 0.15s;
   }
   .field select:focus, .field input:focus {
-    border-color: var(--accent);
+    border-color: var(--forest);
+    box-shadow: 0 0 0 3px rgba(47,79,62,.14);
   }
   .help-text {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-top: 2px;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    margin-top: 3px;
   }
   .expr-hint {
-    font-size: 0.72rem;
-    color: #94a3b8;
-    margin-top: 2px;
-    font-family: 'SF Mono', 'Consolas', monospace;
+    font-size: 11px;
+    color: var(--sage);
+    margin-top: 3px;
+    font-family: 'IBM Plex Mono', monospace;
     min-height: 0;
     overflow: hidden;
     transition: all 0.2s;
@@ -96,84 +131,103 @@
   .expr-hint:empty { display: none; }
   .field input.has-expr {
     font-weight: 600;
-    color: var(--accent);
+    color: var(--forest);
   }
   .btn {
     display: block;
     width: 100%;
-    padding: 12px;
-    background: var(--accent);
-    color: white;
+    padding: 13px;
+    background: var(--forest);
+    color: var(--paper);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
+    font-family: 'Archivo', sans-serif;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: opacity 0.2s;
-    margin-top: 8px;
+    transition: background 0.15s, opacity 0.15s;
+    margin-top: 10px;
   }
-  .btn:hover { opacity: 0.9; }
+  .btn:hover { background: var(--forest-2); }
 
   /* Results */
   #results { display: none; }
   .summary-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin-bottom: 20px;
+    gap: 14px;
+    margin-bottom: 22px;
   }
   .summary-item {
     text-align: center;
-    padding: 12px 8px;
-    border-radius: 8px;
-    background: var(--bg);
+    padding: 16px 10px;
+    border-radius: 12px;
+    background: var(--paper);
+    border: 1px solid var(--line);
   }
   .summary-item .label {
-    font-size: 0.75rem;
-    color: var(--muted);
-    margin-bottom: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
   }
   .summary-item .value {
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -.01em;
+    color: var(--ink);
   }
-  .summary-item.highlight { background: var(--accent-light); }
-  .summary-item.highlight .value { color: var(--accent); }
-  .summary-item.green { background: var(--green-light); }
-  .summary-item.green .value { color: var(--green); }
+  .summary-item.highlight {
+    background: rgba(47,79,62,.08);
+    border-color: rgba(47,79,62,.22);
+  }
+  .summary-item.highlight .value { color: var(--forest); }
+  .summary-item.green {
+    background: rgba(122,146,119,.12);
+    border-color: rgba(122,146,119,.30);
+  }
+  .summary-item.green .value { color: var(--forest); }
 
   /* Bracket table */
   table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.85rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
   }
   th {
+    position: sticky;
+    top: 0;
     text-align: left;
-    padding: 8px 10px;
-    background: var(--bg);
-    font-weight: 600;
-    font-size: 0.75rem;
-    color: var(--muted);
+    padding: 11px 12px;
+    background: var(--forest);
+    color: var(--paper);
+    font-weight: 500;
+    font-size: 11.5px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border-bottom: 2px solid var(--border);
+    letter-spacing: .04em;
   }
   td {
-    padding: 8px 10px;
-    border-bottom: 1px solid var(--border);
+    padding: 9px 12px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink);
   }
   tr:last-child td { border-bottom: none; }
+  tbody tr:nth-child(even) { background: var(--paper); }
+  tbody tr:hover { background: var(--paper-2); }
   tr.total-row {
     font-weight: 700;
-    background: var(--accent-light);
+    background: rgba(47,79,62,.08);
   }
-  tr.total-row td { border-top: 2px solid var(--accent); }
+  tr.total-row td { border-top: 2px solid var(--forest); }
   .bar-cell { position: relative; }
   .bar {
     height: 6px;
     border-radius: 3px;
-    background: var(--accent);
+    background: var(--forest);
     margin-top: 4px;
     transition: width 0.4s ease;
   }
@@ -182,10 +236,12 @@
 
   .disclaimer {
     text-align: center;
-    font-size: 0.7rem;
-    color: var(--muted);
-    margin-top: 20px;
-    padding: 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--ink-soft);
+    margin-top: 24px;
+    padding: 16px;
+    line-height: 1.55;
   }
 
   @media (max-width: 500px) {
@@ -366,6 +422,7 @@
   </div>
 
   <div class="disclaimer">
+    This tool is for educational and informational purposes only and does not constitute tax, legal, or financial advice.
     This is an estimator only — not tax advice. Does not include state taxes, FICA, AMT, or capital gains.
     Consult a tax professional for your actual filing.
     <br><br>&copy; 2026 Saurin Parikh. All rights reserved.

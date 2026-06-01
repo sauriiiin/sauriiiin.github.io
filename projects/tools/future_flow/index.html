@@ -4,144 +4,260 @@
   <meta charset="UTF-8">
   <title>Investment Growth Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.4;
-      color: #222;
-      background: #f5f5f7;
+      --paper:#f4efe4;
+      --paper-2:#ece4d3;
+      --ink:#22271f;
+      --ink-soft:#5b6155;
+      --forest:#2f4f3e;
+      --forest-2:#3d6650;
+      --clay:#c0633f;
+      --gold:#caa44a;
+      --sage:#7a9277;
+      --line:#d7cdb8;
+      --card:#fbf8f0;
+      --shadow:rgba(34,39,31,.10);
     }
 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
     body {
-      margin: 0;
-      padding: 0;
-      background: #f5f5f7;
+      font-family: 'Archivo', sans-serif;
+      background: var(--paper);
+      background-image:
+        radial-gradient(circle at 12% 8%, rgba(202,164,74,.10), transparent 38%),
+        radial-gradient(circle at 88% 92%, rgba(47,79,62,.10), transparent 42%);
+      color: var(--ink);
+      line-height: 1.5;
+      padding: clamp(16px, 4vw, 56px);
+      min-height: 100vh;
     }
 
     .container {
       max-width: 960px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 1.75rem 1.5rem 2rem;
-      border-radius: 10px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      margin: 0 auto;
     }
 
+    /* ---- Header ---- */
     h1 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      font-style: italic;
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      color: var(--ink);
+      text-align: left;
       margin-top: 0;
-      font-size: 1.6rem;
-      text-align: center;
+      margin-bottom: 0;
+    }
+
+    h1::before {
+      content: 'Planning Tool';
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-style: normal;
+      font-size: 12px;
+      letter-spacing: .32em;
+      text-transform: uppercase;
+      color: var(--clay);
+      font-weight: 500;
+      margin-bottom: 10px;
     }
 
     .intro {
-      max-width: 720px;
-      margin: 0.5rem auto 1.5rem;
-      font-size: 0.9rem;
-      color: #4b5563;
-      text-align: center;
+      max-width: 62ch;
+      margin: 14px 0 36px;
+      font-size: clamp(15px, 1.6vw, 17px);
+      color: var(--ink-soft);
+      text-align: left;
     }
 
+    /* ---- Section headings (h2) ---- */
     h2 {
-      font-size: 1.1rem;
-      margin-top: 2rem;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 0.35rem;
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -.01em;
+      color: var(--ink);
+      margin-top: 30px;
+      padding-top: 28px;
+      padding-bottom: 0;
+      border-top: 1px dashed var(--line);
+      border-bottom: none;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
     }
 
+    h2::before {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--paper);
+      background: var(--forest);
+      width: 24px;
+      height: 24px;
+      border-radius: 7px;
+      display: inline-grid;
+      place-items: center;
+      flex: none;
+    }
+
+    /* Number the section badges */
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    h2:first-of-type::before { content: '1'; }
+    h2:nth-of-type(2)::before { content: '2'; }
+    h2:nth-of-type(3)::before { content: '3'; }
+
+    /* ---- Grid layout ---- */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem 1.5rem;
+      gap: 16px 18px;
       margin-bottom: 1.5rem;
     }
 
+    /* ---- Labels ---- */
     label {
-      font-size: 0.9rem;
-      font-weight: 500;
-      margin-bottom: 0.2rem;
       display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: var(--ink);
     }
 
+    .mobile-label {
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+
+    /* ---- Fields ---- */
     .field {
       display: flex;
       flex-direction: column;
     }
 
+    /* ---- Inputs & Selects ---- */
     input[type="number"],
     select {
-      padding: 0.45rem 0.55rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 0.9rem;
       width: 100%;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 15px;
+      padding: 11px 13px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      color: var(--ink);
       box-sizing: border-box;
+      transition: border-color .15s, box-shadow .15s;
+      -moz-appearance: textfield;
     }
 
     input[type="number"]:focus,
     select:focus {
       outline: none;
-      border-color: #2563eb;
-      box-shadow: 0 0 0 1px rgba(37,99,235,0.3);
+      border-color: var(--forest);
+      box-shadow: 0 0 0 3px rgba(47,79,62,.14);
     }
 
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* ---- Periods header & rows ---- */
     .periods-header {
       display: grid;
       grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
       gap: 0.75rem;
-      font-size: 0.8rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
       font-weight: 600;
-      color: #555;
-      margin-bottom: 0.25rem;
-      padding: 0 0.25rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 8px;
+      padding: 0 4px;
     }
 
     .period-row {
       display: grid;
       grid-template-columns: 1.1fr 1.1fr 1.1fr 0.7fr;
       gap: 0.75rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 10px;
       align-items: center;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 4px 12px -8px var(--shadow);
     }
 
     .period-row input[type="number"] {
       width: 100%;
     }
 
+    /* ---- Buttons ---- */
     .btn-row {
-      margin-top: 0.5rem;
+      margin-top: 18px;
       display: flex;
-      gap: 0.5rem;
+      gap: 10px;
       flex-wrap: wrap;
     }
 
     button {
+      font-family: 'Archivo', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
       border: none;
-      border-radius: 999px;
-      padding: 0.4rem 0.9rem;
-      font-size: 0.9rem;
+      border-radius: 10px;
+      padding: 10px 18px;
       cursor: pointer;
-      transition: background 0.12s ease, box-shadow 0.12s ease, transform 0.05s ease;
+      transition: all .15s;
     }
 
     button.primary {
-      background: #2563eb;
-      color: #fff;
-      box-shadow: 0 4px 10px rgba(37,99,235,0.25);
+      background: var(--forest);
+      color: var(--paper);
+      box-shadow: 0 4px 12px rgba(47,79,62,.25);
+    }
+
+    button.primary:hover {
+      background: var(--forest-2);
+      box-shadow: 0 6px 16px rgba(47,79,62,.30);
     }
 
     button.secondary {
-      background: #e5e7eb;
-      color: #111827;
+      background: var(--card);
+      color: var(--ink);
+      border: 1.5px solid var(--line);
+    }
+
+    button.secondary:hover {
+      border-color: var(--forest);
+      background: rgba(47,79,62,.06);
     }
 
     button.danger {
-      background: #ef4444;
-      color: #fff;
+      background: rgba(192,99,63,.1);
+      color: var(--clay);
+      border: 1.5px solid rgba(192,99,63,.25);
+    }
+
+    button.danger:hover {
+      background: rgba(192,99,63,.18);
+      border-color: var(--clay);
     }
 
     button:hover {
       transform: translateY(-1px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     }
 
     button:active {
@@ -149,103 +265,158 @@
       box-shadow: none;
     }
 
+    /* ---- Results panel ---- */
     .results {
-      margin-top: 1.5rem;
-      padding: 1rem 1rem 0.75rem;
-      border-radius: 8px;
-      background: #f9fafb;
-      border: 1px solid #e5e7eb;
+      margin-top: 30px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: clamp(20px, 3vw, 30px);
+      box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 30px -22px var(--shadow);
       font-size: 0.9rem;
     }
 
     .results-summary {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.75rem 1.5rem;
-      margin-bottom: 1rem;
+      gap: 16px;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed var(--line);
     }
 
     .summary-item {
-      padding-bottom: 0.25rem;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
     }
 
     .summary-label {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-bottom: 0.15rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin-bottom: 4px;
     }
 
     .summary-value {
-      font-size: 1rem;
+      font-family: 'Fraunces', serif;
       font-weight: 600;
+      font-size: 26px;
+      letter-spacing: -.01em;
+      color: var(--ink);
+    }
+
+    /* ---- Table ---- */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      margin-top: 8px;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.83rem;
-      margin-bottom: 0.5rem;
-    }
-
-    th, td {
-      border-bottom: 1px solid #e5e7eb;
-      padding: 0.4rem 0.3rem;
-      text-align: right;
-      white-space: nowrap;
-    }
-
-    th:first-child, td:first-child {
-      text-align: left;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      margin-bottom: 0;
     }
 
     th {
-      font-weight: 600;
-      background: #f3f4f6;
+      position: sticky;
+      top: 0;
+      background: var(--forest);
+      color: var(--paper);
+      font-weight: 500;
+      text-align: right;
+      padding: 11px 14px;
+      font-size: 11.5px;
+      letter-spacing: .04em;
+      white-space: nowrap;
     }
 
-    .table-wrapper {
-      width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+    th:first-child {
+      text-align: left;
     }
 
+    td {
+      padding: 9px 14px;
+      text-align: right;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    td:first-child {
+      text-align: left;
+      font-weight: 500;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--paper);
+    }
+
+    tbody tr:hover {
+      background: var(--paper-2);
+    }
+
+    /* ---- Muted text ---- */
     .muted {
-      color: #6b7280;
-      font-size: 0.8rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12.5px;
+      color: var(--ink-soft);
+      line-height: 1.5;
     }
 
+    /* ---- Error ---- */
     .error {
-      color: #b91c1c;
-      font-size: 0.85rem;
-      margin-top: 0.4rem;
+      color: var(--clay);
+      font-size: 13px;
+      font-family: 'IBM Plex Mono', monospace;
+      margin-top: 10px;
+      background: rgba(192,99,63,.08);
+      border: 1px solid rgba(192,99,63,.25);
+      border-radius: 9px;
+      padding: 9px 12px;
     }
 
+    /* ---- Chart ---- */
     .chart-container {
       position: relative;
       height: 260px;
-      margin-top: 0.75rem;
+      margin-top: 16px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
     }
 
+    /* ---- Footer ---- */
     .footer {
-      max-width: 960px;
-      margin: 1rem auto 2rem;
+      margin-top: 34px;
       text-align: center;
-      font-size: 0.8rem;
-      color: #6b7280;
+      font-size: 12px;
+      color: var(--ink-soft);
+      font-family: 'IBM Plex Mono', monospace;
     }
 
+    /* ---- Responsive ---- */
     @media (max-width: 640px) {
       .container {
-        margin: 0.75rem;
-        padding: 1.25rem 1rem 1.5rem;
+        margin: 0;
       }
 
       h1 {
-        font-size: 1.4rem;
+        font-size: clamp(28px, 8vw, 42px);
       }
 
       .intro {
-        font-size: 0.85rem;
+        font-size: 14px;
       }
 
       .grid {
@@ -258,14 +429,12 @@
 
       .period-row {
         grid-template-columns: 1fr;
-        gap: 0.4rem;
-        padding: 0.6rem 0.5rem;
-        border-radius: 8px;
-        background: #f9fafb;
+        gap: 10px;
+        padding: 14px 16px;
       }
 
       .period-row .field {
-        margin-bottom: 0.15rem;
+        margin-bottom: 0;
       }
 
       .btn-row {
@@ -278,12 +447,15 @@
       }
 
       table {
-        font-size: 0.78rem;
+        font-size: 12px;
       }
 
-      .footer {
-        margin: 1rem 0 1.5rem;
-        padding: 0 1rem;
+      .summary-value {
+        font-size: 22px;
+      }
+
+      .results-summary {
+        grid-template-columns: 1fr 1fr;
       }
     }
   </style>
@@ -382,11 +554,11 @@
       <canvas id="growthChart"></canvas>
     </div>
   </div>
-</div>
 
-<footer class="footer">
-  © 2025 Saurin Parikh. All rights reserved.
-</footer>
+  <p style="margin-top:22px;font-size:11.5px;color:var(--ink-soft);line-height:1.5;padding-top:16px;border-top:1px dashed var(--line);text-align:center;">This is a rough planning estimate, not financial advice. Actual investment returns vary and are not guaranteed. Past performance does not predict future results. Consult a qualified financial advisor for personalized guidance.</p>
+
+  <footer style="margin-top:34px;text-align:center;font-size:12px;color:var(--ink-soft);font-family:'IBM Plex Mono',monospace">Built as a planning aid · all calculations run locally in your browser</footer>
+</div>
 
 <!-- Chart.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -146,6 +146,11 @@ Department of Bioengineering, University of Pittsburgh Swanson School of Enginee
     <div class="project-card-desc">Federal income tax estimator with a bracket-by-bracket breakdown.</div>
     <a class="project-card-launch" href="/projects/tools/tax_estimator/" target="_blank" rel="noopener">Launch →</a>
   </div>
+  <div class="project-card">
+    <div class="project-card-name">Mortgage Calculator</div>
+    <div class="project-card-desc">True monthly cost of homeownership — taxes, insurance, maintenance, and more.</div>
+    <a class="project-card-launch" href="/projects/tools/mortgage_calculator/" target="_blank" rel="noopener">Launch →</a>
+  </div>
 </div>
 
 <h3 class="project-subhead">Dashboards</h3>
