@@ -304,6 +304,57 @@
   .eq-legend .sw{width:12px;height:12px;border-radius:3px;display:inline-block}
   svg.equity-chart{width:100%;height:auto;display:block}
 
+  /* ---- Tabs ---- */
+  .tabs{display:inline-flex;gap:4px;background:var(--paper-2);border:1.5px solid var(--line);border-radius:12px;padding:4px;margin-bottom:30px;flex-wrap:wrap}
+  .tab{font-family:'Archivo',sans-serif;font-size:14px;font-weight:500;color:var(--ink-soft);background:transparent;border:none;padding:9px 18px;border-radius:8px;cursor:pointer;transition:all .15s}
+  .tab.active{background:var(--forest);color:var(--paper)}
+  .tabpane[hidden]{display:none}
+
+  /* ---- Compare cards ---- */
+  .cmp-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin:6px 0 16px}
+  .cmp-title{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(24px,4vw,34px);letter-spacing:-.02em}
+  .cmp-add{display:flex;gap:8px;margin-left:auto}
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px;margin-bottom:34px}
+  .card{border:1.5px solid var(--line);border-radius:14px;padding:16px;background:var(--card);border-top-width:4px}
+  .card.rent{border-top-color:var(--slate)}
+  .card.buy{border-top-color:var(--forest)}
+  .card-top{display:flex;align-items:center;gap:8px;margin-bottom:13px}
+  .card-badge{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:6px}
+  .card.rent .card-badge{background:rgba(107,125,140,.18);color:var(--slate)}
+  .card.buy .card-badge{background:rgba(47,79,62,.12);color:var(--forest)}
+  .card-name{flex:1;font-family:'Fraunces',serif;font-weight:600;font-size:16px;border:none;background:transparent;color:var(--ink);min-width:0;border-bottom:1px dashed transparent}
+  .card-name:focus{outline:none;border-bottom-color:var(--sage)}
+  .card-acts{display:flex;gap:4px}
+  .card-act{border:1px solid var(--line);background:var(--paper);border-radius:7px;width:28px;height:28px;cursor:pointer;color:var(--ink-soft);font-size:14px;display:grid;place-items:center;transition:all .15s}
+  .card-act:hover{border-color:var(--forest);color:var(--forest)}
+  .card-fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .card-fields label{font-size:11.5px;margin-bottom:4px}
+  .card-fields input[type=number]{font-size:14px;padding:8px 10px}
+  .card-fields input.has-pre{padding-left:22px}
+  .card-fields .pre{left:10px;font-size:13px}
+  .card-fields .post{right:10px;font-size:13px}
+  .card-result{margin-top:13px;padding-top:12px;border-top:1px dashed var(--line)}
+  .cr-nw{font-family:'Fraunces',serif;font-weight:600;font-size:22px}
+  .cr-sub{font-size:11.5px;color:var(--ink-soft);margin-top:2px;line-height:1.4}
+  .cr-flag{font-size:11.5px;margin-top:6px;color:var(--clay);background:rgba(192,99,63,.09);border-radius:7px;padding:5px 8px}
+
+  /* ---- Compare results ---- */
+  .cmp-results{margin-top:10px}
+  .cmp-crossover{background:var(--forest);color:var(--paper);border-radius:12px;padding:14px 18px;font-size:15px;line-height:1.5;margin-bottom:22px}
+  .cmp-crossover b{color:var(--gold)}
+  .cmp-crossover.flat{background:var(--paper-2);color:var(--ink)}
+  .cmp-crossover.flat b{color:var(--forest)}
+  svg.cmp-chart{width:100%;height:auto;display:block;margin-bottom:22px}
+  .cmp-rank{display:flex;flex-direction:column;gap:8px}
+  .rank-row{display:grid;grid-template-columns:24px 14px 1fr auto;align-items:center;gap:11px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+  .rank-row.win{border-color:var(--forest);box-shadow:0 0 0 2px rgba(47,79,62,.12)}
+  .rank-pos{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-soft);text-align:center}
+  .rank-dot{width:12px;height:12px;border-radius:4px}
+  .rank-name{font-weight:500;font-size:14px}
+  .rank-name small{display:block;color:var(--ink-soft);font-weight:400;font-size:11.5px}
+  .rank-nw{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;text-align:right}
+  .rank-nw small{display:block;font-weight:400;font-size:10.5px;color:var(--ink-soft)}
+
   @media print{
     body{padding:10px;background:#fff;background-image:none}
     .toolbar,.add-item,.item-del{display:none!important}
@@ -329,6 +380,12 @@
     </div>
   </header>
 
+  <nav class="tabs">
+    <button class="tab active" data-tab="cost">Monthly Cost</button>
+    <button class="tab" data-tab="compare">Rent vs Buy · Net Worth</button>
+  </nav>
+
+  <div class="tabpane" id="tab-cost">
   <div class="grid">
     <!-- ============ INPUTS ============ -->
     <div class="panel">
@@ -618,10 +675,57 @@
     </div>
     <svg class="equity-chart" id="equityChart" viewBox="0 0 720 260" preserveAspectRatio="xMidYMid meet"></svg>
   </section>
+  </div><!-- /tab-cost -->
 
-  <p class="disclaimer" style="max-width:720px;margin:34px auto 0;text-align:center;">This tool is for educational and informational purposes only and does not constitute financial, legal, or tax advice. Actual costs vary by lender, locality, and property. Verify all figures independently before making financial decisions. Consult a qualified financial advisor for personalized guidance.</p>
+  <!-- ============ COMPARE: RENT VS BUY ============ -->
+  <div class="tabpane" id="tab-compare" hidden>
+    <p class="amort-sub" style="max-width:74ch">Give every path the same monthly budget and the same starting cash, then watch which builds the most wealth over 30 years. Renters invest whatever they don't spend on rent; buyers spend their starting cash on the down payment and closing, then invest the rest of the budget each month. <b>Net worth = investments (after capital-gains tax) + home equity.</b> The budget and all costs grow with inflation while a fixed mortgage payment doesn't — which is a real part of the story.</p>
+
+    <div class="panel" style="margin-bottom:26px">
+      <div class="sec-head"><span class="sec-num">$</span><span class="sec-title">Budget &amp; Shared Assumptions</span><span class="sec-note">Apply to every scenario</span></div>
+      <div class="fields">
+        <div class="field"><label>Monthly budget <span class="hint">Housing + saving; grows w/ inflation</span></label><div class="inputbox"><span class="pre">$</span><input type="number" id="c_corpus" class="has-pre" value="4000" min="0" step="100"></div></div>
+        <div class="field"><label>Starting cash <span class="hint">Same for every option</span></label><div class="inputbox"><span class="pre">$</span><input type="number" id="c_pool" class="has-pre" value="100000" min="0" step="1000"></div></div>
+        <div class="field"><label>Investment return <span class="hint">Annual, before tax</span></label><div class="inputbox"><input type="number" id="c_ret" class="has-post" value="7" min="0" step="0.5"><span class="post">%</span></div></div>
+        <div class="field"><label>Capital gains tax <span class="hint">On investment gains</span></label><div class="inputbox"><input type="number" id="c_cg" class="has-post" value="15" min="0" step="1"><span class="post">%</span></div></div>
+      </div>
+      <details class="adv" open>
+        <summary>Home cost assumptions — every Buy scenario</summary>
+        <div class="fields" style="margin-top:14px">
+          <div class="field"><label>Interest rate <span class="hint">Default; editable per card</span></label><div class="inputbox"><input type="number" id="c_rate" class="has-post" value="6.75" min="0" step="0.01"><span class="post">%</span></div></div>
+          <div class="field"><label>Loan term</label><select id="c_term"><option value="30">30 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select></div>
+          <div class="field"><label>Property tax <span class="hint">% of price / yr</span></label><div class="inputbox"><input type="number" id="c_taxRate" class="has-post" value="1.10" min="0" step="0.01"><span class="post">%</span></div></div>
+          <div class="field"><label>Home insurance <span class="hint">$ / yr</span></label><div class="inputbox"><span class="pre">$</span><input type="number" id="c_insurance" class="has-pre" value="1800" min="0" step="50"></div></div>
+          <div class="field"><label>Utilities <span class="hint">$ / mo (buy)</span></label><div class="inputbox"><span class="pre">$</span><input type="number" id="c_utilities" class="has-pre" value="350" min="0" step="10"></div></div>
+          <div class="field"><label>Maintenance <span class="hint">% of value / yr</span></label><div class="inputbox"><input type="number" id="c_maintPct" class="has-post" value="1.0" min="0" step="0.1"><span class="post">%</span></div></div>
+          <div class="field"><label>Closing costs <span class="hint">% of price</span></label><div class="inputbox"><input type="number" id="c_closingPct" class="has-post" value="3" min="0" step="0.5"><span class="post">%</span></div></div>
+          <div class="field"><label>PMI rate <span class="hint">if &lt; 20% down</span></label><div class="inputbox"><input type="number" id="c_pmiRate" class="has-post" value="0.60" min="0" step="0.05"><span class="post">%</span></div></div>
+          <div class="field"><label>Cost / rent inflation <span class="hint">Annual</span></label><div class="inputbox"><input type="number" id="c_escal" class="has-post" value="3" min="0" step="0.5"><span class="post">%</span></div></div>
+          <div class="field"><label>Home appreciation <span class="hint">Annual</span></label><div class="inputbox"><input type="number" id="c_appr" class="has-post" value="3" min="-10" step="0.5"><span class="post">%</span></div></div>
+        </div>
+      </details>
+    </div>
+
+    <div class="cmp-head">
+      <h2 class="cmp-title">Scenarios</h2>
+      <div class="cmp-add">
+        <button class="tbtn" id="addRent">+ Add rent</button>
+        <button class="tbtn" id="addBuy">+ Add buy</button>
+      </div>
+    </div>
+    <div class="cards" id="cards"></div>
+
+    <section class="cmp-results">
+      <div class="amort-head"><h2>30-year <em>net worth</em></h2></div>
+      <div class="cmp-crossover" id="crossover"></div>
+      <div class="eq-legend" id="cmpLegend"></div>
+      <svg class="cmp-chart" id="cmpChart" viewBox="0 0 760 320" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="cmp-rank" id="rank"></div>
+      <p class="oppo-caveats">Every figure is a projection resting on the assumptions above — and small changes (return rate, appreciation, how long you stay) can flip the winner. Net worth assumes you liquidate at year 30: investment gains are taxed; home equity is not (primary-residence exclusion). Selling costs, security deposits, mortgage-interest deductions, and the risk gap between a guaranteed loan payoff and uncertain market returns aren't modeled. Not financial advice.</p>
+    </section>
+  </div>
+
   <footer>Built as a planning aid · all calculations run locally in your browser</footer>
-  <div style="text-align:center;padding:14px 16px;font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line);margin-top:14px;">Maintained by <a href="https://sauriiiin.github.io/" style="color:var(--ink-soft);" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-04-14</div>
 </div>
 
 <script>
@@ -1183,6 +1287,199 @@ $('printBtn').addEventListener('click', ()=>{
   try{ window.print(); }catch(e){}
 });
 
+// ===================== COMPARE: RENT VS BUY =====================
+let cmpCards = [];
+let cmpSeq = 0;
+const CMP_COLORS = ['#2f4f3e','#c0633f','#caa44a','#6b7d8c','#7d5a6a','#7a9277','#a8763f','#5b8a9c','#b0795e','#8a7da0'];
+
+function cmpGlobals(){
+  return {
+    corpus:num('c_corpus'), startingPool:num('c_pool'), iAnnual:num('c_ret'), cg:num('c_cg'),
+    rate:num('c_rate'), term:num('c_term'), taxRate:num('c_taxRate'), insurance:num('c_insurance'),
+    utilities:num('c_utilities'), maintPct:num('c_maintPct'),
+    closingPct:num('c_closingPct'), pmiRate:num('c_pmiRate'), escal:num('c_escal'), appr:num('c_appr')
+  };
+}
+function afterTaxNW(inv, basis, cg, equity){ const g=Math.max(inv-basis,0); return (inv-g*cg)+equity; }
+
+function simulate(card, G){
+  const i=G.iAnnual/100/12, g=G.escal/100, a=G.appr/100, cg=G.cg/100, HOR=360;
+  const yearly=[];
+  if(card.type==='rent'){
+    let inv=G.startingPool, basis=G.startingPool, over=0;
+    yearly.push(afterTaxNW(inv,basis,cg,0));
+    for(let m=1;m<=HOR;m++){
+      const y=Math.floor((m-1)/12), f=Math.pow(1+g,y);
+      const budget=G.corpus*f, H=(card.rent+card.rentUtil)*f, c=budget-H;
+      if(c<0) over++;
+      inv=inv*(1+i)+c; basis+=c; if(inv<0) inv=0;
+      if(m%12===0) yearly.push(afterTaxNW(inv,Math.max(basis,0),cg,0));
+    }
+    return {yearly, final:yearly[30], endInv:inv, endEquity:0, type:'rent', feasible:true, over, month1:card.rent+card.rentUtil};
+  }
+  const price=card.price, downPct=card.downPct, rate=(card.rate||G.rate);
+  const down=price*downPct/100, loan0=Math.max(price-down,0), closing=price*G.closingPct/100;
+  const upfront=down+closing, feasible=G.startingPool>=upfront;
+  let inv=Math.max(G.startingPool-upfront,0), basis=inv;
+  const r=rate/100/12, n=Math.round(G.term*12);
+  const pi=loan0>0?(r===0?loan0/n:loan0*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1)):0;
+  let bal=loan0; const extra=card.extra||0; let over=0, payoffMonth=0, month1=0;
+  yearly.push(afterTaxNW(inv,basis,cg,price-bal));
+  for(let m=1;m<=HOR;m++){
+    const y=Math.floor((m-1)/12), f=Math.pow(1+g,y);
+    let mort=0,pmi=0;
+    if(bal>0){
+      const interest=bal*r; let principal=(pi-interest)+extra;
+      if(principal>bal) principal=bal; bal-=principal; mort=interest+principal;
+      if(downPct<20 && bal/price>0.8) pmi=loan0*(G.pmiRate/100)/12;
+      if(bal<=0 && !payoffMonth) payoffMonth=m;
+    }
+    const costs=(price*G.taxRate/100/12 + G.insurance/12 + G.utilities + price*G.maintPct/100/12 + (card.hoa||0) + (card.cdd||0)/12)*f;
+    const budget=G.corpus*f, H=mort+pmi+costs, c=budget-H;
+    if(m===1) month1=H;
+    if(c<0) over++;
+    inv=inv*(1+i)+c; basis+=c; if(inv<0) inv=0;
+    if(m%12===0){ const hv=price*Math.pow(1+a,m/12); yearly.push(afterTaxNW(inv,Math.max(basis,0),cg,hv-bal)); }
+  }
+  const hv30=price*Math.pow(1+a,30);
+  return {yearly, final:yearly[30], endInv:inv, endEquity:hv30-bal, type:'buy', feasible, over, upfront, payoffMonth, month1};
+}
+
+function addCard(type){
+  cmpSeq++;
+  if(type==='rent') cmpCards.push({id:cmpSeq, type:'rent', name:'Rent option', rent:2200, rentUtil:250});
+  else cmpCards.push({id:cmpSeq, type:'buy', name:'Buy option', price:400000, downPct:20, rate:(num('c_rate')||6.75), extra:0, hoa:0, cdd:0});
+  renderCards(); renderCompare();
+}
+function dupCard(id){
+  const idx=cmpCards.findIndex(c=>c.id===id); if(idx<0) return;
+  cmpSeq++; cmpCards.splice(idx+1,0,{...cmpCards[idx], id:cmpSeq, name:cmpCards[idx].name+' (copy)'});
+  renderCards(); renderCompare();
+}
+function delCard(id){ cmpCards=cmpCards.filter(c=>c.id!==id); renderCards(); renderCompare(); }
+
+function renderCards(){
+  $('cards').innerHTML = cmpCards.map(c=>{
+    const acts=`<div class="card-acts"><button class="card-act" data-act="dup" data-id="${c.id}" title="Duplicate">⧉</button><button class="card-act" data-act="del" data-id="${c.id}" title="Remove">×</button></div>`;
+    if(c.type==='rent'){
+      return `<div class="card rent" data-id="${c.id}">
+        <div class="card-top"><span class="card-badge">Rent</span><input class="card-name" data-id="${c.id}" data-field="name" value="${esc(c.name)}">${acts}</div>
+        <div class="card-fields">
+          <div class="field"><label>Monthly rent</label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="rent" value="${c.rent}" min="0" step="50"></div></div>
+          <div class="field"><label>Utilities</label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="rentUtil" value="${c.rentUtil}" min="0" step="10"></div></div>
+        </div>
+        <div class="card-result" id="cres-${c.id}"></div>
+      </div>`;
+    }
+    return `<div class="card buy" data-id="${c.id}">
+      <div class="card-top"><span class="card-badge">Buy</span><input class="card-name" data-id="${c.id}" data-field="name" value="${esc(c.name)}">${acts}</div>
+      <div class="card-fields">
+        <div class="field"><label>Home price</label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="price" value="${c.price}" min="0" step="1000"></div></div>
+        <div class="field"><label>Down payment</label><div class="inputbox"><input type="number" class="has-post" data-id="${c.id}" data-field="downPct" value="${c.downPct}" min="0" max="100" step="1"><span class="post">%</span></div></div>
+        <div class="field"><label>Interest rate</label><div class="inputbox"><input type="number" class="has-post" data-id="${c.id}" data-field="rate" value="${c.rate}" min="0" step="0.01"><span class="post">%</span></div></div>
+        <div class="field"><label>Extra principal</label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="extra" value="${c.extra}" min="0" step="50"></div></div>
+        <div class="field"><label>HOA <span class="hint">$ / mo</span></label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="hoa" value="${c.hoa}" min="0" step="10"></div></div>
+        <div class="field"><label>CDD <span class="hint">$ / yr</span></label><div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${c.id}" data-field="cdd" value="${c.cdd}" min="0" step="50"></div></div>
+      </div>
+      <div class="card-result" id="cres-${c.id}"></div>
+    </div>`;
+  }).join('');
+}
+
+function renderCompare(){
+  const G=cmpGlobals();
+  const results = cmpCards.map((c,idx)=>({card:c, color:CMP_COLORS[idx%CMP_COLORS.length], ...simulate(c,G)}));
+
+  // per-card result chips
+  results.forEach(r=>{
+    const el=$('cres-'+r.card.id); if(!el) return;
+    const flags=[];
+    if(r.type==='buy' && r.feasible===false) flags.push(`Needs ${fmt(r.upfront)} up front — over your starting cash`);
+    if(r.over>0) flags.push(`Tops the budget in ${r.over} month${r.over>1?'s':''} (drawn from savings)`);
+    const mix = r.type==='buy' ? `${fmt(r.endEquity)} equity + ${fmt(r.endInv)} invested` : `${fmt(r.endInv)} invested`;
+    el.innerHTML = `<div class="cr-nw" style="color:${r.color}">${fmt(r.final)}</div>
+      <div class="cr-sub">net worth in 30 yrs · ${mix}</div>
+      ${flags.map(f=>`<div class="cr-flag">⚠ ${f}</div>`).join('')}`;
+  });
+
+  drawCompareChart(results);
+
+  $('cmpLegend').innerHTML = results.map(r=>`<span><i class="sw" style="background:${r.color}"></i>${esc(r.card.name)}</span>`).join('');
+
+  const ranked=[...results].sort((a,b)=>b.final-a.final);
+  $('rank').innerHTML = ranked.map((r,idx)=>`
+    <div class="rank-row ${idx===0?'win':''}">
+      <span class="rank-pos">${idx+1}</span>
+      <span class="rank-dot" style="background:${r.color}"></span>
+      <span class="rank-name">${esc(r.card.name)}<small>${r.type==='buy'?'Buy':'Rent'}</small></span>
+      <span class="rank-nw">${fmt(r.final)}<small>${r.type==='buy'?fmt(r.endInv)+' inv + '+fmt(r.endEquity)+' equity':'all invested'}</small></span>
+    </div>`).join('');
+
+  // crossover narrative
+  const rents=results.filter(r=>r.type==='rent'), buys=results.filter(r=>r.type==='buy');
+  const box=$('crossover');
+  if(rents.length && buys.length){
+    const br=rents.reduce((a,b)=>b.final>a.final?b:a);
+    const bb=buys.reduce((a,b)=>b.final>a.final?b:a);
+    let cross=null; for(let y=0;y<=30;y++){ if(bb.yearly[y]>=br.yearly[y]){ cross=y; break; } }
+    if(bb.final>=br.final && cross!==null){
+      box.className='cmp-crossover';
+      box.innerHTML = cross===0
+        ? `<b>${esc(bb.card.name)}</b> leads from the start and finishes ${fmt(bb.final-br.final)} ahead of <b>${esc(br.card.name)}</b>.`
+        : `<b>${esc(bb.card.name)}</b> overtakes renting (<b>${esc(br.card.name)}</b>) in <b>year ${cross}</b>, finishing ${fmt(bb.final-br.final)} ahead at year 30.`;
+    } else {
+      box.className='cmp-crossover flat';
+      box.innerHTML = `Renting (<b>${esc(br.card.name)}</b>) stays ahead the whole 30 years — about ${fmt(br.final-bb.final)} over the best buy — largely the head start from not sinking cash into a down payment.`;
+    }
+  } else if(results.length){
+    box.className='cmp-crossover flat';
+    box.innerHTML = `Add both a rent and a buy scenario to see where the lines cross. Leader so far: <b>${esc(ranked[0].card.name)}</b> at ${fmt(ranked[0].final)}.`;
+  } else {
+    box.className='cmp-crossover flat';
+    box.innerHTML = `Add scenarios above to compare.`;
+  }
+}
+
+function drawCompareChart(results){
+  const W=760,H=320, padL=60,padR=12,padT=14,padB=28;
+  if(!results.length){ $('cmpChart').innerHTML=''; return; }
+  const maxNW = Math.max(...results.flatMap(r=>r.yearly), 1);
+  const X=y=>padL+(W-padL-padR)*(y/30);
+  const Y=v=>padT+(H-padT-padB)*(1-v/maxNW);
+  let grid='', yl='';
+  for(let k=0;k<=4;k++){ const v=maxNW*k/4, yy=Y(v); grid+=`<line x1="${padL}" y1="${yy.toFixed(1)}" x2="${W-padR}" y2="${yy.toFixed(1)}" stroke="var(--line)" stroke-width="1" opacity="${k===0?1:.45}"/>`; yl+=`<text class="bar-tip" x="${padL-8}" y="${(yy+3).toFixed(1)}" text-anchor="end">$${Math.round(v/1000)}k</text>`; }
+  let xl=''; for(let y=0;y<=30;y+=5){ xl+=`<text class="bar-tip" x="${X(y).toFixed(1)}" y="${H-9}" text-anchor="middle">yr ${y}</text>`; }
+  const lines=results.map(r=>`<polyline points="${r.yearly.map((v,y)=>`${X(y).toFixed(1)},${Y(v).toFixed(1)}`).join(' ')}" fill="none" stroke="${r.color}" stroke-width="2.5"/>`).join('');
+  $('cmpChart').innerHTML = grid+yl+xl+lines;
+}
+
+// compare wiring
+['c_corpus','c_pool','c_ret','c_cg','c_rate','c_term','c_taxRate','c_insurance','c_utilities','c_maintPct','c_closingPct','c_pmiRate','c_escal','c_appr']
+  .forEach(id=>$(id).addEventListener('input', renderCompare));
+$('cards').addEventListener('input', e=>{
+  const el=e.target, id=+el.dataset.id, f=el.dataset.field;
+  if(!id || !f) return;
+  const card=cmpCards.find(c=>c.id===id); if(!card) return;
+  card[f] = (f==='name') ? el.value : (parseFloat(el.value)||0);
+  renderCompare();
+});
+$('cards').addEventListener('click', e=>{
+  const btn=e.target.closest('.card-act'); if(!btn) return;
+  const id=+btn.dataset.id;
+  if(btn.dataset.act==='dup') dupCard(id); else delCard(id);
+});
+$('addRent').addEventListener('click', ()=>addCard('rent'));
+$('addBuy').addEventListener('click', ()=>addCard('buy'));
+
+// tab switching
+document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click', ()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active', x===t));
+  const id=t.dataset.tab;
+  $('tab-cost').hidden    = id!=='cost';
+  $('tab-compare').hidden = id!=='compare';
+  if(id==='compare') renderCompare();
+}));
+
 // ===================== INIT =====================
 ids.forEach(id => $(id).addEventListener('input', onInput));
 
@@ -1190,6 +1487,15 @@ const restored = restoreFromUrl();
 if(!restored) addItemRow('Lawn / pest service', '');  // seed example only on a fresh load
 syncToggleUI();
 render();
+
+// seed compare scenarios
+cmpCards = [
+  {id:++cmpSeq, type:'rent', name:'Rent an apartment', rent:2200, rentUtil:250},
+  {id:++cmpSeq, type:'buy',  name:'Buy a $400k home', price:400000, downPct:20, rate:6.75, extra:0, hoa:0, cdd:0},
+  {id:++cmpSeq, type:'buy',  name:'Buy + $300/mo extra', price:400000, downPct:20, rate:6.75, extra:300, hoa:0, cdd:0},
+];
+renderCards();
+renderCompare();
 </script>
 </body>
 </html>
