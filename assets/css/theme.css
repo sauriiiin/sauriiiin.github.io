@@ -32,54 +32,6 @@
   --sage:       var(--banyan);
 }
 
-/* --- Dark mode --- */
-[data-theme="dark"] {
-  --khadi:      #1A1F2E;
-  --khadi-2:    #232838;
-  --sandstone:  #3A3F50;
-  --ink:        #E8E2D8;
-  --ink-soft:   #A8A29A;
-  --terracotta: #E07A58;
-  --terracotta-light: rgba(224,122,88,.12);
-  --indigo:     #7B9AD6;
-  --indigo-light: rgba(123,154,214,.10);
-  --midnight:   #E8E2D8;
-  --haldi:      #E4C06A;
-  --haldi-light: rgba(228,192,106,.12);
-  --banyan:     #6AAF7A;
-  --banyan-light: rgba(106,175,122,.10);
-  --card:       #222738;
-  --line:       #3A3F50;
-  --shadow:     rgba(0,0,0,.25);
-}
-
-/* --- Dark mode toggle button --- */
-.darkmode-toggle {
-  position: fixed;
-  top: 18px;
-  right: 24px;
-  z-index: 1000;
-  background: var(--card);
-  border: 1.5px solid var(--line);
-  border-radius: 10px;
-  padding: 7px 12px;
-  cursor: pointer;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--ink-soft);
-  transition: all .15s;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.darkmode-toggle:hover {
-  border-color: var(--indigo);
-  color: var(--ink);
-}
-.darkmode-toggle .icon { font-size: 15px; }
-
 /* --- Fonts --- */
 /* Google Fonts import is expected in each page's <head>:
    Bitter:ital,wght@0,400;0,500;0,600;1,400
