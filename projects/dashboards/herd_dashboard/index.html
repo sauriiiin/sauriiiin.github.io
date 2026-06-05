@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HERD Survey (2023) Dashboard</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Plotly -->
@@ -16,17 +20,20 @@
 </head>
 
 <body class="has-footer">
+<nav style="display:flex;align-items:center;padding:14px 16px;margin-bottom:14px;border-bottom:1px solid #D9CBC0;font-family:'Archivo',sans-serif;font-size:13px;max-width:1200px;margin-left:auto;margin-right:auto;">
+  <a href="https://sauriiiin.github.io/" style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.04em;color:#C75B39;text-decoration:none;">&#8592; sauriiiin.github.io</a>
+</nav>
 <div class="container-fluid py-3">
   <div class="d-flex align-items-center justify-content-between mb-3">
     <h4 class="mb-0">HERD Survey (2023) Dashboard</h4>
-    <div id="loadStatus" class="text-muted small">Loading…</div>
+    <div id="loadStatus" class="text-muted small">Loading&hellip;</div>
   </div>
 
   <!-- Tabs -->
   <ul class="nav nav-tabs" id="mainTabs" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-rank" type="button" role="tab">
-        Rankings & Growth
+        Rankings &amp; Growth
       </button>
     </li>
     <li class="nav-item" role="presentation">
@@ -36,7 +43,7 @@
     </li>
     <li class="nav-item" role="presentation">
       <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-port" type="button" role="tab">
-        Portfolio & Agencies (2023)
+        Portfolio &amp; Agencies (2023)
       </button>
     </li>
     <li class="nav-item" role="presentation">
@@ -58,7 +65,7 @@
               <div class="sidebar-section-title">Selection</div>
               <div class="mb-2">
                 <label class="form-label">Institution(s)</label>
-                <input id="instSearchRank" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <input id="instSearchRank" class="form-control form-control-sm mb-2" placeholder="Type to search&hellip;" />
                 <div id="instListRank" class="inst-list" role="listbox" aria-label="Institutions"></div>
                 <div class="form-text">Click to select/unselect. Selected items are pinned to the top.</div>
               </div>
@@ -102,7 +109,7 @@
               <div class="sidebar-section-title">Options</div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="includeAllInst">
-                <label class="form-check-label" for="includeAllInst">Include “All institutions”</label>
+                <label class="form-check-label" for="includeAllInst">Include "All institutions"</label>
               </div>
 
             </div>
@@ -174,7 +181,7 @@
               <div class="sidebar-section-title">Selection</div>
               <div class="mb-2">
                 <label class="form-label">Institution(s)</label>
-                <input id="instSearchMix" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <input id="instSearchMix" class="form-control form-control-sm mb-2" placeholder="Type to search&hellip;" />
                 <div id="instListMix" class="inst-list" role="listbox" aria-label="Institutions"></div>
                 <div class="form-text">Selected items are pinned to the top.</div>
               </div>
@@ -272,7 +279,7 @@
             <div class="col-12">
               <div class="card plot-card plot-card-lg" id="heatmapCard">
                 <div class="card-header plot-header">
-                  <span>Source × Field heatmap (FY 2023)</span>
+                  <span>Source &times; Field heatmap (FY 2023)</span>
                   <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
                 </div>
                 <div class="card-body plot-body">
@@ -296,7 +303,7 @@
               <div class="sidebar-section-title">Selection</div>
               <div class="mb-2">
                 <label class="form-label">Institution(s)</label>
-                <input id="instSearchPort" class="form-control form-control-sm mb-2" placeholder="Type to search…" />
+                <input id="instSearchPort" class="form-control form-control-sm mb-2" placeholder="Type to search&hellip;" />
                 <div id="instListPort" class="inst-list" role="listbox" aria-label="Institutions"></div>
                 <div class="form-text">Selected items are pinned to the top.</div>
               </div>
@@ -363,7 +370,7 @@
             <div class="col-12">
               <div class="card plot-card plot-card-xl">
                 <div class="card-header plot-header">
-                  <span>Federal dependence (FY 2023) — selected highlighted</span>
+                  <span>Federal dependence (FY 2023) &mdash; selected highlighted</span>
                   <button class="btn btn-sm btn-outline-secondary plot-fs" type="button">Fullscreen</button>
                 </div>
                 <div class="card-body plot-body"><div id="scatterSizeShare" class="plot"></div></div>
@@ -392,21 +399,21 @@
 
               <h5 class="mb-3">What data is used in this dashboard?</h5>
               <p class="mb-2">
-                This dashboard is built from HERD 2023 <b>Tables 21–31</b> (institution-level tables). The original Excel tables were
-                converted into tidy “fact” tables so they can be joined, filtered, and visualized consistently. These are loaded in the browser and aggregated on the fly for the visuals shown here. The fact tables include:
+                This dashboard is built from HERD 2023 <b>Tables 21&ndash;31</b> (institution-level tables). The original Excel tables were
+                converted into tidy "fact" tables so they can be joined, filtered, and visualized consistently. These are loaded in the browser and aggregated on the fly for the visuals shown here. The fact tables include:
               </p>
               <ul class="mb-3">
                 <li><b>Time series</b> totals and federally financed totals by institution and year.</li>
                 <li><b>FY 2023 funding-source mix</b> by institution (federal, state/local, institutional, business, nonprofit, other).</li>
                 <li><b>FY 2023 field portfolios</b> for all funds and federally financed funds.</li>
                 <li><b>FY 2023 federal agency composition</b> for federally financed R&amp;D.</li>
-                <li><b>FY 2023 source × field</b> detail for non-federal funding sources across fields.</li>
+                <li><b>FY 2023 source &times; field</b> detail for non-federal funding sources across fields.</li>
               </ul>
 
               <h5 class="mb-3">How is the data displayed?</h5>
               <ul class="mb-3">
                 <li><b>Rankings &amp; Growth:</b> Top-N bars by selected year and metric; rank-over-time background for all institutions with selected highlighted; and trend lines for selected institutions.</li>
-                <li><b>Funding Mix (2023):</b> Stacked bars show the composition of funding sources; a source-specific ranking view shows institutions by a selected source; heatmaps show source × field patterns (log-scaled for readability).</li>
+                <li><b>Funding Mix (2023):</b> Stacked bars show the composition of funding sources; a source-specific ranking view shows institutions by a selected source; heatmaps show source &times; field patterns (log-scaled for readability).</li>
                 <li><b>Portfolio &amp; Agencies (2023):</b> Grouped bars compare selected institutions side-by-side across fields and agencies; scatter shows federal dependence with selected highlighted.</li>
               </ul>
 
@@ -436,7 +443,7 @@
       </div>
 
       <div class="footer-mid">
-        © 2025 Saurin Parikh. All rights reserved.
+        &copy; 2025 Saurin Parikh. All rights reserved.
       </div>
 
       <div class="footer-right">
@@ -450,6 +457,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="app.js"></script>
-<div style="text-align:center;padding:14px 16px;font-size:12px;color:#888;border-top:1px solid #eee;margin-top:24px;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#888;" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-04-14</div>
+<div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:24px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> &middot; Last updated 2026-06-05</div>
 </body>
 </html>

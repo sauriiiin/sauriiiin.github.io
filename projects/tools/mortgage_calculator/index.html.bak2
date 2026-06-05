@@ -257,12 +257,12 @@
 
   /* ---- Affordability band ---- */
   .afford{margin:18px 0;border-radius:14px;padding:16px 18px;border:1.5px solid var(--line);background:var(--paper)}
-  .afford.good{border-color:#4A7C59;background:rgba(44,62,107,.07)}
+  .afford.good{border-color:#3d6650;background:rgba(44,62,107,.07)}
   .afford.ok{border-color:var(--gold);background:rgba(202,164,74,.12)}
   .afford.over{border-color:var(--clay);background:rgba(192,99,63,.09)}
   .a-head{display:flex;align-items:center;gap:8px;font-family:'Bitter',serif;font-weight:600;font-size:16px;margin-bottom:12px}
   .a-dot{width:10px;height:10px;border-radius:50%;background:var(--ink-soft)}
-  .afford.good .a-dot{background:#4A7C59}.afford.ok .a-dot{background:var(--gold)}.afford.over .a-dot{background:var(--clay)}
+  .afford.good .a-dot{background:#3d6650}.afford.ok .a-dot{background:var(--gold)}.afford.over .a-dot{background:var(--clay)}
   .ratio{margin:10px 0}
   .ratio-top{display:flex;justify-content:space-between;font-size:12.5px;margin-bottom:4px}
   .ratio-top b{font-family:'IBM Plex Mono',monospace}
@@ -395,6 +395,10 @@
 <div class="wrap">
 <nav class="site-topnav">
   <a class="home-link" href="https://sauriiiin.github.io/">&#8592; sauriiiin.github.io</a>
+  <a href="https://sauriiiin.github.io/#about-me">About</a>
+  <a href="https://sauriiiin.github.io/#projects">Projects</a>
+  <a href="https://sauriiiin.github.io/#publications">Publications</a>
+  <a href="https://sauriiiin.github.io/files/Saurin_Parikh_CV.pdf" target="_blank" rel="noopener">CV</a>
 </nav>
   <header>
     <div class="eyebrow">Homeownership · Monthly Estimate</div>
@@ -749,14 +753,6 @@
       <div class="cmp-rank" id="rank"></div>
       <p class="oppo-caveats">Every figure is a projection resting on the assumptions above — and small changes (return rate, appreciation, how long you stay) can flip the winner. Net worth assumes you liquidate at year 30: investment gains are taxed; home equity is not (primary-residence exclusion). Selling costs, security deposits, mortgage-interest deductions, and the risk gap between a guaranteed loan payoff and uncertain market returns aren't modeled. Not financial advice.</p>
     </section>
-  </div>
-
-  <div style="margin-top:40px;padding-top:24px;border-top:1px dashed #D9CBC0;">
-    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#5B5550;margin:0 0 12px;">More financial tools</p>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="/projects/tools/future_flow/" target="_blank" rel="noopener" style="font-family:'Archivo',sans-serif;font-size:14px;font-weight:500;color:#2C3E6B;text-decoration:none;padding:8px 16px;border:1.5px solid #D9CBC0;border-radius:10px;transition:all .15s;">Future Flow &rarr;</a>
-      <a href="/projects/tools/tax_estimator/" target="_blank" rel="noopener" style="font-family:'Archivo',sans-serif;font-size:14px;font-weight:500;color:#2C3E6B;text-decoration:none;padding:8px 16px;border:1.5px solid #D9CBC0;border-radius:10px;transition:all .15s;">Tax Estimator &rarr;</a>
-    </div>
   </div>
 
   <footer>Built as a planning aid · all calculations run locally in your browser</footer>
@@ -1324,7 +1320,7 @@ $('printBtn').addEventListener('click', ()=>{
 // ===================== COMPARE: RENT VS BUY =====================
 let cmpCards = [];
 let cmpSeq = 0;
-const CMP_COLORS = ['#2C3E6B','#C75B39','#D4A84B','#6b7d8c','#7d5a6a','#4A7C59','#a8763f','#5b8a9c','#b0795e','#8a7da0'];
+const CMP_COLORS = ['#2f4f3e','#c0633f','#caa44a','#6b7d8c','#7d5a6a','#7a9277','#a8763f','#5b8a9c','#b0795e','#8a7da0'];
 
 function cmpGlobals(){
   return {

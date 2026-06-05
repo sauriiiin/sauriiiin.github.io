@@ -6,31 +6,31 @@
 <title>Federal Income Tax Estimator</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
-    --paper: #f4efe4;
-    --paper-2: #ece4d3;
-    --ink: #22271f;
-    --ink-soft: #5b6155;
-    --forest: #2f4f3e;
-    --forest-2: #3d6650;
-    --clay: #c0633f;
-    --gold: #caa44a;
-    --sage: #7a9277;
-    --line: #d7cdb8;
-    --card: #fbf8f0;
-    --shadow: rgba(34,39,31,.10);
+    --paper: #F2EBE0;
+    --paper-2: #E6DDD0;
+    --ink: #1A1F33;
+    --ink-soft: #5B5550;
+    --forest: #2C3E6B;
+    --forest-2: #4A7C59;
+    --clay: #C75B39;
+    --gold: #D4A84B;
+    --sage: #4A7C59;
+    --line: #D9CBC0;
+    --card: #FAF7F2;
+    --shadow: rgba(26,31,51,.10);
 
     /* mapped aliases for existing class references */
     --bg: var(--paper);
     --accent: var(--forest);
-    --accent-light: rgba(47,79,62,.10);
+    --accent-light: rgba(44,62,107,.07);
     --text: var(--ink);
     --muted: var(--ink-soft);
     --border: var(--line);
     --green: var(--forest-2);
-    --green-light: rgba(122,146,119,.14);
+    --green-light: rgba(74,124,89,.14);
     --red: var(--clay);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,8 +39,8 @@
     font-family: 'Archivo', sans-serif;
     background: var(--paper);
     background-image:
-      radial-gradient(circle at 12% 8%, rgba(202,164,74,.10), transparent 38%),
-      radial-gradient(circle at 88% 92%, rgba(47,79,62,.10), transparent 42%);
+      radial-gradient(circle at 12% 8%, rgba(212,168,75,.12), transparent 38%),
+      radial-gradient(circle at 88% 92%, rgba(44,62,107,.07), transparent 42%);
     color: var(--ink);
     line-height: 1.5;
     padding: clamp(16px, 4vw, 56px);
@@ -48,7 +48,7 @@
   }
   .container { max-width: 720px; margin: 0 auto; }
   h1 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Bitter', serif;
     font-weight: 500;
     font-size: clamp(28px, 5vw, 42px);
     font-style: italic;
@@ -74,7 +74,7 @@
     box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 30px -22px var(--shadow);
   }
   .card h2 {
-    font-family: 'Fraunces', serif;
+    font-family: 'Bitter', serif;
     font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 18px;
@@ -112,7 +112,7 @@
   }
   .field select:focus, .field input:focus {
     border-color: var(--forest);
-    box-shadow: 0 0 0 3px rgba(47,79,62,.14);
+    box-shadow: 0 0 0 3px rgba(44,62,107,.14);
   }
   .help-text {
     font-size: 11.5px;
@@ -174,20 +174,20 @@
     margin-bottom: 4px;
   }
   .summary-item .value {
-    font-family: 'Fraunces', serif;
+    font-family: 'Bitter', serif;
     font-size: 1.35rem;
     font-weight: 600;
     letter-spacing: -.01em;
     color: var(--ink);
   }
   .summary-item.highlight {
-    background: rgba(47,79,62,.08);
+    background: rgba(44,62,107,.08);
     border-color: rgba(47,79,62,.22);
   }
   .summary-item.highlight .value { color: var(--forest); }
   .summary-item.green {
-    background: rgba(122,146,119,.12);
-    border-color: rgba(122,146,119,.30);
+    background: rgba(74,124,89,.12);
+    border-color: rgba(74,124,89,.30);
   }
   .summary-item.green .value { color: var(--forest); }
 
@@ -220,7 +220,7 @@
   tbody tr:hover { background: var(--paper-2); }
   tr.total-row {
     font-weight: 700;
-    background: rgba(47,79,62,.08);
+    background: rgba(44,62,107,.08);
   }
   tr.total-row td { border-top: 2px solid var(--forest); }
   .bar-cell { position: relative; }
@@ -249,10 +249,36 @@
     .card { padding: 16px; }
     .summary-grid { grid-template-columns: 1fr 1fr; }
   }
+.site-topnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #D9CBC0;
+  font-family: 'Archivo', sans-serif;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.site-topnav .home-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: #C75B39;
+  text-decoration: none;
+  margin-right: auto;
+}
+.site-topnav .home-link:hover { text-decoration: underline; }
+.site-topnav a { color: #2C3E6B; text-decoration: none; font-weight: 500; }
+.site-topnav a:hover { color: #C75B39; }
 </style>
 </head>
 <body>
 <div class="container">
+<nav class="site-topnav">
+  <a class="home-link" href="https://sauriiiin.github.io/">&#8592; sauriiiin.github.io</a>
+</nav>
   <h1>Federal Income Tax Estimator</h1>
   <p class="subtitle">Simple bracket-by-bracket breakdown for 2025 &amp; 2026</p>
 
@@ -418,6 +444,14 @@
           <div class="value" id="resMonthly">—</div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div style="margin-top:40px;padding-top:24px;border-top:1px dashed #D9CBC0;">
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#5B5550;margin:0 0 12px;">More financial tools</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="/projects/tools/mortgage_calculator/" target="_blank" rel="noopener" style="font-family:'Archivo',sans-serif;font-size:14px;font-weight:500;color:#2C3E6B;text-decoration:none;padding:8px 16px;border:1.5px solid #D9CBC0;border-radius:10px;transition:all .15s;">Mortgage Calculator &rarr;</a>
+      <a href="/projects/tools/future_flow/" target="_blank" rel="noopener" style="font-family:'Archivo',sans-serif;font-size:14px;font-weight:500;color:#2C3E6B;text-decoration:none;padding:8px 16px;border:1.5px solid #D9CBC0;border-radius:10px;transition:all .15s;">Future Flow &rarr;</a>
     </div>
   </div>
 
@@ -642,6 +676,6 @@ function calculate() {
   document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
 }
 </script>
-<div style="text-align:center;padding:14px 16px;font-size:12px;color:#888;border-top:1px solid #eee;margin-top:24px;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#888;" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-04-14</div>
+<div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:24px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> &middot; Last updated 2026-06-05</div>
 </body>
 </html>

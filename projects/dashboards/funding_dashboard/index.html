@@ -4,11 +4,14 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Funding Snapshot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <style>
-  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:16px;line-height:1.35}
-  h1{font-size:20px;margin:0 0 12px}
+  body{font-family:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:16px;line-height:1.35}
+  h1{font-family:'Bitter',serif;font-size:20px;margin:0 0 12px}
   .controls{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:12px;margin-bottom:14px}
   label{font-size:12px;color:#444;display:block;margin-bottom:4px}
   select{width:100%;padding:6px;font-size:14px}
@@ -27,6 +30,9 @@
 </style>
 </head>
 <body>
+<nav style="display:flex;align-items:center;padding:14px 16px;margin-bottom:14px;border-bottom:1px solid #D9CBC0;font-family:'Archivo',sans-serif;font-size:13px;max-width:1200px;margin-left:auto;margin-right:auto;">
+  <a href="https://sauriiiin.github.io/" style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.04em;color:#C75B39;text-decoration:none;">&#8592; sauriiiin.github.io</a>
+</nav>
 <h1>Funding Dashboard</h1>
 
 <div class="controls">
@@ -95,7 +101,7 @@
 <div class="footer">
   <div>NIH data collected from The Blue Ridge Institute for Medical Research. NSF data collected from NSF Award Search.</div>
   <div>Get in touch: <a href="mailto:saurinbp@gmail.com">E-mail</a>, <a href="https://www.linkedin.com/in/sauriiiin/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
-  <div>© 2025 <a href="https://sauriiiin.github.io/" target="_blank" rel="noopener noreferrer">Saurin Parikh</a>. All rights reserved.</div>
+  <div>&copy; 2025 <a href="https://sauriiiin.github.io/" target="_blank" rel="noopener noreferrer">Saurin Parikh</a>. All rights reserved.</div>
 </div>
 
 <script>
@@ -475,6 +481,6 @@ attachListeners();
 // first load uses NIH defaults and full range
 loadData(pathForSource('NIH'), /*preserveSelections=*/false);
 </script>
-<div style="text-align:center;padding:14px 16px;font-size:12px;color:#888;border-top:1px solid #eee;margin-top:24px;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#888;" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-04-14</div>
+<div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:24px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> &middot; Last updated 2026-06-05</div>
 </body>
 </html>

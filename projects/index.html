@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — sauriiiin.github.io</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --khadi:      #F2EBE0;
+    --khadi-2:    #E6DDD0;
+    --sandstone:  #D9CBC0;
+    --ink:        #1A1F33;
+    --ink-soft:   #5B5550;
+    --terracotta: #C75B39;
+    --terracotta-light: rgba(199,91,57,.08);
+    --indigo:     #2C3E6B;
+    --indigo-light: rgba(44,62,107,.07);
+    --midnight:   #1A1F33;
+    --haldi:      #D4A84B;
+    --haldi-light: rgba(212,168,75,.12);
+    --banyan:     #4A7C59;
+    --banyan-light: rgba(74,124,89,.07);
+    --card:       #FAF7F2;
+    --line:       #D9CBC0;
+    --shadow:     rgba(26,31,51,.10);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+    background: var(--khadi);
+    background-image:
+      radial-gradient(circle at 12% 8%, var(--haldi-light), transparent 38%),
+      radial-gradient(circle at 88% 92%, var(--indigo-light), transparent 42%);
+    color: var(--ink);
+    line-height: 1.5;
+    margin: 0;
+    padding: clamp(16px, 4vw, 56px);
+    min-height: 100vh;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; }
+
+  /* Project card styles */
+  .project-subhead { font-family: 'Bitter', serif; font-size: 20px; margin: 28px 0 12px; color: var(--ink); }
+  .project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 16px; }
+  .project-card { border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px; background: var(--card); display: flex; flex-direction: column; transition: box-shadow .15s, transform .15s; }
+  .project-card:hover { box-shadow: 0 3px 10px var(--shadow); transform: translateY(-1px); }
+  .project-card-name { font-family: 'Bitter', serif; font-weight: 600; font-size: 16px; color: var(--ink); margin-bottom: 6px; }
+  .project-card-desc { font-family: 'Archivo', sans-serif; font-size: 14px; color: var(--ink-soft); line-height: 1.5; flex: 1; }
+  .project-card-launch { align-self: flex-start; margin-top: 12px; font-family: 'Archivo', sans-serif; font-size: 14px; font-weight: 600; color: var(--indigo); text-decoration: none; }
+  .project-card-launch:hover { color: var(--terracotta); text-decoration: underline; }
+  .project-card-links { display: flex; gap: 14px; margin-top: 12px; }
+  .project-card-links .project-card-launch { margin-top: 0; }
+  .project-card-launch-secondary { color: var(--ink-soft); }
+  .project-card-launch-secondary:hover { color: var(--terracotta); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<nav style="display:flex;align-items:center;padding:14px 0;margin-bottom:28px;border-bottom:1px solid #D9CBC0;font-family:'Archivo',sans-serif;font-size:13px;">
+  <a href="https://sauriiiin.github.io/" style="font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.04em;color:#C75B39;text-decoration:none;">&#8592; sauriiiin.github.io</a>
+</nav>
+
+<h1 style="font-family:'Bitter',serif;font-weight:500;font-size:clamp(34px,6vw,56px);line-height:1.05;letter-spacing:-.02em;color:var(--ink);margin:0 0 8px;">Projects</h1>
+<p style="font-family:'Archivo',sans-serif;font-size:clamp(15px,1.6vw,17px);color:var(--ink-soft);margin:0 0 32px;max-width:62ch;">Apps, tools, and dashboards I've built.</p>
+
+<!-- Apps -->
+<h2 class="project-subhead">Apps</h2>
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-card-name">Nestline</div>
+    <div class="project-card-desc">Financial planning toolkit for iPhone — investments, budgeting, and tax estimation.</div>
+    <div class="project-card-links">
+      <a class="project-card-launch" href="/projects/apps/nestline/" target="_blank" rel="noopener">Learn more &rarr;</a>
+      <a class="project-card-launch project-card-launch-secondary" href="https://apps.apple.com/us/app/nestline/id6756862734" target="_blank" rel="noopener">App Store &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Tools -->
+<h2 class="project-subhead">Tools</h2>
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-card-name">AI Triage</div>
+    <div class="project-card-desc">Separate AI signal from noise when evaluating opportunities.</div>
+    <a class="project-card-launch" href="/projects/tools/ai_triage/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card-name">Future Flow</div>
+    <div class="project-card-desc">Investment growth calculator for projecting compound returns over time.</div>
+    <a class="project-card-launch" href="/projects/tools/future_flow/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card-name">MatchMaker</div>
+    <div class="project-card-desc">Optimally assign teams or individuals into groups based on interaction preferences.</div>
+    <a class="project-card-launch" href="/projects/tools/match_maker/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card-name">Tax Estimator</div>
+    <div class="project-card-desc">Federal income tax estimator with a bracket-by-bracket breakdown.</div>
+    <a class="project-card-launch" href="/projects/tools/tax_estimator/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card-name">Mortgage Calculator</div>
+    <div class="project-card-desc">True monthly cost of homeownership — taxes, insurance, maintenance, and more.</div>
+    <a class="project-card-launch" href="/projects/tools/mortgage_calculator/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+</div>
+
+<!-- Dashboards -->
+<h2 class="project-subhead">Dashboards</h2>
+<div class="project-grid">
+  <div class="project-card">
+    <div class="project-card-name">NIH/NSF Funding Snapshot</div>
+    <div class="project-card-desc">Interactive explorer for department- and school-level research funding trends.</div>
+    <a class="project-card-launch" href="/projects/dashboards/funding_dashboard/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+  <div class="project-card">
+    <div class="project-card-name">HERD Survey 2023</div>
+    <div class="project-card-desc">Visualize university R&D spending from the 2023 HERD Survey.</div>
+    <a class="project-card-launch" href="/projects/dashboards/herd_dashboard/" target="_blank" rel="noopener">Launch &rarr;</a>
+  </div>
+</div>
+
+<div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:40px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-06-05</div>
+
+</div>
+</body>
+</html>

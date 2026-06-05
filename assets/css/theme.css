@@ -1,0 +1,263 @@
+/* ============================================================
+   Terracotta & Indigo — sauriiiin.github.io unified theme
+   ============================================================ */
+
+/* --- Palette --- */
+:root {
+  --khadi:      #F2EBE0;
+  --khadi-2:    #E6DDD0;
+  --sandstone:  #D9CBC0;
+  --ink:        #1A1F33;
+  --ink-soft:   #5B5550;
+  --terracotta: #C75B39;
+  --terracotta-light: rgba(199,91,57,.08);
+  --indigo:     #2C3E6B;
+  --indigo-light: rgba(44,62,107,.07);
+  --midnight:   #1A1F33;
+  --haldi:      #D4A84B;
+  --haldi-light: rgba(212,168,75,.12);
+  --banyan:     #4A7C59;
+  --banyan-light: rgba(74,124,89,.07);
+  --card:       #FAF7F2;
+  --line:       #D9CBC0;
+  --shadow:     rgba(26,31,51,.10);
+
+  /* backward compat aliases */
+  --paper:      var(--khadi);
+  --paper-2:    var(--khadi-2);
+  --forest:     var(--indigo);
+  --forest-2:   var(--banyan);
+  --clay:       var(--terracotta);
+  --gold:       var(--haldi);
+  --sage:       var(--banyan);
+}
+
+/* --- Fonts --- */
+/* Google Fonts import is expected in each page's <head>:
+   Bitter:ital,wght@0,400;0,500;0,600;1,400
+   Archivo:wght@400;500;600
+   IBM Plex Mono:wght@400;500;600
+*/
+
+/* --- Base --- */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+  background: var(--khadi);
+  background-image:
+    radial-gradient(circle at 12% 8%, var(--haldi-light), transparent 38%),
+    radial-gradient(circle at 88% 92%, var(--indigo-light), transparent 42%);
+  color: var(--ink);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* --- Universal site nav (for standalone pages) --- */
+.site-topnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  margin-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+  font-family: 'Archivo', sans-serif;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.site-topnav .home-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: var(--terracotta);
+  text-decoration: none;
+  margin-right: auto;
+}
+.site-topnav .home-link:hover { text-decoration: underline; }
+.site-topnav a {
+  color: var(--indigo);
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-topnav a:hover { color: var(--terracotta); }
+
+/* --- Panel / card --- */
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: clamp(20px, 3vw, 30px);
+  box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 30px -22px var(--shadow);
+}
+
+/* --- Headings (Bitter display) --- */
+h1, h2, h3 {
+  font-family: 'Bitter', serif;
+}
+
+/* --- Eyebrow label --- */
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* --- Inputs (shared) --- */
+input[type=number],
+input[type=text],
+select {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+  padding: 11px 13px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: var(--khadi);
+  color: var(--ink);
+  transition: border-color .15s, box-shadow .15s;
+  -moz-appearance: textfield;
+  width: 100%;
+}
+input:focus, select:focus {
+  outline: none;
+  border-color: var(--indigo);
+  box-shadow: 0 0 0 3px var(--indigo-light);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+
+/* --- Buttons --- */
+.btn-primary {
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--khadi);
+  background: var(--indigo);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.btn-primary:hover { background: #364d80; }
+
+.btn-secondary {
+  font-family: 'Archivo', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--indigo);
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.btn-secondary:hover { border-color: var(--indigo); background: var(--indigo-light); }
+
+/* --- Stat cards --- */
+.stat {
+  background: var(--khadi);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.stat .k {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.stat .v {
+  font-family: 'Bitter', serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -.01em;
+  margin-top: 4px;
+}
+
+/* --- Tables --- */
+table.themed {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+}
+table.themed thead th {
+  position: sticky;
+  top: 0;
+  background: var(--indigo);
+  color: var(--khadi);
+  font-weight: 500;
+  text-align: right;
+  padding: 11px 14px;
+  font-size: 11.5px;
+  letter-spacing: .04em;
+}
+table.themed thead th:first-child { text-align: left; }
+table.themed td {
+  padding: 9px 14px;
+  text-align: right;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+}
+table.themed td:first-child { text-align: left; font-weight: 500; }
+table.themed tbody tr:nth-child(even) { background: var(--khadi); }
+table.themed tbody tr:hover { background: var(--khadi-2); }
+
+/* --- Toggle / pill group --- */
+.toggle {
+  display: inline-flex;
+  background: var(--khadi-2);
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 3px;
+}
+.toggle button {
+  font-family: 'Archivo', sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  color: var(--ink-soft);
+  padding: 7px 13px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.toggle button.active { background: var(--indigo); color: var(--khadi); }
+
+/* --- Disclaimer --- */
+.disclaimer {
+  margin-top: 22px;
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  padding-top: 16px;
+  border-top: 1px dashed var(--line);
+}
+
+/* --- Footer --- */
+.site-footer {
+  margin-top: 34px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ink-soft);
+  font-family: 'IBM Plex Mono', monospace;
+}
+.site-footer a { color: var(--ink-soft); }
+
+/* --- Print --- */
+@media print {
+  body { padding: 10px; background: #fff; background-image: none; }
+  .site-topnav { display: none; }
+  .panel { box-shadow: none; }
+}

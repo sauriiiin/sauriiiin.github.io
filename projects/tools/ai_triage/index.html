@@ -4,48 +4,79 @@
 <meta charset="utf-8" />
 <title>Separating AI Signal from Noise</title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <style>
-  :root { font-family: system-ui, sans-serif; --b:#e5e7eb; --muted:#666; }
-  body { margin:16px; }
+  :root { font-family: 'Archivo', system-ui, sans-serif; --b:#D9CBC0; --muted:#5B5550; }
+  body { margin:16px; font-family: 'Archivo', system-ui, sans-serif; background: #F2EBE0; background-image: radial-gradient(circle at 12% 8%, rgba(212,168,75,.12), transparent 38%), radial-gradient(circle at 88% 92%, rgba(44,62,107,.07), transparent 42%); color: #1A1F33; }
   .wrap { width:85%; margin:0 auto; }
 
-  header.top { display:flex; justify-content:space-between; align-items:center; gap:12px; position:sticky; top:0; background:#fff; padding:8px 0; border-bottom:1px solid var(--b); z-index:5; }
-  h1 { font-size:18px; margin:0; }
+  header.top { display:flex; justify-content:space-between; align-items:center; gap:12px; position:sticky; top:0; background:#F2EBE0; padding:8px 0; border-bottom:1px solid var(--b); z-index:5; }
+  h1 { font-size:18px; margin:0; font-family: 'Bitter', serif; }
 
   .lead { margin:12px 0 0; color:#222; }
   .byline { margin:6px 0 12px; color:var(--muted); }
-  .byline a { color:inherit; text-decoration:underline; }
+  .byline a { color:#2C3E6B; text-decoration:underline; }
 
   hr.section-break { border:0; border-top:1px solid var(--b); margin:28px 0 16px; }
 
-  button { padding:8px 12px; border:1px solid #888; background:#f6f6f6; border-radius:6px; cursor:pointer; transition:background-color .12s, border-color .12s, box-shadow .12s; }
-  .press.flash, .press:active { background:#e6f0ff; border-color:#5a8cff; box-shadow: inset 0 0 0 2px rgba(90,140,255,.18); }
+  button { padding:8px 12px; border:1px solid #D9CBC0; background:#FAF7F2; border-radius:6px; cursor:pointer; transition:background-color .12s, border-color .12s, box-shadow .12s; font-family: 'Archivo', sans-serif; }
+  .press.flash, .press:active { background:rgba(44,62,107,.07); border-color:#2C3E6B; box-shadow: inset 0 0 0 2px rgba(44,62,107,.18); }
 
   .muted { color:var(--muted); font-size:12px; }
   details#guide { margin:12px 0; }
   details#guide > summary { cursor:pointer; font-weight:600; }
 
   .grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:16px; margin-top:8px; }
-  .panel { border:1px solid var(--b); border-radius:8px; padding:12px; background:#fff; }
+  .panel { border:1px solid var(--b); border-radius:8px; padding:12px; background:#F2EBE0; }
   .graph { max-height:78vh; overflow:auto; }
 
   .title { font-weight:600; white-space:pre-wrap; margin:0 0 8px; }
   .choices { display:grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap:8px; }
   .meta { display:flex; gap:8px; align-items:center; margin-top:8px; flex-wrap:wrap; }
   .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin:6px 0 10px; }
-  .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding:2px 6px; border:1px solid var(--b); border-radius:4px; background:#f9fafb; }
+  .kbd { font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; padding:2px 6px; border:1px solid var(--b); border-radius:4px; background:#E6DDD0; }
 
-  footer.site { margin-top:16px; padding-top:12px; border-top:1px solid var(--b); color:var(--muted); font-size:14px; text-align:center; }
+  footer.site { margin-top:16px; padding-top:12px; border-top:1px solid var(--b); color:var(--muted); font-size:14px; text-align:center; font-family: 'IBM Plex Mono', monospace; }
   @media (max-width:900px){
     .grid { grid-template-columns:1fr; }
     .runner { order:-1; }
   }
+.site-topnav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 14px 0;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #D9CBC0;
+  font-family: 'Archivo', sans-serif;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.site-topnav .home-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  color: #C75B39;
+  text-decoration: none;
+  margin-right: auto;
+}
+.site-topnav .home-link:hover { text-decoration: underline; }
+.site-topnav a { color: #2C3E6B; text-decoration: none; font-weight: 500; }
+.site-topnav a:hover { color: #C75B39; }
+a[href] { color: #2C3E6B; }
+.lead a, .intro a { color: #2C3E6B; }
 </style>
 </head>
 <body>
 
 <div class="wrap">
+<nav class="site-topnav">
+  <a class="home-link" href="https://sauriiiin.github.io/">&#8592; sauriiiin.github.io</a>
+</nav>
 <header class="top">
   <h1>Separating AI Signal from Noise</h1>
 </header>
@@ -69,13 +100,13 @@
   <summary>How to use • Taxonomy + Five Signals</summary>
   <section id="ai-field-guide-summary" style="line-height:1.4">
     <p style="margin:.4rem 0">Classify the “AI” first, then run the five-signal test. If it clears, pick protection that matches where the value lives.</p>
-    <h4 style="margin:.6rem 0 .2rem">Fast taxonomy</h4>
+    <h4 style="margin:.6rem 0 .2rem;font-family:'Bitter',serif">Fast taxonomy</h4>
     <ul style="margin:.2rem 0 .8rem 1.2rem">
       <li><strong>AI as the core invention</strong> — mechanism-level novelty altering compute behavior.
       <li><strong>AI as an enabling capability</strong> — integration, calibration, operating points.
       <li><strong>AI as a bolt-on</strong> — no unique data/algorithm, no lift.
     </ul>
-    <h4 style="margin:.6rem 0 .2rem">Five signals</h4>
+    <h4 style="margin:.6rem 0 .2rem;font-family:'Bitter',serif">Five signals</h4>
     <ol style="margin:.2rem 0 .8rem 1.2rem">
       <li><strong>Benchmark lift</strong> vs credible baseline on external/prospective data; tie to outcomes where relevant.</li>
       <li><strong>Defensible data</strong> provenance, rights, reproducible pipelines, bias assessment, governance.</li>
@@ -83,7 +114,7 @@
       <li><strong>Safety/regulatory</strong> lifecycle: intended use, bounds, human-in-the-loop, verification &amp; validation, security, monitoring, rollback; map to <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a> and use a <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents/marketing-submission-recommendations-predetermined-change-control-plan-artificial-intelligence">PCCP</a> where applicable.</li>
       <li><strong>Upstream licenses</strong> compatible with outbound promises: FoU, flow-downs, redistribution, export.</li>
     </ol>
-    <h4 style="margin:.6rem 0 .2rem">Evidence pack (captures from Signals)</h4>
+    <h4 style="margin:.6rem 0 .2rem;font-family:'Bitter',serif">Evidence pack (captures from Signals)</h4>
     <p style="margin:.2rem 0">
       As you answer the five signals, record the artifacts below. They form the evidence pack for licensing and diligence.
     </p>
@@ -304,6 +335,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 </script>
-<div style="text-align:center;padding:14px 16px;font-size:12px;color:#888;border-top:1px solid #eee;margin-top:24px;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#888;" target="_blank" rel="noopener">sauriiiin</a> · Last updated 2026-04-14</div>
+<div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:24px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> &middot; Last updated 2026-06-05</div>
 </body>
 </html>

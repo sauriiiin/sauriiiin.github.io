@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me | Saurin Parikh</title>
+  <meta name="description" content="Physician-engineer-scientist and technology transfer specialist">
+  <meta property="og:title" content="About Me | Saurin Parikh">
+  <meta property="og:description" content="Physician-engineer-scientist and technology transfer specialist">
+  <meta property="og:url" content="https://sauriiiin.github.io/">
+  <meta property="og:type" content="website">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  <style>
+    /* ================================================================
+       Full-width single-column layout
+       ================================================================ */
+    html { scroll-behavior: smooth; scroll-padding-top: 70px; }
+    body { margin: 0; padding: 0; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding: clamp(16px, 4vw, 56px); }
+    a { color: var(--indigo); text-decoration: none; }
+    a:hover { color: var(--terracotta); }
+
+    /* ================================================================
+       Hero
+       ================================================================ */
+    .hero-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: clamp(20px, 3vw, 32px);
+      margin-bottom: 0;
+      box-shadow: 0 1px 0 rgba(255,255,255,.6) inset, 0 12px 30px -22px var(--shadow);
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 8px;
+    }
+    .hero-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .hero-info { flex: 1; }
+    .hero-name {
+      font-family: 'Bitter', serif;
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      color: var(--midnight);
+      margin: 0;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .hero-tagline {
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      color: var(--ink-soft);
+      margin: 6px 0 0;
+    }
+    .hero-links {
+      display: flex;
+      gap: 16px;
+      margin: 10px 0 0;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+    }
+    .hero-links a {
+      color: var(--indigo);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero-links a:hover { color: var(--terracotta); }
+
+    @media (max-width: 600px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-links { justify-content: center; flex-wrap: wrap; }
+    }
+
+    /* ================================================================
+       Page nav — horizontal strip
+       ================================================================ */
+    .page-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding: 14px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 0;
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+    }
+    .page-nav a {
+      color: var(--indigo);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .page-nav a:hover { color: var(--terracotta); }
+
+    /* ================================================================
+       Experience & Education tiles
+       ================================================================ */
+    .tile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .tile {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .tile-role {
+      font-family: 'Bitter', serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--ink);
+      margin: 0 0 2px;
+      line-height: 1.3;
+    }
+    .tile-org {
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+      color: var(--indigo);
+      margin: 0 0 2px;
+    }
+    .tile-org a { color: var(--indigo); }
+    .tile-org a:hover { color: var(--terracotta); }
+    .tile-dates {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-soft);
+      margin: 0 0 10px;
+    }
+    .tile-loc {
+      font-family: 'Archivo', sans-serif;
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin: 0 0 10px;
+    }
+    .tile ul {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      flex: 1;
+    }
+    .tile li { margin: 4px 0; }
+    .tile-degree {
+      font-family: 'Bitter', serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--ink);
+      margin: 0 0 4px;
+      line-height: 1.3;
+    }
+    .tile-focus {
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin: 0 0 8px;
+    }
+    .tile-school {
+      font-family: 'Archivo', sans-serif;
+      font-size: 13px;
+      color: var(--ink-soft);
+      margin: 0;
+      margin-top: auto;
+    }
+    .tile-school a { color: var(--indigo); }
+    @media (max-width: 800px) {
+      .tile-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ================================================================
+       Projects grid
+       ================================================================ */
+    .project-subhead {
+      font-family: 'Bitter', serif;
+      font-size: 20px;
+      margin: 24px 0 10px 0;
+      color: var(--ink);
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .project-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px 16px;
+      background: var(--card);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .15s ease, transform .15s ease;
+    }
+    .project-card:hover {
+      box-shadow: 0 3px 10px var(--shadow);
+      transform: translateY(-1px);
+    }
+    .project-card-name {
+      font-family: 'Bitter', serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .project-card-desc {
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+      color: var(--ink-soft);
+      line-height: 1.4;
+      flex: 1;
+    }
+    .project-card-launch {
+      align-self: flex-start;
+      margin-top: 10px;
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--indigo);
+      text-decoration: none;
+    }
+    .project-card-launch:hover { text-decoration: underline; color: var(--terracotta); }
+    .project-card-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 10px;
+    }
+    .project-card-links .project-card-launch { margin-top: 0; }
+    .project-card-launch-secondary { color: var(--ink-soft); }
+    .project-card-launch-secondary:hover { color: var(--terracotta); }
+
+    /* ================================================================
+       Main content typography
+       Type scale: 14 / 16 / 20 / 28 / 40
+       ================================================================ */
+    main {
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ink);
+    }
+
+    /* Page title: "About Me" */
+    main > h1 {
+      font-family: 'Bitter', serif;
+      font-size: 26px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--midnight);
+      margin: 48px 0 24px 0;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--line);
+    }
+
+    /* Top-level sections: Experience / Education / Skills / Projects / Publications */
+    main > h2 {
+      font-family: 'Bitter', serif;
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      color: var(--midnight);
+      margin: 44px 0 16px 0;
+    }
+
+    /* Subsections: role titles, degree names, skill groupings */
+    main > h3 {
+      font-family: 'Bitter', serif;
+      font-size: 18px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 24px 0 8px 0;
+    }
+
+    /* Body, lists, paragraphs */
+    main p,
+    main ul,
+    main ol { font-size: 16px; margin: 10px 0; }
+    main li { margin: 6px 0; }
+
+    /* ================================================================
+       Publications: structured cards
+       ================================================================ */
+    .pub-group-head {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--ink-soft);
+      font-weight: 600;
+      margin: 16px 0 12px 0;
+    }
+    .pub {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .pub:last-of-type { border-bottom: none; }
+    .pub-year {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--indigo);
+      padding-top: 2px;
+    }
+    .pub-title {
+      font-family: 'Archivo', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .pub-authors {
+      font-size: 13px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin-bottom: 2px;
+    }
+    .pub-authors strong { color: var(--ink); }
+    .pub-venue {
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    .pub-note {
+      color: var(--ink-soft);
+      font-size: 12px;
+      margin-left: 4px;
+    }
+    .pub-tag {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--haldi);
+      background: var(--haldi-light);
+      border: 1px solid var(--haldi);
+      border-radius: 4px;
+      padding: 1px 6px;
+      margin-left: 6px;
+      vertical-align: 1px;
+    }
+    .pub-links {
+      margin-top: 6px;
+      display: flex;
+      gap: 10px;
+    }
+    .pub-links a {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--indigo);
+      text-decoration: none;
+      border: 1px solid var(--indigo-light);
+      background: var(--indigo-light);
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+    .pub-links a:hover {
+      background: var(--indigo);
+      color: var(--khadi);
+      border-color: var(--indigo);
+    }
+    details.pub-all {
+      margin-top: 28px;
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+    }
+    details.pub-all > summary {
+      cursor: pointer;
+      font-family: 'Archivo', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--indigo);
+      padding: 8px 0;
+      list-style: none;
+    }
+    details.pub-all > summary::-webkit-details-marker { display: none; }
+    details.pub-all > summary::before {
+      content: "\25B8 ";
+      display: inline-block;
+      margin-right: 4px;
+      transition: transform .15s ease;
+    }
+    details.pub-all[open] > summary::before {
+      content: "\25BE ";
+    }
+    @media (max-width: 520px) {
+      .pub { grid-template-columns: 1fr; gap: 4px; }
+      .pub-year { padding-top: 0; }
+    }
+
+    /* Summary under About Me */
+    .about-summary {
+      font-family: 'Archivo', sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      font-style: normal;
+      border-left: 3px solid var(--terracotta);
+      padding: 2px 0 2px 14px;
+      margin: -16px 0 32px 0;
+      max-width: none;
+    }
+
+    /* Skills: label / value two-column list */
+    .skills-list {
+      display: grid;
+      grid-template-columns: minmax(180px, 240px) 1fr;
+      gap: 14px 24px;
+      margin: 12px 0 0 0;
+    }
+    .skills-list dt {
+      font-family: 'Archivo', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+      padding-top: 2px;
+    }
+    .skills-list dd {
+      font-family: 'Archivo', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+    @media (max-width: 720px) {
+      .skills-list {
+        grid-template-columns: 1fr;
+        gap: 4px 0;
+      }
+      .skills-list dt { margin-top: 12px; }
+    }
+
+    /* ================================================================
+       Footer
+       ================================================================ */
+    .site-footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      text-align: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-soft);
+    }
+    .site-footer a { color: var(--ink-soft); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO CARD -->
+    <div class="hero-card">
+      <header class="hero">
+        <img src="/images/Headshot.jpg" alt="Saurin Parikh" class="hero-photo">
+        <div class="hero-info">
+          <h1 class="hero-name">Saurin Parikh</h1>
+          <p class="hero-tagline">Physician-Engineer-Scientist · Problem Solver</p>
+          <p class="hero-links">
+            <a href="https://www.linkedin.com/in/sauriiiin/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sauriiiin" target="_blank">GitHub</a>
+            <a href="mailto:saurinbp@gmail.com">Email</a>
+            <a href="/files/Saurin_Parikh_CV.pdf" target="_blank" rel="noopener">CV &#x2197;</a>
+          </p>
+        </div>
+      </header>
+
+      <nav class="page-nav">
+        <a href="#about-me">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+
+    <!-- CONTENT -->
+    <main>
+
+      <!-- ============================================================
+           About Me
+           ============================================================ -->
+      <h1 id="about-me">About Me</h1>
+      <p class="about-summary">
+        Physician-engineer-scientist and technology transfer specialist with expertise in evaluating, protecting, and licensing intellectual property in the fields of digital health, AI/ML, medical devices, and gene therapy. Proven bridge between clinicians, researchers, investors and industry.
+      </p>
+
+      <!-- ============================================================
+           Experience
+           ============================================================ -->
+      <h2 id="experience">Experience</h2>
+      <div class="tile-grid">
+        <div class="tile">
+          <p class="tile-role">Sr Technology Licensing Specialist</p>
+          <p class="tile-org"><a href="https://www.rochester.edu/ventures/" target="_blank">UR Ventures</a>, University of Rochester</p>
+          <p class="tile-dates">February 2024 &ndash; Present</p>
+          <ul>
+            <li>Identify, evaluate, protect and commercialize technologies developed at the <a href="https://rochester.edu/" target="_blank">University of Rochester</a>.</li>
+            <li>Digital health, artificial intelligence, machine learning, biomedical devices</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <p class="tile-role">Graduate Researcher</p>
+          <p class="tile-org"><a href="https://www.carvunis.com" target="_blank">Carvunis Lab</a>, University of Pittsburgh School of Medicine</p>
+          <p class="tile-dates">August 2017 &ndash; December 2023</p>
+          <ul>
+            <li>Advisor: <a href="https://scholar.google.com/citations?user=E0dmcsYAAAAJ&amp;hl=en" target="_blank">Anne-Ruxandra Carvunis</a></li>
+            <li>Understanding how evolutionarily novel micro proteins influence the fitness of an organism</li>
+            <li>Bioinformatics, Computational Biology, Evolution, Genetics, Genomics, Systems Biology</li>
+          </ul>
+        </div>
+        <div class="tile">
+          <p class="tile-role">Technology Fellow</p>
+          <p class="tile-org"><a href="https://www.engineering.pitt.edu/coulter/" target="_blank">Coulter Translational Research Partners II</a>, University of Pittsburgh</p>
+          <p class="tile-dates">January 2017 &ndash; June 2017</p>
+          <ul>
+            <li>Identify, develop, and commercialize projects by bioengineers and clinical faculty addressing unmet clinical needs</li>
+            <li>Stakeholder Discovery, IP Analysis, Reimbursement Strategy, Business Plan Development</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           Education
+           ============================================================ -->
+      <h2 id="education">Education</h2>
+      <div class="tile-grid">
+        <div class="tile">
+          <p class="tile-degree">Ph.D. in Integrative Systems Biology</p>
+          <p class="tile-dates">2023</p>
+          <p class="tile-focus">Focus: Evolutionary Systems Biology</p>
+          <p class="tile-school"><a href="https://somgrad.pitt.edu" target="_blank">University of Pittsburgh School of Medicine</a><br>Pittsburgh, Pennsylvania, USA</p>
+        </div>
+        <div class="tile">
+          <p class="tile-degree">M.S. in Bioengineering</p>
+          <p class="tile-dates">2018</p>
+          <p class="tile-focus">Focus: Medical Product Engineering</p>
+          <p class="tile-school"><a href="https://www.engineering.pitt.edu/cmi/" target="_blank">Center For Medical Innovation</a><br><a href="https://www.engineering.pitt.edu" target="_blank">University of Pittsburgh Swanson School of Engineering</a><br>Pittsburgh, Pennsylvania, USA</p>
+        </div>
+        <div class="tile">
+          <p class="tile-degree">Bachelor of Medicine &amp; Bachelor of Surgery</p>
+          <p class="tile-dates">2014</p>
+          <p class="tile-focus"><a href="http://www.amcmet.org" target="_blank">Smt. NHL Municipal Medical College</a>, <a href="https://www.gujaratuniversity.ac.in" target="_blank">Gujarat University</a></p>
+          <p class="tile-school">Ahmedabad, Gujarat, India<br>Internship: Vadilal Sarabhai General Hospital</p>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           Skills
+           ============================================================ -->
+      <h2 id="skills">Skills</h2>
+
+      <dl class="skills-list">
+        <dt>Subject Expertise</dt>
+        <dd>Genomics, Bioinformatics, Computational Biology, Evolutionary Biology, Systems Biology, Digital Health, Artificial Intelligence, Machine Learning, Biomedical Devices</dd>
+
+        <dt>Intellectual Property &amp; Licensing</dt>
+        <dd>Patent Landscape Analysis, Freedom-to-Operate, Invention Disclosure Evaluation, Patent Drafting &amp; Prosecution Support, License Negotiation, Royalty Structuring, Inter-Institutional Agreements</dd>
+
+        <dt>Business Development &amp; Market Analysis</dt>
+        <dd>Market Sizing, Competitive Intelligence, Startup Formation &amp; Mentoring, Industry Outreach, Pitch Development, Due Diligence</dd>
+
+        <dt>Regulatory &amp; Funding</dt>
+        <dd>FDA Regulatory Pathways (510(k), De Novo, PMA), SBIR/STTR Grant Strategy, Reimbursement Analysis (CPT/DRG)</dd>
+
+        <dt>Technical Toolkit</dt>
+        <dd>Python, R, SQL, Bash/Shell, Git, Jupyter, High-Performance Computing (HPC/Slurm), HTML/CSS/JS, Swift</dd>
+
+        <dt>Licenses &amp; Certifications</dt>
+        <dd>Registered Patent Agent (USPTO Reg. No. 80,038), Licensed Physician (Medical Council of India)</dd>
+      </dl>
+
+      <!-- ============================================================
+           Publications
+           ============================================================ -->
+      <h2 id="publications">Publications</h2>
+
+      <h3 class="pub-group-head">Selected</h3>
+
+      <!-- Pub 1 — 2025 -->
+      <div class="pub">
+        <div class="pub-year">2025</div>
+        <div class="pub-body">
+          <div class="pub-title">Separating AI signal from noise: How TTOs can tell what's real, pick the proper protection, and turn substance into deals</div>
+          <div class="pub-authors"><strong>Parikh, S. B.</strong></div>
+          <div class="pub-venue"><em>les Nouvelles</em>, 58(4), 18&ndash;23.</div>
+          <div class="pub-links">
+            <a href="https://sauriiiin.github.io/files/papers/Parikh2025.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 2 — 2023 -->
+      <div class="pub">
+        <div class="pub-year">2023</div>
+        <div class="pub-body">
+          <div class="pub-title">A vast evolutionarily transient translatome contributes to phenotype and fitness</div>
+          <div class="pub-authors">Wacholder, A., <strong>Parikh, S. B.</strong>, Coelho, N. C., Acar, O., Houghton, C., Chou, L., &amp; Carvunis, A.-R.</div>
+          <div class="pub-venue"><em>Cell Systems</em>, 14(5), 363&ndash;381.e8.</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.cels.2023.04.002" target="_blank" rel="noopener">DOI</a>
+            <a href="https://sauriiiin.github.io/files/papers/Wacholder2023.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 3 — 2022 -->
+      <div class="pub">
+        <div class="pub-year">2022</div>
+        <div class="pub-body">
+          <div class="pub-title">On the illusion of auxotrophy: met15&#x394; yeast cells can grow on inorganic sulfur thanks to the previously uncharacterized homocysteine synthase Yll058w</div>
+          <div class="pub-authors"><strong>Parikh, S. B.</strong>*, Van Oss, S. B.*, Castilho Coelho, N.*, Wacholder, A., Belashov, I., Zdancewicz, S., Michaca, M., Xu, J., Kang, Y. P., Ward, N. P., Yoon, S. J., McCourt, K. M., McKee, J., Ideker, T., VanDemark, A. P., DeNicola, G. M., &amp; Carvunis, A.-R.</div>
+          <div class="pub-venue"><em>Journal of Biological Chemistry</em>, 298(12), 102697. <span class="pub-note">* equal contribution</span></div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1016/j.jbc.2022.102697" target="_blank" rel="noopener">DOI</a>
+            <a href="https://sauriiiin.github.io/files/papers/VanOss2022.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pub 4 — 2021 -->
+      <div class="pub">
+        <div class="pub-year">2021</div>
+        <div class="pub-body">
+          <div class="pub-title">LI Detector: a framework for sensitive colony-based screens regardless of the distribution of fitness effects</div>
+          <div class="pub-authors"><strong>Parikh, S. B.</strong>, Castilho Coelho, N., &amp; Carvunis, A.-R.</div>
+          <div class="pub-venue"><em>G3 Genes|Genomes|Genetics</em>, 11(2).</div>
+          <div class="pub-links">
+            <a href="https://doi.org/10.1093/g3journal/jkaa068" target="_blank" rel="noopener">DOI</a>
+            <a href="https://sauriiiin.github.io/files/papers/Parikh2021.pdf" target="_blank" rel="noopener">PDF</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           Projects (featured)
+           ============================================================ -->
+      <h2 id="projects">Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-card-name">Nestline</div>
+          <div class="project-card-desc">On-device financial planning toolkit for iPhone &mdash; investment calculators, budgeting, and tax estimation.</div>
+          <div class="project-card-links">
+            <a class="project-card-launch" href="/projects/apps/nestline/" target="_blank" rel="noopener">Learn more &rarr;</a>
+            <a class="project-card-launch project-card-launch-secondary" href="https://apps.apple.com/us/app/nestline/id6756862734" target="_blank" rel="noopener">App Store &#x2197;</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card-name">AI Triage</div>
+          <div class="project-card-desc">Interactive decision tool for evaluating AI-related invention disclosures at technology transfer offices.</div>
+          <a class="project-card-launch" href="/projects/tools/ai_triage/" target="_blank" rel="noopener">Launch &rarr;</a>
+        </div>
+        <div class="project-card">
+          <div class="project-card-name">Future Flow</div>
+          <div class="project-card-desc">Investment growth calculator with compound interest, recurring contributions, and inflation adjustment.</div>
+          <a class="project-card-launch" href="/projects/tools/future_flow/" target="_blank" rel="noopener">Launch &rarr;</a>
+        </div>
+        <div class="project-card">
+          <div class="project-card-name">Mortgage Calculator</div>
+          <div class="project-card-desc">True cost of home ownership estimator &mdash; monthly payments, taxes, insurance, and maintenance.</div>
+          <a class="project-card-launch" href="/projects/tools/mortgage_calculator/" target="_blank" rel="noopener">Launch &rarr;</a>
+        </div>
+      </div>
+
+      <p style="margin-top:16px;"><a href="/projects/" style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:500;color:var(--indigo);">See all projects &rarr;</a></p>
+
+    </main>
+
+    <footer class="site-footer">
+      Pages maintained by <a href="https://github.com/sauriiiin" target="_blank">sauriiiin</a> · Last updated 2026-06-05
+    </footer>
+  </div>
+</body>
+</html>
