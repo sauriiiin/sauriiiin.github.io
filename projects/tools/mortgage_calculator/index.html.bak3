@@ -356,35 +356,6 @@
   .rank-nw{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:15px;text-align:right}
   .rank-nw small{display:block;font-weight:400;font-size:10.5px;color:var(--ink-soft)}
 
-  /* ---- Mortgage comparison matrix ---- */
-  .mtx-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card);margin-bottom:22px}
-  table.mtx{border-collapse:separate;border-spacing:0;width:100%;min-width:520px}
-  table.mtx th,table.mtx td{padding:11px 16px;text-align:right;border-bottom:1px solid var(--line);vertical-align:middle}
-  table.mtx tr:last-child td{border-bottom:none}
-  .mtx .rowlabel{text-align:left;font-weight:500;font-size:13px;color:var(--ink);position:sticky;left:0;background:var(--card);min-width:190px;z-index:2}
-  .mtx .rowlabel small{display:block;font-weight:400;font-size:11px;color:var(--ink-soft);margin-top:1px}
-  .mtx .scen-col{min-width:170px}
-  .mtx thead th{border-bottom:1.5px solid var(--line)}
-  .mtx thead .rowlabel{vertical-align:bottom}
-  .mtx-scenhead{display:flex;align-items:center;gap:8px}
-  .mtx-name{flex:1;font-family:'Bitter',serif;font-weight:600;font-size:15px;border:none;background:transparent;color:var(--ink);min-width:0;text-align:right;border-bottom:1px dashed transparent}
-  .mtx-name:focus{outline:none;border-bottom-color:var(--sage)}
-  .mtx-del{border:1px solid var(--line);background:var(--paper);color:var(--ink-soft);border-radius:7px;width:26px;height:26px;flex:none;cursor:pointer;font-size:14px;line-height:1;display:grid;place-items:center;transition:all .15s}
-  .mtx-del:hover{border-color:var(--clay);color:var(--clay);background:rgba(192,99,63,.08)}
-  .mtx .inputbox input{text-align:right}
-  .mtx .inputbox .pre{left:11px}
-  .mtx .inputbox .post{right:11px}
-  .mtx td select{text-align:right}
-  .mtx-dsub{display:block;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--ink-soft);margin-top:4px}
-  .mtx tr.sec-row td{background:var(--paper-2);border-bottom:1px solid var(--line)}
-  .mtx tr.sec-row .rowlabel{background:var(--paper-2);font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
-  .mtx tr.out td{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--ink)}
-  .mtx tr.out .rowlabel{font-family:'Archivo',sans-serif;font-size:13px}
-  .mtx tr.out.key td{font-weight:600}
-  .mtx .cell-best{color:var(--forest);font-weight:600}
-  .mtx .best-tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:rgba(44,62,107,.1);border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle}
-  .mtx-empty{padding:26px;text-align:center;color:var(--ink-soft);font-size:14px}
-
   @media print{
     body{padding:10px;background:#fff;background-image:none}
     .toolbar,.add-item,.item-del{display:none!important}
@@ -439,7 +410,6 @@
   <nav class="tabs">
     <button class="tab active" data-tab="cost">Monthly Cost</button>
     <button class="tab" data-tab="compare">Rent vs Buy · Net Worth</button>
-    <button class="tab" data-tab="mortgages">Compare Mortgages</button>
   </nav>
 
   <div class="tabpane" id="tab-cost">
@@ -780,25 +750,6 @@
       <div class="cmp-rank" id="rank"></div>
       <p class="oppo-caveats">Every figure is a projection resting on the assumptions above — and small changes (return rate, appreciation, how long you stay) can flip the winner. Net worth assumes you liquidate at year 30: investment gains are taxed; home equity is not (primary-residence exclusion). Selling costs, security deposits, mortgage-interest deductions, and the risk gap between a guaranteed loan payoff and uncertain market returns aren't modeled. Not financial advice.</p>
     </section>
-  </div>
-
-  <!-- ============ COMPARE: MORTGAGE SCENARIOS ============ -->
-  <div class="tabpane" id="tab-mortgages" hidden>
-    <p class="amort-sub" style="max-width:74ch">A quick, side-by-side look at how different loans stack up. Each column is one scenario — set the price, down payment, rate, term, and discount points, and see the loan amount, cash needed at closing, and the full lifetime cost laid out row by row. The lowest monthly payment, least interest, and cheapest total are flagged as <b>best</b>.</p>
-
-    <div class="cmp-head">
-      <h2 class="cmp-title">Scenarios</h2>
-      <div class="cmp-add">
-        <button class="tbtn" id="addScenario">+ Add scenario</button>
-      </div>
-    </div>
-
-    <div class="mtx-scroll">
-      <table class="mtx" id="mtxTable"></table>
-    </div>
-    <div class="mtx-empty" id="mtxEmpty" style="display:none">No scenarios — add one to start comparing.</div>
-
-    <p class="oppo-caveats">Discount points are assumed paid in cash at closing and are a percentage of the loan amount; each point buys down the rate you enter, so lower the interest rate yourself to model the trade-off. Monthly figures are principal &amp; interest only — taxes, insurance, PMI, and upkeep live on the Monthly Cost tab. "Upfront" is down payment + points (your cash to close, before other closing costs). "Total for the house" adds every loan payment to your down payment and points. Not financial advice.</p>
   </div>
 
   <div style="margin-top:40px;padding-top:24px;border-top:1px dashed #D9CBC0;">
@@ -1559,152 +1510,10 @@ $('addBuy').addEventListener('click', ()=>addCard('buy'));
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click', ()=>{
   document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active', x===t));
   const id=t.dataset.tab;
-  $('tab-cost').hidden      = id!=='cost';
-  $('tab-compare').hidden   = id!=='compare';
-  $('tab-mortgages').hidden = id!=='mortgages';
+  $('tab-cost').hidden    = id!=='cost';
+  $('tab-compare').hidden = id!=='compare';
   if(id==='compare') renderCompare();
-  if(id==='mortgages') updateMtxOutputs();
 }));
-
-// ===================== COMPARE: MORTGAGE SCENARIOS =====================
-let mtxScenarios = [];
-let mtxSeq = 0;
-
-function mtxCalc(s){
-  const price = Math.max(+s.price||0, 0);
-  const down  = Math.min(Math.max(+s.down||0,0), price);
-  const loan  = Math.max(price - down, 0);
-  const downPct = price>0 ? down/price*100 : 0;
-  const pointsPct  = Math.max(+s.points||0, 0);
-  const pointsCost = loan * pointsPct/100;
-  const r = Math.max(+s.rate||0,0)/100/12;
-  const n = Math.round((+s.term||30)*12);
-  let pi = 0;
-  if(loan>0 && n>0) pi = r===0 ? loan/n : loan*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
-  const totalLoan     = pi*n;                  // sum of all P&I payments
-  const totalInterest = Math.max(totalLoan - loan, 0);
-  const upfront       = down + pointsCost;     // cash to close (down + points)
-  const totalHouse    = totalLoan + down + pointsCost;
-  return {price, down, downPct, loan, pointsPct, pointsCost, pi, n, totalLoan, totalInterest, upfront, totalHouse};
-}
-
-// output rows: field key, label, sublabel, whether lower value is "best" (flagged)
-const MTX_OUT = [
-  {f:'loan',          label:'Loan amount',            sub:'Price − down payment',        best:false},
-  {f:'pointsCost',    label:'Points cost',            sub:'Points % × loan',             best:false},
-  {f:'upfront',       label:'Upfront payment',        sub:'Down payment + points',       best:false, key:true},
-  {f:'pi',            label:'Monthly principal & interest', sub:'',                       best:true,  key:true},
-  {f:'totalInterest', label:'Total interest paid',    sub:'Over the full term',          best:true},
-  {f:'totalLoan',     label:'Total of all loan payments', sub:'Principal + interest',     best:false},
-  {f:'totalHouse',    label:'Total paid for the house', sub:'Loan payments + down + points', best:true, key:true},
-];
-
-function renderMtx(){
-  const tbl = $('mtxTable');
-  if(!mtxScenarios.length){
-    tbl.innerHTML = '';
-    $('mtxEmpty').style.display = 'block';
-    return;
-  }
-  $('mtxEmpty').style.display = 'none';
-
-  // ---- header: scenario names ----
-  let head = `<thead><tr><th class="rowlabel"></th>`;
-  mtxScenarios.forEach(s=>{
-    head += `<th class="scen-col">
-      <div class="mtx-scenhead">
-        <input class="mtx-name" data-id="${s.id}" data-field="name" value="${esc(s.name)}" aria-label="Scenario name">
-        <button class="mtx-del" data-id="${s.id}" title="Remove scenario" aria-label="Remove">×</button>
-      </div>
-    </th>`;
-  });
-  head += `</tr></thead>`;
-
-  // ---- input rows ----
-  const money = (id,field,val,step)=>`<div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${id}" data-field="${field}" value="${val}" min="0" step="${step}"></div>`;
-  const pct   = (id,field,val,step)=>`<div class="inputbox"><input type="number" class="has-post" data-id="${id}" data-field="${field}" value="${val}" min="0" step="${step}"><span class="post">%</span></div>`;
-
-  let body = `<tbody>`;
-  body += `<tr><td class="rowlabel">Home price</td>` +
-    mtxScenarios.map(s=>`<td>${money(s.id,'price',s.price,1000)}</td>`).join('') + `</tr>`;
-  body += `<tr><td class="rowlabel">Down payment</td>` +
-    mtxScenarios.map(s=>`<td>${money(s.id,'down',s.down,1000)}<span class="mtx-dsub" id="dsub-${s.id}"></span></td>`).join('') + `</tr>`;
-  body += `<tr><td class="rowlabel">Interest rate <small>Annual APR</small></td>` +
-    mtxScenarios.map(s=>`<td>${pct(s.id,'rate',s.rate,0.01)}</td>`).join('') + `</tr>`;
-  body += `<tr><td class="rowlabel">Loan term</td>` +
-    mtxScenarios.map(s=>{
-      const opts=[30,20,15,10].map(y=>`<option value="${y}" ${(+s.term===y)?'selected':''}>${y} years</option>`).join('');
-      return `<td><select data-id="${s.id}" data-field="term">${opts}</select></td>`;
-    }).join('') + `</tr>`;
-  body += `<tr><td class="rowlabel">Buying points <small>% of loan amount</small></td>` +
-    mtxScenarios.map(s=>`<td>${pct(s.id,'points',s.points,0.125)}</td>`).join('') + `</tr>`;
-
-  // ---- output rows ----
-  body += `<tr class="sec-row"><td class="rowlabel">Results</td>` + mtxScenarios.map(()=>`<td></td>`).join('') + `</tr>`;
-  MTX_OUT.forEach(o=>{
-    body += `<tr class="out ${o.key?'key':''}"><td class="rowlabel">${o.label}${o.sub?`<small>${o.sub}</small>`:''}</td>` +
-      mtxScenarios.map(s=>`<td id="o-${o.f}-${s.id}">–</td>`).join('') + `</tr>`;
-  });
-  body += `</tbody>`;
-
-  tbl.innerHTML = head + body;
-  updateMtxOutputs();
-}
-
-function updateMtxOutputs(){
-  if(!mtxScenarios.length) return;
-  const res = mtxScenarios.map(s=>({id:s.id, r:mtxCalc(s)}));
-
-  // down payment % sublabel
-  res.forEach(({id,r})=>{
-    const el=$('dsub-'+id); if(el) el.textContent = r.downPct.toFixed(1)+'% of price';
-  });
-
-  MTX_OUT.forEach(o=>{
-    // find best (lowest, among scenarios that actually have a loan) for flagged rows
-    let bestId=null;
-    if(o.best && res.length>1){
-      let bestVal=Infinity;
-      res.forEach(({id,r})=>{ if(r.loan>0 && r[o.f]<bestVal){ bestVal=r[o.f]; bestId=id; } });
-      // only flag if there's a meaningful spread
-      const vals=res.filter(x=>x.r.loan>0).map(x=>x.r[o.f]);
-      if(vals.length<2 || Math.max(...vals)-Math.min(...vals) < 0.5) bestId=null;
-    }
-    res.forEach(({id,r})=>{
-      const cell=$(`o-${o.f}-${id}`); if(!cell) return;
-      const isBest = id===bestId;
-      cell.className = isBest ? 'cell-best' : '';
-      cell.innerHTML = fmt(r[o.f]) + (isBest ? '<span class="best-tag">best</span>' : '');
-    });
-  });
-}
-
-function addScenario(seed){
-  mtxSeq++;
-  const base = {id:mtxSeq, name:'Scenario '+mtxSeq, price:400000, down:80000, rate:6.75, term:30, points:0};
-  mtxScenarios.push(Object.assign(base, seed||{}));
-  renderMtx();
-}
-function delScenario(id){ mtxScenarios = mtxScenarios.filter(s=>s.id!==id); renderMtx(); }
-
-// wiring (inputs update model then recompute outputs — no full re-render, keeps focus)
-$('mtxTable').addEventListener('input', e=>{
-  const el=e.target, id=+el.dataset.id, f=el.dataset.field;
-  if(!id || !f) return;
-  const s=mtxScenarios.find(x=>x.id===id); if(!s) return;
-  s[f] = (f==='name') ? el.value : (parseFloat(el.value)||0);
-  updateMtxOutputs();
-});
-$('mtxTable').addEventListener('change', e=>{
-  const el=e.target; if(el.dataset.field!=='term') return;
-  const id=+el.dataset.id, s=mtxScenarios.find(x=>x.id===id); if(!s) return;
-  s.term = parseFloat(el.value)||30; updateMtxOutputs();
-});
-$('mtxTable').addEventListener('click', e=>{
-  const btn=e.target.closest('.mtx-del'); if(!btn) return;
-  delScenario(+btn.dataset.id);
-});
-$('addScenario').addEventListener('click', ()=>addScenario());
 
 // ===================== INIT =====================
 ids.forEach(id => $(id).addEventListener('input', onInput));
@@ -1722,13 +1531,6 @@ cmpCards = [
 ];
 renderCards();
 renderCompare();
-
-// seed mortgage comparison scenarios
-mtxScenarios = [
-  {id:++mtxSeq, name:'30-yr, no points', price:400000, down:80000, rate:6.75, term:30, points:0},
-  {id:++mtxSeq, name:'30-yr, 1 point',   price:400000, down:80000, rate:6.25, term:30, points:1},
-];
-renderMtx();
 </script>
 <div style="text-align:center;padding:14px 16px;font-size:12px;color:#5B5550;border-top:1px solid #D9CBC0;margin-top:24px;font-family:'IBM Plex Mono',monospace;">Maintained by <a href="https://sauriiiin.github.io/" style="color:#5B5550;" target="_blank" rel="noopener">sauriiiin</a> &middot; Last updated 2026-06-05</div>
 </body>
