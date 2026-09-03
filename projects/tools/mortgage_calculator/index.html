@@ -385,6 +385,21 @@
   .mtx .best-tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);background:rgba(44,62,107,.1);border-radius:5px;padding:1px 5px;margin-left:6px;vertical-align:middle}
   .mtx-empty{padding:26px;text-align:center;color:var(--ink-soft);font-size:14px}
 
+  /* head-to-head diff column (rightmost) */
+  .mtx .diff-col{border-left:2px solid var(--forest);min-width:150px}
+  .mtx th.diff-col{background:var(--paper-2);vertical-align:bottom}
+  .mtx tr.sec-row td.diff-col{background:var(--paper-2)}
+  .mtx td.diff-col{font-weight:600}
+  .mtx td.diff-col small{display:block;font-weight:400;font-size:10.5px;color:var(--ink-soft);margin-top:2px}
+  .mtx-diffhead{display:flex;flex-direction:column;gap:7px;align-items:stretch}
+  .mtx-diffcap{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--forest);text-align:right;font-weight:600}
+  .mtx-diffsel{display:flex;align-items:center;gap:6px;justify-content:flex-end}
+  .mtx-diffsel span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-soft);font-weight:600;flex:none}
+  .mtx-diffsel select{font-size:12px;padding:6px 8px;max-width:118px}
+  .delta-worse{color:var(--clay)}
+  .delta-better{color:var(--forest)}
+  .delta-none{color:var(--ink-soft)}
+
   @media print{
     body{padding:10px;background:#fff;background-image:none}
     .toolbar,.add-item,.item-del{display:none!important}
@@ -784,7 +799,7 @@
 
   <!-- ============ COMPARE: MORTGAGE SCENARIOS ============ -->
   <div class="tabpane" id="tab-mortgages" hidden>
-    <p class="amort-sub" style="max-width:74ch">A quick, side-by-side look at how different loans stack up. Each column is one scenario — set the price, down payment, rate, term, and discount points, and see the loan amount, cash needed at closing, and the full lifetime cost laid out row by row. The lowest monthly payment, least interest, and cheapest total are flagged as <b>best</b>.</p>
+    <p class="amort-sub" style="max-width:74ch">A quick, side-by-side look at how different loans stack up. Each column is one scenario — set the price, down payment, rate, term, and discount points, and see the loan amount, cash needed at closing, and the full lifetime cost laid out row by row. The lowest monthly payment, least interest, and cheapest total are flagged as <b>best</b>. With two or more scenarios, the <b>rightmost column</b> shows the head-to-head difference between any two you pick.</p>
 
     <div class="cmp-head">
       <h2 class="cmp-title">Scenarios</h2>
@@ -1608,6 +1623,23 @@ function renderMtx(){
   }
   $('mtxEmpty').style.display = 'none';
 
+  const showDiff = mtxScenarios.length >= 2;
+  if(showDiff) normalizeDiffSel();
+
+  // diff-column pieces (header selects + per-row cells)
+  const opt = sel => mtxScenarios.map(s=>`<option value="${s.id}" ${s.id===sel?'selected':''}>${esc(s.name)}</option>`).join('');
+  const diffHead = showDiff
+    ? `<th class="scen-col diff-col">
+        <div class="mtx-diffhead">
+          <span class="mtx-diffcap">Difference · B − A</span>
+          <div class="mtx-diffsel"><span>A</span><select data-diff="A" aria-label="Compare scenario A">${opt(mtxSelA)}</select></div>
+          <div class="mtx-diffsel"><span>B</span><select data-diff="B" aria-label="Compare scenario B">${opt(mtxSelB)}</select></div>
+        </div>
+      </th>`
+    : '';
+  const diffCell = field => showDiff ? `<td class="diff-col delta" id="diff-${field}"></td>` : '';
+  const diffBlank = showDiff ? `<td class="diff-col"></td>` : '';
+
   // ---- header: scenario names ----
   let head = `<thead><tr><th class="rowlabel"></th>`;
   mtxScenarios.forEach(s=>{
@@ -1618,7 +1650,7 @@ function renderMtx(){
       </div>
     </th>`;
   });
-  head += `</tr></thead>`;
+  head += diffHead + `</tr></thead>`;
 
   // ---- input rows ----
   const money = (id,field,val,step)=>`<div class="inputbox"><span class="pre">$</span><input type="number" class="has-pre" data-id="${id}" data-field="${field}" value="${val}" min="0" step="${step}"></div>`;
@@ -1626,24 +1658,24 @@ function renderMtx(){
 
   let body = `<tbody>`;
   body += `<tr><td class="rowlabel">Home price</td>` +
-    mtxScenarios.map(s=>`<td>${money(s.id,'price',s.price,1000)}</td>`).join('') + `</tr>`;
+    mtxScenarios.map(s=>`<td>${money(s.id,'price',s.price,1000)}</td>`).join('') + diffCell('price') + `</tr>`;
   body += `<tr><td class="rowlabel">Down payment</td>` +
-    mtxScenarios.map(s=>`<td>${money(s.id,'down',s.down,1000)}<span class="mtx-dsub" id="dsub-${s.id}"></span></td>`).join('') + `</tr>`;
+    mtxScenarios.map(s=>`<td>${money(s.id,'down',s.down,1000)}<span class="mtx-dsub" id="dsub-${s.id}"></span></td>`).join('') + diffCell('down') + `</tr>`;
   body += `<tr><td class="rowlabel">Interest rate <small>Annual APR</small></td>` +
-    mtxScenarios.map(s=>`<td>${pct(s.id,'rate',s.rate,0.01)}</td>`).join('') + `</tr>`;
+    mtxScenarios.map(s=>`<td>${pct(s.id,'rate',s.rate,0.01)}</td>`).join('') + diffCell('rate') + `</tr>`;
   body += `<tr><td class="rowlabel">Loan term</td>` +
     mtxScenarios.map(s=>{
       const opts=[30,20,15,10].map(y=>`<option value="${y}" ${(+s.term===y)?'selected':''}>${y} years</option>`).join('');
       return `<td><select data-id="${s.id}" data-field="term">${opts}</select></td>`;
-    }).join('') + `</tr>`;
+    }).join('') + diffCell('term') + `</tr>`;
   body += `<tr><td class="rowlabel">Buying points <small>% of loan amount</small></td>` +
-    mtxScenarios.map(s=>`<td>${pct(s.id,'points',s.points,0.125)}</td>`).join('') + `</tr>`;
+    mtxScenarios.map(s=>`<td>${pct(s.id,'points',s.points,0.125)}</td>`).join('') + diffCell('points') + `</tr>`;
 
   // ---- output rows ----
-  body += `<tr class="sec-row"><td class="rowlabel">Results</td>` + mtxScenarios.map(()=>`<td></td>`).join('') + `</tr>`;
+  body += `<tr class="sec-row"><td class="rowlabel">Results</td>` + mtxScenarios.map(()=>`<td></td>`).join('') + diffBlank + `</tr>`;
   MTX_OUT.forEach(o=>{
     body += `<tr class="out ${o.key?'key':''}"><td class="rowlabel">${o.label}${o.sub?`<small>${o.sub}</small>`:''}</td>` +
-      mtxScenarios.map(s=>`<td id="o-${o.f}-${s.id}">–</td>`).join('') + `</tr>`;
+      mtxScenarios.map(s=>`<td id="o-${o.f}-${s.id}">–</td>`).join('') + diffCell(o.f) + `</tr>`;
   });
   body += `</tbody>`;
 
@@ -1677,6 +1709,7 @@ function updateMtxOutputs(){
       cell.innerHTML = fmt(r[o.f]) + (isBest ? '<span class="best-tag">best</span>' : '');
     });
   });
+  fillDiffColumn();
 }
 
 function addScenario(seed){
@@ -1687,16 +1720,81 @@ function addScenario(seed){
 }
 function delScenario(id){ mtxScenarios = mtxScenarios.filter(s=>s.id!==id); renderMtx(); }
 
+// ---- head-to-head difference column ----
+let mtxSelA = null, mtxSelB = null;
+const MTX_DIFF = {
+  price:{type:'money', cost:false}, down:{type:'money', cost:false},
+  rate:{type:'rate', cost:false}, term:{type:'term', cost:false}, points:{type:'pts', cost:false},
+  loan:{type:'money', cost:true}, pointsCost:{type:'money', cost:true}, upfront:{type:'money', cost:true},
+  pi:{type:'money', cost:true}, totalInterest:{type:'money', cost:true},
+  totalLoan:{type:'money', cost:true}, totalHouse:{type:'money', cost:true},
+};
+
+function fmtDelta(d, type){
+  const eps = type==='money' ? 0.5 : 1e-9;
+  if(Math.abs(d) < eps) return '—';
+  const sign = d>0 ? '+' : '−', mag = Math.abs(d);
+  if(type==='money') return sign+'$'+Math.round(mag).toLocaleString('en-US');
+  if(type==='rate')  return sign+mag.toFixed(2)+' pp';
+  if(type==='term')  return sign+mag+' yrs';
+  if(type==='pts')   return sign+(Math.round(mag*1000)/1000)+' pts';
+  return sign+mag;
+}
+
+function normalizeDiffSel(){
+  if(!mtxScenarios.some(s=>s.id===mtxSelA)) mtxSelA = mtxScenarios[0] ? mtxScenarios[0].id : null;
+  if(!mtxScenarios.some(s=>s.id===mtxSelB)){
+    const other = mtxScenarios.find(s=>s.id!==mtxSelA);
+    mtxSelB = other ? other.id : (mtxScenarios[0] ? mtxScenarios[0].id : null);
+  }
+}
+
+// flatten a scenario into every field the diff column can show
+function mtxRow(s){
+  const c = mtxCalc(s);
+  return {price:c.price, down:c.down, rate:+s.rate||0, term:+s.term||30, points:c.pointsPct,
+    loan:c.loan, pointsCost:c.pointsCost, upfront:c.upfront, pi:c.pi,
+    totalInterest:c.totalInterest, totalLoan:c.totalLoan, totalHouse:c.totalHouse};
+}
+
+function fillDiffColumn(){
+  if(mtxScenarios.length < 2) return;
+  normalizeDiffSel();
+  const sa = mtxScenarios.find(s=>s.id===mtxSelA) || mtxScenarios[0];
+  const sb = mtxScenarios.find(s=>s.id===mtxSelB) || mtxScenarios[1] || mtxScenarios[0];
+  const A = mtxRow(sa), B = mtxRow(sb);
+  Object.keys(MTX_DIFF).forEach(field=>{
+    const cell = $('diff-'+field); if(!cell) return;
+    const m = MTX_DIFF[field], d = B[field]-A[field], txt = fmtDelta(d, m.type);
+    let cls = 'delta-none';
+    if(m.cost && txt!=='—') cls = d<0 ? 'delta-better' : 'delta-worse';
+    let sub = '';
+    if(m.type==='money' && m.cost && Math.abs(d)>=0.5 && Math.abs(A[field])>1e-6){
+      const pct = d/A[field]*100; sub = `<small>${pct>0?'+':'−'}${Math.abs(pct).toFixed(1)}%</small>`;
+    }
+    cell.className = 'diff-col delta ' + cls;
+    cell.innerHTML = txt + sub;
+  });
+}
+
 // wiring (inputs update model then recompute outputs — no full re-render, keeps focus)
 $('mtxTable').addEventListener('input', e=>{
   const el=e.target, id=+el.dataset.id, f=el.dataset.field;
   if(!id || !f) return;
   const s=mtxScenarios.find(x=>x.id===id); if(!s) return;
   s[f] = (f==='name') ? el.value : (parseFloat(el.value)||0);
+  if(f==='name'){
+    document.querySelectorAll(`.mtx-diffsel select option[value="${id}"]`).forEach(o=>o.textContent=el.value);
+  }
   updateMtxOutputs();
 });
 $('mtxTable').addEventListener('change', e=>{
-  const el=e.target; if(el.dataset.field!=='term') return;
+  const el=e.target;
+  if(el.dataset.diff){                                    // A/B picker in the diff column header
+    if(el.dataset.diff==='A') mtxSelA=+el.value; else mtxSelB=+el.value;
+    fillDiffColumn(); return;
+  }
+  if(el.dataset.field!=='term') return;
   const id=+el.dataset.id, s=mtxScenarios.find(x=>x.id===id); if(!s) return;
   s.term = parseFloat(el.value)||30; updateMtxOutputs();
 });
